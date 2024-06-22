@@ -1,0 +1,3208 @@
+<!DOCTYPE html>
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html class="js csstransitions supports no-touchevents no-forcetouch objectfit object-fit cssanimations no-cssgridlegacy cssgrid cssfilters csstransforms csstransforms3d mobile-false js_active vc_desktop vc_transform not-iOS" style="" lang="en"><!--<![endif]-->
+	
+<head>
+	
+<!-- Google tag (gtag.js) -->
+<script type="text/javascript" src="../markup/js/googletagmanager.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5V23KZXJ79');
+</script>
+	
+<!-- Typekit font loading script -->
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+
+		<meta name="theme-color" content="#000000">	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+<title>Lauren Thy Doan / CAAWT - Usability Test &amp; Redesign Recommendations</title>	
+		
+<link rel="icon" type="image/x-icon" href="https://ltd-hfid.com/fav/favicon.ico">
+<link rel="apple-touch-icon" href="https://ltd-hfid.com/fav/apple-touch-icon.png" />
+<link rel="android-chrome" type="image/png" sizes="32x32" href="https://ltd-hfid.com/fav/android-chrome-192x192.png">
+<link rel="android-chrome" type="image/png" sizes="16x16" href="https://ltd-hfid.com/fav/android-chrome-512x512.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ltd-hfid.com/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ltd-hfid.com/fav/favicon-16x16.png">
+	
+<meta name="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	
+<link rel="stylesheet" href="https://use.typekit.net/ego2stb.css">
+
+<link rel="stylesheet" href="../markup/css/root.css">
+<link rel="stylesheet" href="../markup/css/custom.css">
+<link rel="stylesheet" href="../markup/css/media.css">
+<link rel="stylesheet" href="../markup/css/site.css">
+
+
+<style>
+	
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay .close{
+position: absolute;
+}
+
+#text{
+  position: absolute;
+  top: 20%;
+  font-family: "futura-pt", "Futura", Helvetica, sans-serif;
+font-size: 24px !important;
+  font-weight: 500 !important;
+  color: white;
+  text-align: left;
+  margin-left: .8em;
+}
+</style>
+
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off_t(x) {
+if (x == 'yes') {
+  document.getElementById("overlay").style.display = "none";
+}
+}
+
+function stop_prop() {
+	event.stopPropagation();
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+
+<style id="dt-main-inline-css" type="text/css">
+body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 10002;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+	
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+	
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background-color: #ffffff;
+}
+	
+.uil-default rect:not(.bk) {
+  fill: rgba(51,51,51,0.3);
+}
+	
+.uil-ring > path {
+  fill: rgba(51,51,51,0.3);
+}
+	
+.ring-loader .circle {
+  fill: rgba(51,51,51,0.3);
+}
+	
+.ring-loader .moving-circle {
+  fill: #333333;
+}
+	
+.uil-hourglass .glass {
+  stroke: #333333;
+}
+	
+.uil-hourglass .sand {
+  fill: rgba(51,51,51,0.3);
+}
+	
+.spinner-loader .load-wrap {
+  background-image: url("data:image/svg+xml,%3Csvg width='75px' height='75px' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='xMidYMid' class='uil-default'%3E%3Crect x='0' y='0' width='100' height='100' fill='none' class='bk'%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(0 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(30 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.08333333333333333s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(60 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.16666666666666666s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(90 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.25s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(120 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.3333333333333333s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(150 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.4166666666666667s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(180 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.5s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(210 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.5833333333333334s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(240 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.6666666666666666s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(270 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.75s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(300 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.8333333333333334s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(330 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.9166666666666666s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/svg%3E");
+}
+	
+.ring-loader .load-wrap {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='72' height='72' fill='rgba%2851%2C51%2C51%2C0.3%29'%3E   %3Cpath opacity='.25' d='M16 0 A16 16 0 0 0 16 32 A16 16 0 0 0 16 0 M16 4 A12 12 0 0 1 16 28 A12 12 0 0 1 16 4'/%3E   %3Cpath d='M16 0 A16 16 0 0 1 32 16 L28 16 A12 12 0 0 0 16 4z'%3E     %3CanimateTransform attributeName='transform' type='rotate' from='0 16 16' to='360 16 16' dur='0.8s' repeatCount='indefinite' /%3E   %3C/path%3E %3C/svg%3E");
+}
+	
+.hourglass-loader .load-wrap {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='72' height='72' fill='rgba%2851%2C51%2C51%2C0.3%29'%3E   %3Cpath transform='translate(2)' d='M0 12 V20 H4 V12z'%3E      %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline'  /%3E   %3C/path%3E   %3Cpath transform='translate(8)' d='M0 12 V20 H4 V12z'%3E     %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0.2' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline'  /%3E   %3C/path%3E   %3Cpath transform='translate(14)' d='M0 12 V20 H4 V12z'%3E     %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0.4' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline' /%3E   %3C/path%3E   %3Cpath transform='translate(20)' d='M0 12 V20 H4 V12z'%3E     %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0.6' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline' /%3E   %3C/path%3E   %3Cpath transform='translate(26)' d='M0 12 V20 H4 V12z'%3E     %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0.8' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline' /%3E   %3C/path%3E %3C/svg%3E");
+}
+
+.futura-condensed {
+  font-family: "futura-pt-condensed", "Futura Condensed", Impact, Helvetica;
+}
+
+
+@media only screen and (max-width: 767px) {
+.title-text1 {
+text-align: center !important;
+font-size: 35px !important;
+padding-bottom: 0px !important;
+}
+	
+.title-text2 {
+text-align: center !important;
+font-size: 24px !important;
+}
+}
+
+@media only screen and (min-width: 768px) and  (max-width: 991px) {	
+.title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+}		
+.title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+}
+}
+
+@media only screen and (min-width: 992px) and  (max-width: 1023px) {	
+.title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+}		
+.title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+}
+}
+
+@media only screen and (min-width: 1024px) and  (max-width: 1199px) {	
+.title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+}		
+.title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+}
+}
+
+@media only screen and (min-width: 1200px) and  (max-width: 1279px) {	
+.title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+}		
+.title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+}
+}
+
+@media only screen and (min-width: 1280px) and  (max-width: 1365px) {	
+.title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+}		
+.title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+}
+}
+
+@media only screen and (min-width: 1366px) and  (max-width: 1399px) {	
+.title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+}		
+.title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+}
+}
+
+@media only screen and (min-width: 1400px) and  (max-width: 1439px) {
+.title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+}		
+.title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+}
+}
+	
+@media only screen and (min-width: 1440px) and  (max-width: 1535px) {
+.title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+padding-left: 15%;
+padding-right: 15%;
+}	
+	
+.title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+padding-left: 18%;
+padding-right: 18%;
+}
+}
+
+@media only screen and (min-width: 1536px) and  (max-width: 1599px) {
+.title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+padding-left: 10%;
+padding-right: 10%;
+}		
+.title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+padding-left: 10%;
+padding-right: 10%;
+}
+}
+
+@media only screen and (min-width: 1600px) and  (max-width: 1679px) {
+.title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+padding-left: 13%;
+padding-right: 13%;
+}		
+.title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+padding-left: 10%;
+padding-right: 10%;
+padding-left: 13%;
+padding-right: 13%;
+}
+}
+
+@media only screen and (min-width: 1680px) and  (max-width: 1919px) {
+.title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+padding-left: 10%;
+padding-right: 10%;
+}		
+.title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+padding-left: 10%;
+padding-right: 10%;
+}
+}
+		
+@media only screen and (min-width: 1920px) {
+.title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+}		
+.title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+}
+}
+
+@media (max-width: 480px) {
+	.body_texts {
+		font-size: 22px !important;
+	}
+	
+	.texts-caption {
+		font-size: 16px !important;
+		line-height: 1;
+	}
+	}
+	
+@media (min-width: 481px) and (max-width: 1024px) {
+	.body_texts {
+		font-size: 23px !important;	
+	}
+	
+	.texts-caption {
+		font-size: 18px !important;
+		line-height: 1;
+	}
+	}
+
+@media (min-width: 1025px) {
+		.body_texts {
+		font-size: 24px !important;		
+	}
+	}
+	
+@media (max-width: 480px) {
+	.mobile_texts {
+		font-size: 20px !important; line-height: 1.2;
+	}	
+	}
+	
+@media (min-width: 481px) and (max-width: 1024px) {
+	.mobile_texts {
+		font-size: 21px !important;	line-height: 1.2;
+	}
+	}
+
+@media (min-width: 1025px) {
+		.mobile_texts {
+		font-size: 22px !important;	line-height: 1.2;	
+	}
+	}
+
+
+.image_caption {
+margin-top: 0em!important;
+margin-bottom: .0em !important;
+}
+	
+</style>
+
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script type="text/javascript" src="../markup/js/jquery.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="../markup/js/jquery-migrate.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="dt-navbar-js-extra">
+<!-- NOTE firstSwitchPoint sets the width point where the floating menu kicks in -->
+/* <![CDATA[ */
+var dtLocal = {"themeUrl":"https:\/\/ltd-hfid.com\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"4753","ajaxurl":"https:\/\/ltd-hfid.com\/wp-admin\/admin-ajax.php","REST":{"baseUrl":"https:\/\/ltd-hfid.com\/wp-json\/the7\/v1","endpoints":{"sendMail":"\/send-mail"}},"contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy.","fillTheCaptchaError":"Please, fill the captcha."},"captchaSiteKey":"","ajaxNonce":"9a9c4d28a2","pageData":{"type":"page","template":"microsite","layout":null},"themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"solid","color":"#000000"},"desktopHeader":{"height":50},"ToggleCaptionEnabled":"disabled","ToggleCaption":"Navigation","floatingHeader":{"showAfter":500,"showMenu":true,"height":80,"logo":{"showLogo":false,"html":"<img class=\" preload-me\" src=\"\" srcset=\"\"  alt=\"Online Portfolio\" \/>","url":"https:\/\/ltd-hfid.com\/"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":200,"secondSwitchPoint":375,"firstSwitchPointHeight":80,"secondSwitchPointHeight":80,"mobileToggleCaptionEnabled":"disabled","mobileToggleCaption":"Menu"},"stickyMobileHeaderFirstSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\" srcset=\"https:\/\/ltd-hfid.com\/wp-content\/uploads\/2021\/07\/blk-logo.png 214w\" width=\"214\" height=\"47\"   sizes=\"214px\" alt=\"Online Portfolio\" \/>"}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\" srcset=\"https:\/\/ltd-hfid.com\/wp-content\/uploads\/2021\/07\/blk-logo.png 214w\" width=\"214\" height=\"47\"   sizes=\"214px\" alt=\"Online Portfolio\" \/>"}},"content":{"textColor":"#1d2731","headerColor":"#1f3044"},"sidebar":{"switchPoint":990},"boxedWidth":"1340px","stripes":{"stripe1":{"textColor":"#787d85","headerColor":"#3b3f4a"},"stripe2":{"textColor":"#8b9199","headerColor":"#ffffff"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}},"VCMobileScreenWidth":"768"};
+var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Tweet","pinterest":"Pin it","linkedin":"Share on Linkedin","whatsapp":"Share on Whatsapp"},"overlayOpacity":"90"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../markup/js/navbar.js" id="dt-navbar-js"></script>
+
+<!--
+<link rel="https://api.w.org/" href="https://ltd-hfid.com/wp-json/"><link rel="alternate" type="application/json" href="https://ltd-hfid.com/wp-json/wp/v2/pages/4753"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ltd-hfid.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://ltd-hfid.com/wp-includes/wlwmanifest.xml">
+-->
+<link rel="canonical" href="https://ltd-hfid.com/">
+<link rel="shortlink" href="https://ltd-hfid.come/">
+<link rel="alternate" type="application/json+oembed" href="https://ltd-hfid.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fltd-hfid.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://ltd-hfid.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fltd-hfid.com%2F&amp;format=xml">
+<meta property="og:site_name" content="Online Portfolio">
+<meta property="og:title" content="Home">
+<meta property="og:url" content="https://ltd-hfid.com/">
+<meta property="og:type" content="website">
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+<!--
+<meta name="generator" content="Powered by Slider Revolution 6.5.8 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+-->
+<script type="text/javascript" id="the7-loader-script">
+document.addEventListener("DOMContentLoaded", function(event) {
+	var load = document.getElementById("load");
+	if(!load.classList.contains('loader-removed')){
+		var removeLoading = setTimeout(function() {
+			load.className += " loader-removed";
+		}, 300);
+	}
+});
+</script>
+	
+<script type="text/javascript">function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+	
+<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1625859779156{margin-right: 20% !important;margin-left: 20% !important;padding-top: 10px !important;background-color: #e8e7e3 !important;}.vc_custom_1625859779156{margin-right: 20% !important;margin-left: 20% !important;padding-top: 10px !important;background-color: #e8e7e3 !important;}.vc_custom_1625317703012{padding-top: 15px !important;}.vc_custom_1628439132875{padding-top: 100px !important;padding-bottom: 50px !important;background-color: #e8e7e3 !important;}.vc_custom_1626217005519{background-color: #e8e7e3 !important;}.vc_custom_1627583808753{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1627755402350{border-left-width: 0px !important;padding-left: 20px !important;border-left-color: #d3d3d3 !important;border-left-style: solid !important;}.vc_custom_1627602231208{margin-bottom: 10px !important;}.vc_custom_1625872002412{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1627751201993{margin-bottom: 10px !important; }.vc_custom_1625807015592{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1625807025230{margin-right: 5% !important;margin-bottom: 0px !important;margin-left: 5% !important;}.vc_custom_1625807025230{margin-right: 5% !important;margin-bottom: 0px !important;margin-left: 5% !important;}.vc_custom_1627583499581{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1627755311735{border-left-width: 3px !important;padding-left: 20px !important;border-left-color: #d3d3d3  !important;border-left-style: solid !important;}.vc_custom_1627655162656{margin-bottom: 10px !important;}.vc_custom_1625872002412{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1627755381719{margin-bottom: 10px !important;}.vc_custom_1627582610979{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1627582610979{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1627751083331{margin-top: 15px !important;margin-right: 2% !important;margin-bottom: 20px !important;margin-left: 2% !important;}.vc_custom_1627751090432{margin-top: 15px !important;margin-right: 2% !important;margin-bottom: 20px !important;margin-left: 2% !important;}.vc_custom_1627751097972{margin-top: 15px !important;margin-right: 2% !important;margin-bottom: 20px !important;margin-left: 2% !important;}.vc_custom_1627751105768{margin-top: 15px !important;margin-right: 2% !important;margin-bottom: 20px !important;margin-left: 2% !important;}.vc_custom_1627751112721{margin-top: 15px !important;margin-right: 2% !important;margin-bottom: 20px !important;margin-left: 2% !important;}.vc_custom_1627751120095{margin-top: 15px !important;margin-right: 2% !important;margin-bottom: 20px !important;margin-left: 2% !important;}.vc_custom_1626215171930{padding-top: 10px !important;padding-bottom: 10px !important;}.vc_custom_1627757524478{margin-bottom: 20px !important;}.vc_custom_1630860484878{margin-top: 20px !important;}.vc_custom_1626215209237{margin-right: 2% !important;margin-bottom: 25px !important;margin-left: 2% !important;}.vc_custom_1630860484878{margin-top: 20px !important;}.vc_custom_1626194535371{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1626217220645{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1626217229469{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1626217229469{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1627755535238{border-left-width: 3px !important;padding-left: 20px !important;border-left-color: #d3d3d3 !important;border-left-style: solid !important;}.vc_custom_1627751351818{margin-bottom: 10px !important;}.vc_custom_1625934777281{margin-right: 5% !important;margin-bottom: 10px !important;margin-left: 5% !important;}.vc_custom_1626105420287{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1626209494916{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1627755548316{border-left-width: 3px !important;padding-left: 20px !important;border-left-color: #e8e7e3  !important;border-left-style: solid !important;}.vc_custom_1626207814767{margin-bottom: 10px !important;}.vc_custom_1627586820374{margin-top: 20px !important;}.vc_custom_1630871079916{margin-top: 20px !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }
+</style></noscript>
+
+
+<style id="the7-custom-inline-css" type="text/css">
+a:link {
+    text-decoration: none;
+}
+
+.bio-pic {
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+	
+.hidden-header .show-floating-icon .mobile-header-bar {
+    display: block !important;
+    position: absolute;
+}
+
+.vc_column_container > .vc_column-inner {
+
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+body, *{
+font-family: "futura-pt", "Futura", Helvetica, sans-serif;
+}
+
+imgbw {
+
+	filter:grayscale(100%);
+}
+
+imgbw:hover {
+
+	filter:grayscale(0%) !important;
+}
+
+.gs {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 1;
+    filter: alpha(opacity=60);
+    transition: all 1.5s ease;
+}
+
+.gs:hover {
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+overflow: hidden !important;
+opacity: 1;
+filter: alpha(opacity=100);
+}
+
+</style>
+
+	
+	
+<style>
+#ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}
+@media (min-width: 1824px) {
+}
+@media (max-width: 1199px) { #ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}
+}
+@media (max-width: 991px)  { #ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}
+}
+@media (max-width: 767px)  { #ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}
+}
+@media (max-width: 479px)  { #ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}
+}
+</style>
+	<style>#ult-carousel-24915921956140fff670c89 .slick-slide { margin:0 5px; } </style><style> #ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}@media (max-width: 1199px) { #ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}}@media (max-width: 991px)  { #ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}}@media (max-width: 767px)  { #ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}}@media (max-width: 479px)  { #ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}}/** Ultimate: Media Responsive - **/</style>
+
+
+<style>
+.home-page-mob-overlay {
+background-color: #fbf9f6 !important;
+opacity: .97 !important;
+//overflow-y: auto !important;
+}
+
+.ham-overlay-text-attrs {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+
+    z-index: 3000 !important;
+	font-family: "futura-pt-condensed", "Futura Condensed", Impact, Helvetica;
+	text-align: center !important;
+}
+
+@media (max-width: 1199px) {
+.hide-full-nav{
+//visibility: hidden !important;
+//opacity: 0 !important;
+}
+}
+
+.homepage-topsliding-image {
+padding-top: 85px !important;
+padding-bottom: 50px !important;
+background-color: #e8e7e3 !important;
+}		
+		
+.homepage-bottom-sliding-image {
+padding-top: 85px !important;
+padding-bottom: 50px !important;
+background-color: #e8e7e3 !important;
+}
+
+@media (max-width: 730px) {
+.homepage-bottom-sliding-image-margin{
+margin-right: 20% !important;
+margin-left: 20% !important;
+padding-top: 10px !important;
+background-color: #e8e7e3 !important;
+margin-bottom: -100px !important;
+}
+
+.sources-of-information-sliding-image-margin{
+margin-right: 20% !important;
+margin-left: 20% !important;
+padding-top: 10px !important;
+background-color: #e8e7e3 !important;
+margin-bottom: -5px !important;
+}
+
+.fig-no_txt_off {
+margin-bottom: 5em;
+}
+
+}
+
+@media (min-width: 731px) {
+.homepage-bottom-sliding-image-margin{
+margin-right: 20% !important;
+margin-left: 20% !important;
+padding-top: 10px !important;
+background-color: #e8e7e3 !important;
+margin-bottom: -10px !important;
+}
+
+.sources-of-information-sliding-image-margin{
+margin-right: 20% !important;
+margin-left: 20% !important;
+padding-top: 10px !important;
+background-color: #e8e7e3 !important;
+margin-bottom: -10px !important;
+}
+}
+
+@media only screen and (max-width: 875px) {
+.intro-text-width {
+width: 100% !important;
+}
+}
+
+@media only screen and (max-width: 319px) {
+.vc_textblock_margins{
+margin-right: 5% !important;
+margin-left: 5% !important;
+}
+
+.single-figure-width-sizing{
+margin-left: ;
+margin-right: ;
+}
+}	
+	
+@media only screen and (min-width: 320px) and  (max-width: 479px) {
+.vc_textblock_margins{
+margin-right: 5% !important;
+margin-left: 5% !important;
+}
+
+.single-figure-width-sizing{
+margin-left: ;
+margin-right: ;
+}
+}
+	
+@media only screen and (min-width: 480px) and  (max-width: 767px) {
+.vc_textblock_margins{
+margin-right: 5% !important;
+margin-left: 5% !important;
+}
+
+.single-figure-width-sizing{
+margin-left: ;
+margin-right: ;
+}
+}
+
+/* 10 AND 12 INCH TABLET AND SOME DESKTOP */
+@media only screen and (min-width: 768px) and  (max-width: 1024px) {	
+.vc_textblock_margins{
+margin-right: 5% !important;
+margin-left: 5% !important;
+}
+
+.single-figure-width-sizing{
+margin-left: -20em !important;
+margin-right: -20em !important;
+}
+}
+
+/* 1025 AND ABOVE IS DESKTOP */
+@media only screen and (min-width: 1025px) and  (max-width: 1151px) {	
+.vc_textblock_margins{
+margin-right: 5% !important;
+margin-left: 5% !important;
+}
+
+.single-figure-width-sizing{
+margin-left: -12em !important;
+margin-right: -12em !important;
+}
+}
+
+@media only screen and (min-width: 1152px) and  (max-width: 1183px) {	
+.vc_textblock_margins{
+margin-right: 5% !important;
+margin-left: 5% !important;
+}
+}
+
+@media only screen and (min-width: 1184px) and  (max-width: 1200px) {	
+.vc_textblock_margins{
+margin-right: 5% !important;
+margin-left: 5% !important;
+}
+}
+
+@media only screen and (min-width: 1201px) and  (max-width: 1279px) {	
+.vc_textblock_margins{
+margin-right: 5% !important;
+margin-left: 5% !important;
+}
+}
+
+@media only screen and (min-width: 1280px) and  (max-width: 1365px) {	
+.vc_textblock_margins{
+margin-right: 5% !important;
+margin-left: 5% !important;
+}
+}
+
+@media only screen and (min-width: 1366px) and  (max-width: 1439px) {		
+.vc_textblock_margins{
+margin-right: 5% !important;
+margin-left: 5% !important;
+}
+}	
+		
+@media only screen and (min-width: 1400px) and  (max-width: 1439px) {
+.vc_textblock_margins{
+margin-right: 21% !important;
+margin-left: 21% !important;
+}
+}
+
+@media only screen and (min-width: 1440px) and  (max-width: 1535px) {
+.vc_textblock_margins{
+margin-right: 21% !important;
+margin-left: 21% !important;
+}
+}
+
+@media only screen and (min-width: 1536px) and  (max-width: 1599px) {
+.vc_textblock_margins{
+margin-right: 21% !important;
+margin-left: 21% !important;
+}
+}
+
+@media only screen and (min-width: 1600px) and  (max-width: 1679px) {
+.vc_textblock_margins{
+margin-right: 21% !important;
+margin-left: 21% !important;
+}
+}
+
+@media only screen and (min-width: 1680px) and  (max-width: 1919px) {
+.vc_textblock_margins{
+margin-right: 21% !important;
+margin-left: 21% !important;
+}
+}
+
+@media only screen and (min-width: 1920px) and  (max-width: 1999px) {
+.vc_textblock_margins{
+margin-right: 23% !important;
+margin-left: 23% !important;
+}
+}
+
+@media only screen and (min-width: 2000px) and  (max-width: 2199px) {
+.vc_textblock_margins{
+margin-right: 25% !important;
+margin-left: 25% !important;
+}
+}
+
+@media only screen and (min-width: 2200px) and  (max-width: 2399px) {
+.vc_textblock_margins{
+margin-right: 25% !important;
+margin-left: 25% !important;
+}
+}
+
+@media only screen and (min-width: 2400px) and  (max-width: 2559px) {
+.vc_textblock_margins{
+margin-right: 25% !important;
+margin-left: 25% !important;
+}
+}
+
+@media only screen and (min-width: 2560px) and  (max-width: 2799px) {
+.vc_textblock_margins{
+margin-right: 25% !important;
+margin-left: 25% !important;
+}
+}
+
+@media only screen and (min-width: 2800px) and  (max-width: 2999px) {
+.vc_textblock_margins{
+margin-right: 30% !important;
+margin-left: 30% !important;
+}
+}
+
+@media only screen and (min-width: 3000px) and  (max-width: 3199px) {
+.vc_textblock_margins{
+margin-right: 30% !important;
+margin-left: 30% !important;
+}
+}
+
+@media only screen and (min-width: 3200px) and  (max-width: 3439px) {
+.vc_textblock_margins{
+margin-right: 35% !important;
+margin-left: 35% !important;
+}
+}
+
+@media only screen and (min-width: 3440px) {
+.vc_textblock_margins{
+margin-right: 35% !important;
+margin-left: 35% !important;
+}
+}
+
+
+
+@media only screen and (max-width: 768px) {	
+
+.single-figure-width-sizing{
+margin-left: ;
+margin-right: ;
+}
+
+.single-figure-4-5-width-sizing{
+margin-left: ;
+margin-right: ;
+}
+
+.triple-figure-1-2-3-width-sizing{
+margin-left: ;
+margin-right: ;
+}
+}
+
+
+@media only screen and (min-width: 769px) and  (max-width: 1024px) {	
+
+.single-figure-width-sizing{
+margin-left: -17em !important;
+margin-right: -17em !important;
+}
+
+.single-figure-4-5-width-sizing{
+margin-left: -18em !important;
+margin-right: -18em !important;
+}
+
+.triple-figure-3-float{
+float: none !important;
+}
+}
+
+
+@media only screen and (min-width: 1025px) and  (max-width: 1151px) {	
+
+
+.single-figure-width-sizing{
+margin-left: -12em !important;
+margin-right: -12em !important;
+}
+
+.single-figure-4-5-width-sizing{
+margin-left: 3em !important;
+margin-right: 3em !important;
+}
+
+.triple-figure-1-2-3-width-sizing{
+margin-left: ;
+margin-right: ;
+}
+}
+
+@media only screen and (min-width: 1152px) and  (max-width: 1183px) {	
+
+.single-figure-width-sizing{
+margin-left: -12em !important;
+margin-right: -12em !important;
+}
+
+.single-figure-4-5-width-sizing{
+margin-left: 3em !important;
+margin-right: 3em !important;
+}
+
+.triple-figure-1-2-3-width-sizing{
+margin-left: ;
+margin-right: ;
+}
+}
+
+@media only screen and (min-width: 1184px) and  (max-width: 1200px) {	
+
+.single-figure-width-sizing{
+margin-left: -10em !important;
+margin-right: -10em !important;
+}
+
+.single-figure-4-5-width-sizing{
+margin-left: 4em !important;
+margin-right: 4em !important;
+}
+
+.triple-figure-1-2-3-width-sizing{
+margin-left:;
+margin-right: ;
+}
+}
+
+@media only screen and (min-width: 1201px) and  (max-width: 1279px) {	
+
+.single-figure-width-sizing{
+margin-left:  -10em !important;
+margin-right:  -10em !important;
+}
+
+.single-figure-4-5-width-sizing{
+margin-left: 4em !important;
+margin-right: 4em !important;
+}
+
+.triple-figure-1-2-3-width-sizing{
+margin-left: ;
+margin-right: ;
+}
+}
+
+@media only screen and (min-width: 1280px) and  (max-width: 1365px) {	
+
+.single-figure-width-sizing{
+margin-left:  -8em !important;
+margin-right:  -8em !important;
+}
+
+.single-figure-4-5-width-sizing{
+margin-left: 4em !important;
+margin-right: 4em !important;
+}
+
+.triple-figure-1-2-3-width-sizing{
+margin-left: ;
+margin-right: ;
+}
+}
+
+@media only screen and (min-width: 1366px) and  (max-width: 1339px) {	
+
+.single-figure-width-sizing{
+margin-left:   -6em !important;
+margin-right:   -6em !important;
+}
+
+.single-figure-4-5-width-sizing{
+margin-left: 4em !important;
+margin-right: 4em !important;
+}
+
+.triple-figure-1-2-3-width-sizing{
+margin-left: ;
+margin-right: ;
+}
+}
+	
+	
+@media only screen and (min-width: 1440px) {	
+
+.single-figure-width-sizing{
+margin-left:   -6em !important;
+margin-right:   -6em !important;
+}
+
+
+.triple-figure-1-2-3-width-sizing{
+margin-left: ;
+margin-right: ;
+}
+}
+
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+.single-figure-4-5-width-sizing{
+margin-left: 4.5em !important;
+margin-right: 4.5em !important;
+}    
+}
+
+
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+.single-figure-4-5-width-sizing{
+margin-left: 6em !important;
+margin-right: 6em !important;
+}    
+}
+
+
+@media screen and (min-width: 2561px) and (max-width: 3440px) {
+.single-figure-4-5-width-sizing{
+margin-left: 9.5em !important;
+margin-right: 9.5em !important;
+}
+}
+
+
+@media screen and (min-width: 3441px) and (max-width: 4096px) {
+.single-figure-4-5-width-sizing{
+margin-left: 12em !important;
+margin-right: 12em !important;
+}
+}
+
+
+@media screen and (min-width: 4097px) and (max-width: 4480px) {
+.single-figure-4-5-width-sizing{
+margin-left: 12em !important;
+margin-right: 12em !important;
+}
+}
+
+
+@media screen and (min-width: 4481px) {
+.single-figure-4-5-width-sizing{
+margin-left: 4.5em !important;
+margin-right: 4.5em !important;
+}
+}
+
+
+@media only screen and (max-width: 1024px) {	
+.double-images-linebreak{
+width: 100% !important;
+}
+
+.sitemap-double-images-spacing{
+width: 100% !important;
+}
+}	
+
+@media only screen and (min-width: 1025px) {	
+.double-images-linebreak{
+width: 50% !important;
+}
+
+.sitemap-double-images-spacing{
+width: 100% !important;
+}
+}
+
+@media only screen and (max-width: 768px) {	
+.sitemap-triple-images-linebreak{
+width: 100% !important;
+}
+}	
+
+
+/* triple image control for tablet */
+@media only screen and (min-width: 769px) and (max-width: 800px) {	
+.sitemap-triple-images-linebreak{
+width: 65% !important;
+}
+
+.triple-figure-1-2-3-width-sizing{
+text-align: center;
+display: block;
+margin-left: 7em !important;
+}
+}
+
+@media only screen and (min-width: 801px) and (max-width: 850px) {	
+.sitemap-triple-images-linebreak{
+width: 65% !important;
+}
+
+.triple-figure-1-2-3-width-sizing{
+text-align: center;
+display: block;
+margin-left: 7em !important;
+}
+}
+
+@media only screen and (min-width: 851px) and (max-width: 900px) {	
+.sitemap-triple-images-linebreak{
+width: 64% !important;
+}
+
+.triple-figure-1-2-3-width-sizing{
+text-align: center;
+display: block;
+margin-left: 7.6em !important;
+}
+}
+
+
+@media only screen and (min-width: 901px) and (max-width: 950px) {	
+.sitemap-triple-images-linebreak{
+width: 63% !important;
+}
+
+.triple-figure-1-2-3-width-sizing{
+text-align: center;
+display: block;
+margin-left: 8.2em !important;
+}
+}
+
+@media only screen and (min-width: 951px) and (max-width: 1024px) {	
+.sitemap-triple-images-linebreak{
+width: 62% !important;
+}
+
+.triple-figure-1-2-3-width-sizing{
+text-align: center;
+display: block;
+margin-left: 9.3em !important;
+}
+}
+
+
+/* end triple image control for tablet */
+
+
+
+@media only screen and (min-width: 1025px) {	
+.sitemap-triple-images-linebreak{
+width: 33.33333% !important;
+}
+}
+
+
+p.shifted {
+    margin-left: 2.2em;
+}	
+		
+</style>
+
+<!-- create space between images -->
+<style>
+	
+@media only screen and (max-width: 1024px) {	
+.img-vertical_break{
+margin-top: 5px !important;
+}
+}
+
+@media only screen and (min-width: 1025px) {	
+.img-vertical_break{
+margin-left: 20px;
+}
+}
+
+
+@media (max-width: 398px) {
+.left {
+  width: 0%;
+}
+
+.middle {
+  width: 95%;
+}
+
+.right {
+  width: 5%;
+}
+}
+	
+.close-arrow-margins{
+margin-left: 4em !important;
+top: -4px !important; 
+right: 0px !important; 
+font-size: .5em !important;
+}
+
+@media (min-width: 400px) and (max-width: 849px) {
+.close-arrow-margins{
+margin-left: 6em !important;
+top: -4px !important; 
+right: 0px !important; 
+font-size: .5em !important;
+}
+}
+
+@media (min-width: 850px) {
+.close-arrow-margins{
+margin-left: 6em !important;
+top: -8px !important; 
+right: 0px !important; 
+font-size: .5em !important;
+}
+}
+
+@media (min-width: 400px) and (max-width: 850px) {
+.left {
+  width: 0%;
+}
+	
+.middle {
+  width: 95%;
+}
+
+.right {
+  width: 5%;
+}
+}
+	
+@media (min-width: 851px) and (max-width: 1800px) {
+.left {
+  width: 15%;
+}
+	
+.middle {
+  width: 70%;
+}
+
+.right {
+  width: 15%;
+}
+}
+
+@media (min-width: 1801px)  {
+.left {
+  width: 20%;
+}
+
+.middle {
+  width: 70%;
+
+}
+
+.right {
+  width: 10%;
+}
+}
+
+.rowa {
+  display: flex;
+}
+
+/* Clear floats after the columns */
+.rowa:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+	
+.columna {
+  float: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+	
+</style>
+
+<style>
+
+@media only screen and (max-width: 319px) {
+.fig2-emp_spc {
+margin-top: 1em;
+}
+
+.fig3-emp_spc {
+margin-top: 1em;
+}
+}
+
+
+@media only screen and (min-width: 320px) and  (max-width: 479px) {
+.fig2-emp_spc {
+margin-top: 1em;
+}
+
+.fig3-emp_spc {
+margin-top: 1.3em;
+}
+}
+
+
+@media only screen and (min-width: 480px) and  (max-width: 567px) {	
+.fig2-emp_spc {
+margin-top: 1em;
+}
+
+.fig3-emp_spc {
+margin-top: 1.5em;
+}
+}
+
+
+@media only screen and (min-width: 568px) and  (max-width: 767px) {
+.fig2-emp_spc {
+margin-top: 1em;
+}
+
+.fig3-emp_spc {
+margin-top: 1.5em;
+}
+}
+
+
+@media only screen and (min-width: 768px) and  (max-width: 991px) {	
+.fig2-emp_spc {
+margin-top: 1em;
+}
+
+.fig3-emp_spc {
+margin-top: 2em;
+}
+}
+
+
+@media only screen and (min-width: 992px) and  (max-width: 1024px) {
+.fig2-emp_spc {
+margin-top: 1em;
+}
+
+.fig3-emp_spc {
+margin-top: 2em;
+}
+}
+
+</style>
+	
+</head>
+<body id="" style="height: 100% !important;" class="max-height-a home page-template page-template-template-microsite page-template-template-microsite-php page page-id-4753
+wp-embed-responsive the7-core-ver-2.5.7.1 one-page-row slideshow-on dt-responsive-on right-mobile-menu-close-icon ouside-menu-close-icon
+mobile-hamburger-close-bg-enable  fade-medium-mobile-menu-close-icon
+fade-small-menu-close-icon srcset-enabled btn-flat custom-btn-color custom-btn-hover-color phantom-slide
+phantom-disable-decoration phantom-custom-logo-on floating-mobile-menu-icon top-header first-switch-logo-left first-switch-menu-right
+second-switch-logo-left second-switch-menu-right right-mobile-menu layzr-loading-on popup-message-style dt-fa-compatibility
+the7-ver-9.17.0 wpb-js-composer js-comp-ver-6.7.0 vc_responsive hidden-header no-mobile closed-overlay-mobile-header" >
+
+
+<div id="load" class="spinner-loader loader-removed">
+	<div class="load-wrap"></div>
+</div>
+<div id="page" class="closed-mobile-header">
+
+
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+
+	<div class="mobile-sticky-header-overlay"></div>
+<div class="masthead inline-header right full-height full-width animate-position-mobile-menu-icon dt-parent-menu-clickable show-sub-menu-on-hover show-device-logo show-mobile-logo" role="banner" style="">
+
+
+
+	<div class="top-bar top-bar-empty top-bar-line-hide hide-top-bar" style="">
+	<div class="top-bar-bg"></div>
+	<div class="mini-widgets left-widgets"></div><div class="mini-widgets right-widgets"></div></div>
+
+	<header class="header-bar">
+
+		<div class="branding">
+	<div id="site-title" class="assistive-text">Online Portfolio</div>
+
+
+		<ul id="primary-menu" class="main-nav underline-decoration upwards-line outside-item-remove-margin" role="menubar">
+		
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4202 first" role="presentation">
+		<a href="javascript:;" data-reveal-id="projects" data-level="1" role="menuitem" >
+		<span class="menu-item-text">
+		<span class="menu-text">WORK</span></span></a></li>
+
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4202 first" role="presentation">
+		<a href="javascript:;" data-reveal-id="reviews" data-level="1" role="menuitem" >
+		<span class="menu-item-text">
+		<span class="menu-text">PRODUCT REVIEWS</span></span></a></li>
+		
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3747" role="presentation">
+		<a href="about.html" data-level="1" role="menuitem">
+		<span class="menu-item-text">
+		<span class="menu-text">ABOUT</span></span></a></li>
+		
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3839" role="presentation">
+		<a href="javascript:;" data-reveal-id="socialmodal" data-level="1" role="menuitem"><span class="menu-item-text">
+		<span class="menu-text">CONTACT</span></span></a></li> 
+		
+		</ul>
+		
+		</div>
+
+	</header>
+	
+	<div class="mob-hide mobile-header-bar" style="visibility: hidden !important;" >
+
+
+<!-- CLASSES FOR THREE COLUMN WORK OVERLAY -->
+
+
+<style>
+
+
+.columna {
+  float: left;
+}
+
+@media (max-width: 399px) {
+.left {
+  width: 0%;
+}
+
+.middle {
+  width: 95%;
+}
+
+.right {
+  width: 5%;
+}
+
+.close-arrow-margins{
+margin-left: 4em !important;
+top: -4px !important; 
+right: 0px !important; 
+font-size: .5em !important;
+}
+}
+
+@media (min-width: 400px) and (max-width: 849px) {
+.close-arrow-margins{
+margin-left: 6em !important;
+top: -4px !important; 
+right: 0px !important; 
+font-size: .5em !important;
+}
+}
+
+@media (min-width: 850px) {
+.close-arrow-margins{
+margin-left: 6em !important;
+top: -8px !important; 
+right: 0px !important; 
+font-size: .5em !important;
+}
+}
+
+@media (min-width: 400px) and (max-width: 850px) {
+.left {
+  width: 0%;
+}
+
+.middle {
+  width: 95%;
+}
+
+.right {
+  width: 5%;
+}
+}
+
+@media (min-width: 851px) and (max-width: 1800px) {
+.left {
+  width: 15%;
+}
+
+.middle {
+  width: 70%;
+}
+
+.right {
+  width: 15%;
+}
+}
+
+@media (min-width: 1801px)  {
+.left {
+  width: 20%;
+}
+
+.middle {
+  width: 70%;
+
+}
+
+.right {
+  width: 10%;
+}
+}
+
+.rowa {
+  display: flex;
+}
+
+/* Clear floats after the columns */
+.rowa:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+	
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+</style>	
+	
+
+
+
+<!-- begin work menu overlay-->
+		
+					
+<div id="projects" class="bak-color overlay-settings reveal-modal" style="opacity: .88 !important; display: none;">
+<nav id="projects-menu" class="futura-condensed clearfix">
+				
+<div class="rowa">
+<div class="columna work_menu-left_padding"></div>
+            		
+<div class="columna work_menu-middle_texts">
+
+<div><h4 class="futura-condensed projects-title fullscreen-work-overlay-title-bar" style="margin-top: 1em; ">Sample Projects    
+<a class="work-close-button-padding- close-reveal-modal mob-hov-color-c overlay-close-button-projects-margins" style="z-index: 9000; position: relative !important;">&times;</a></h4></div>
+            		
+<h4 class="fullscreen-work-overlay-spacer-bar"></h4>
+	
+<ul class="fullscreen-work-overlay-projects-bar">
+
+                    
+					<li><a href="../pg/caawt.html">
+					<span class="mob-hov-color-b overlay_menu-font">CAAWT: Usability Test and Redesign Recommendations</span></a></li>
+	
+					<li><a href="../pg/greendrop.html">
+					<span class="mob-hov-color-b overlay_menu-font" >Greendrop: The Green Watering App</span></a></li>
+						
+					<li><a href="../pg/phr.html">
+					<span class="mob-hov-color-b overlay_menu-font">Personal Health Record (PHR) User Stories</span></a></li>
+					
+					<li><a href="../pg/bch.html">
+					<span class="mob-hov-color-b overlay_menu-font">Boston Children's Hospital: Pre- and Post-Virtual Checklists</span></a></li>
+
+					<li><a href="frontier.html">
+					<span class="mob-hov-color-b overlay_menu-font">Frontier: Print &amp; Digital</span></a></li>
+					
+					<li><a href="kohls.html">
+					<span class="mob-hov-color-b overlay_menu-font">Kohl's Drive-to-Web</span></a></li>
+					
+					<li><a href="usps.html">
+					<span class="mob-hov-color-b overlay_menu-font">USPS Change of Address: Display &amp; Card</span></a></li>
+					
+					<li><a href="target.html">
+					<span class="mob-hov-color-b overlay_menu-font">Target Mover Sample Kit</span></a></li>     
+					    
+         	        </ul>
+         	        </div> <!-- end class="columna right" -->
+         	        
+         	        
+					<div class="columna work_menu-right_padding"></div>
+         	        
+         	        </div> <!-- end class="rowa" -->
+         	        
+         	        </nav>
+         	        
+         	        </div>
+
+
+<!-- begin menu overlay for product reviews -->
+		
+<div id="reviews" class="bak-color overlay-settings reveal-modal" style="opacity: .88 !important; display: none;">
+<nav id="projects-menu" class="futura-condensed clearfix">
+	
+<div class="rowa">
+<div class="columna reviews_menu-left_padding"></div>
+            		
+<div class="columna reviews_menu-middle_texts">
+
+<div><h4 class="futura-condensed projects-title fullscreen-work-overlay-title-bar" style="margin-top: 1em;">
+Product Reviews<a class="work-close-button-padding- close-reveal-modal mob-hov-color-c 
+overlay-close-button-reviews-margins"  style="z-index: 9000; position: relative !important;">&times;</a></h4></div>     
+            		
+
+					<h4 class="fullscreen-work-overlay-spacer-bar"></h4>
+    		        
+            		<ul class="fullscreen-work-overlay-projects-bar">
+
+					<li><a href="review1.html"><span class="mob-hov-color-b overlay_menu-font">Perceptual Processing Systems / Design Review of a Self-Checkout Experience</span></a></li>
+					
+					<li><a href="review2.html"><span class="mob-hov-color-b overlay_menu-font">Pre-Attentive Processing / The Grouping of Information Display on HealthData.gov</span></a></li>
+					
+					<li><a href="review3.html"><span class="mob-hov-color-b overlay_menu-font">Prior Knowledge / Categorization Theory of the Mega Menus for Step Up for Students</span></a></li>
+					
+					<li><a href="review4.html"><span class="mob-hov-color-b overlay_menu-font">Cognitive Skills / Metacognitive Analysis of Users’ Decision Making on Morningstar Website</span></a></li>
+					
+					<li><a href="review5.html"><span class="mob-hov-color-b overlay_menu-font">Memory &amp; Cognitive Load / Emotional Subsystems / A User Experience on Trust Wallet</span></a></li>
+					
+					<li><a href="review6.html"><span class="mob-hov-color-b overlay_menu-font">A Heuristic Evaluation of Governor of Poker 3</span></a></li>
+					
+					<li><a href="review7.html"><span class="mob-hov-color-b overlay_menu-font">An Evaluation of the McIntosh Laboratory User Experience</span></a></li>    
+					    
+         	        </ul>
+         	        </div> <!-- end class="columna right" -->
+         	        
+         	        
+					<div class="columna reviews_menu-right_padding"></div>
+         	        
+         	        </div> <!-- end class="rowa" -->
+         	        
+         	        </nav>
+         	        
+         	        </div>
+		
+<!-- BEGIN OF CONTACT OVERLAY -->
+		
+			<div id="socialmodal" class="bak-color contact-overlay-settings reveal-modal"
+			 style="opacity: .88 !important; display: none;">
+            		<nav id="projects-menu" class="futura-condensed clearfix">
+            		
+					<div class="menu-row">
+					
+					<div class="menu-column menu-left-padding"></div>
+            		
+            		
+            		<div class="menu-column menu-middle-size">
+            		
+            		
+					<div><h4 class="futura-condensed projects-title contact-overlay-title-bar" style="margin-top: 1em;">Let's connect!<a class="close-reveal-modal mob-hov-color-c close-arrow-margins-contact" style="z-index: 9000; position: relative !important;">&times;</a></h4></div>
+						
+            		<h4 class="fullscreen-work-overlay-spacer-bar"></h4>        
+            		<ul class="fullscreen-work-overlay-projects-bar">
+                    
+					<li><a class="linkedin" href="http://www.linkedin.com/in/lauren-thy-doan-8811519">
+					<span class="mob-hov-color-b overlay_menu-font   menu-line-item-params" >LinkedIn</span></a></li>
+					<div class="menu-inter-line-item-spacing"></div>
+					
+					<li><a class="email" href="mailto:info@ltd-hfid.com">
+					<span class="mob-hov-color-b overlay_menu-font   menu-line-item-params">Email</span></a></li>
+					
+					</ul>    
+         	        </div> <!-- end class="menu-column right" -->
+         	        
+         	        
+					<div class="menu-column menu-right-padding"></div>
+         	        
+         	        </div> <!-- end class="menu-row" -->
+         	        
+         	        </nav>
+         	        
+         	        </div>
+
+<!--  END OF CONTACT OVERLAY -->
+
+
+		<div class="mobile-mini-widgets"></div>
+		<div class="mobile-branding">
+
+
+
+
+</div></div></div>
+	
+<!-- NOTE main overlay for hamburger menu -->
+	<div class="home-page-mob-overlay dt-mobile-header mobile-menu-show-divider dt-parent-menu-clickable"
+		 style="min-width:600px; max-width:900px !important; z-index:15001 !important; ">
+		<div class="mobile-header-scrollbar-wrap">
+			<div class="dt-close-mobile-menu-icon" style="z-index:20000; min-width:600px; max-width:900px !important;">
+				<div class="overlay-close-button-main-hp ">
+				<div class="overlay-close-button-main-hp">				
+					<a class="mob-hov-color-c overlay-close-button-main-hp" style="font-size: 1.5em !important;">&times;</a>
+				</div>
+				</div>
+				</div>
+			
+			<!-- NOTE this is hamburger menu items -->
+			
+			<ul id="mobile-menu" class="ham-overlay-text-attrs  
+			mobile-main-nav futura-condensed" 
+			role="menubar" style="padding-top: 67px !important;">
+
+			<li class="ham-overlay-text-attrs " style="text-align: center !important;  
+			" role="presentation">
+			<a href="javascript:;" data-reveal-id="projects" data-level="1" role="menuitem" >
+			<span class="">
+			<span class=" topnav-float-left-a mob-hov-color " style="font-size: 23px !important; z-index: 50000 !important;">
+			<b>WORK</b> 
+			</span></span></a>
+			</li>
+
+			<li class="ham-overlay-text-attrs" style="text-align: center !important;" role="presentation">
+			<a href="javascript:;" data-reveal-id="reviews" data-level="1" role="menuitem" >
+			<span class="">
+			<span class=" topnav-float-left-a mob-hov-color " style="font-size: 23px  !important; z-index: 50000 !important;">
+			<b>PRODUCT REVIEWS</b>
+			</span></span></a>
+			</li>
+			
+			<li class="ham-overlay-text-attrs menu-item menu-item-type-post_type menu-item-object-page menu-item-3747" role="presentation">
+			<a href="about.html" data-level="1" role="menuitem">
+			<span class="menu-item-text">
+			<span class=" topnav-float-left-a mob-hov-color " style="font-size: 23px !important; z-index: 50000 !important;">
+			<b>ABOUT</b>
+			</span></span></a>
+			</li>
+			
+			<li class="ham-overlay-text-attrs menu-item menu-item-type-post_type menu-item-object-page menu-item-3839" role="presentation">
+			<a href="javascript:;" data-reveal-id="socialmodal" data-level="5" role="menuitem">				
+			<span class="menu-item-text">
+			<span class=" topnav-float-left-a mob-hov-color " style="font-size: 23px !important; z-index: 50000 !important;">
+			<b>CONTACT</b>
+			</span></span></a>
+			</li>
+
+			
+			<div class="mobile-mini-widgets-in-menu first-switch-no-widgets second-switch-no-widgets"></div>
+			
+			
+			
+			</ul>
+				
+		</div></div>
+
+
+
+	<!-- animated header --> <br>
+<div class="row homewrapper clearfix" style="z-index: 10000 !important;">
+            <span class="screen-reader-text"><h1>Lauren Thy Doan / Sample Projects / CAAWT</h1></span>
+
+
+<center><img src="../img/CAAWT/caawt_members.png" 
+alt="CAAWT" width="850" class="center animated fadeInUpBig" style= "margin-top: 1.5em;"></center>
+
+</div></div></div>
+
+
+
+<div id="main" class="sidebar-none ">
+
+
+	<div class="main-gradient"></div>
+	<div class="wf-wrap">
+	<div class="wf-container-main">
+
+
+
+<div id="content" class="content" role="main">
+
+	<div id="featured" class="vc_row wpb_row vc_row-fluid">
+		<div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-sm vc_hidden-xs">
+			<div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div>
+	<div data-vc-full-width="true" data-vc-full-width-init="true"
+		 class="vc_row wpb_row vc_row-fluid" style="z-index:; left: 245px; position: relative; box-sizing: border-box; width: 1903px; padding-left: 245px; padding-right: 244px;">
+		<div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-xs">
+			<div class="vc_column-inner">
+				<div class="wpb_wrapper" >
+				<div class="vc_empty_space" style="height: -20px">
+					<span class="vc_empty_space_inner"></span></div>
+				<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1627583808753 
+				vc_column-gap-20- vc_row-o-content-middle vc_row-flex">
+				<div class="wpb_column vc_column_container vc_col-sm-2">
+				<div class="vc_column-inner">
+				<div class="wpb_wrapper"></div></div></div>
+				<div class="wpb_column vc_column_container intro-text-width vc_col-sm-8- vc_col-has-fill">
+	<div class="vc_column-inner vc_custom_1627755402350-">
+		<div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  vc_custom_1627602231208">
+
+	</div>
+
+<div class="main-gradient"></div>			
+<div class="wpb_text_column wpb_content_element">
+<div class="wpb_wrapper">
+<div class="headline-margins animated fadeInUpBig">
+<p style="color: white; line-height: 1.1; margin-top: 1.2em; margin-bottom: .4em;" class="title-text1 animated fadeInUpBig">
+USABILITY TEST &amp; REDESIGN RECOMMENDATIONS</p>					
+<p style="color: white; margin-bottom: 1em;" class="title-text2 animated fadeInUpBig">
+for the Website of Constructional Approach to Animal Welfare and Training</p>
+<br>
+</div></div></div></div></div></div>
+					
+<div class="wpb_column vc_column_container vc_col-sm-2">
+<div class="vc_column-inner">
+	<div class="wpb_wrapper"></div></div></div></div></div></div></div>
+	<div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-lg vc_hidden-md vc_hidden-sm">
+	<div class="vc_column-inner">
+	<div class="wpb_wrapper">
+	<div class="vc_empty_space" style="height: 22px">
+	<span class="vc_empty_space_inner">
+	</span></div>
+	<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1625872002412" style="z-index:;">
+		<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner">
+			<div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  vc_custom_1627751201993">
+
+</div>
+
+<div class="wpb_text_column wpb_content_element" style="float: none !important;">
+<div class="homepage-top-txt-style wpb_wrapper center">
+<p style="color: white; line-height: 1.1; margin-top: 0em; margin-bottom: .5em; font-size: 24px;" class="title-text1 animated fadeInUpBig">
+USABILITY TEST &amp; REDESIGN RECOMMENDATIONS</p>					
+<p style="color: white; margin-bottom: 1.6em;" class="title-text2 animated fadeInUpBig">
+for the Website of Constructional Approach to Animal Welfare and Training</p>
+
+	</div>
+	</div>
+</div></div></div></div>
+
+</div></div></div></div>
+
+
+
+
+
+	<div class="vc_row-full-width vc_clearfix"></div>
+	<div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true"
+	class="vc_row wpb_row vc_row-fluid vc_custom_1625859779156- vc_row-has-fill"
+	style="left: -532px; position: relative; box-sizing: border-box; width: 1903px;">
+	<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner">
+		<div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid">
+			<div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-xs">
+				<div class="vc_column-inner"><div class="wpb_wrapper">
+					<div class="vc_empty_space" style="height: 0px">
+						<span class="vc_empty_space_inner"></span>
+					
+</div></div></div></div></div>		
+
+			<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1625807025230">
+				<div class="wpb_column vc_column_container vc_col-sm-6">
+					<div class="vc_column-inner">
+						<div class="wpb_wrapper">
+				<div class="wpb_single_image wpb_content_element vc_align_center gs">
+
+</div></div></div></div></div></div></div></div></div>
+
+		<div class="vc_row-full-width vc_clearfix"></div>
+		<div data-vc-full-width="true" data-vc-full-width-init="true" 
+		class="vc_row wpb_row vc_row-fluid" style="left: -245px; position: relative; 
+		box-sizing: border-box; width: 1903px; padding-left: 245px; padding-right: 244px;">
+
+
+		<div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-lg vc_hidden-md vc_hidden-sm" id="featured2"
+		style="display: none !important;">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="vc_empty_space" style="height: 0px">
+		<span class="vc_empty_space_inner"></span>
+		</div>
+		<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1625872002412">
+		<div class="wpb_column vc_column_container vc_col-sm-12">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_text_column wpb_content_element  vc_custom_1627755381719">
+			<div class="wpb_wrapper">
+			
+			</div></div></div></div></div></div></div></div>
+
+		<div class="vc_empty_space" style="height: 7px">
+		<span class="vc_empty_space_inner"></span></div></div></div></div></div>
+		
+
+	
+<!-- begin intro texts -->
+
+		<div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" 
+		class="vc_row wpb_row vc_row-fluid 
+		homepage-bottom-sliding-image-margin 
+		vc_row-has-fill" 
+		style="left: -532px; position: relative; box-sizing: border-box; width: 1903px;">
+		<div class="wpb_column vc_column_container vc_col-sm-12">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="vc_row wpb_row vc_inner vc_row-fluid">
+		<div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-xs">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="vc_empty_space" style="height: 20px">
+		<span class="vc_empty_space_inner">
+		</span></div></div></div></div></div>
+
+<div class="vc_empty_space" style="height: .8em"></div>
+<p class="body_texts vc_textblock_margins animated fadeInUpBig" style="color: #282828; font-size:24px; text-indent: 1.2em;">
+Constructional Approach to Animal Welfare and Training (CAAWT) operates as a 501(c)(3) non-profit entity with a mission to provide free training services to individuals and organizations. Among other endeavors, CAAWT helps dogs get adopted from animal shelters. These free programs are funded through the proceeds from group classes, memberships, private consultations, conferences, and webinars. The donations that CAAWT received have been minimal. </p>		
+			
+<p class="body_texts vc_textblock_margins animated fadeInUpBig" style="color: #282828; font-size:24px; text-indent: 1.2em;">
+CAAWT would like to improve the website's navigation to direct visitors to the donation page. From web analytics, there were uneven traffic throughout the year, and most activities on the site were podcast related. Both of the web and mobile pages have not previously been evaluated through usability studies.</p>
+	
+<p class="body_texts vc_textblock_margins animated fadeInUpBig" style="color: #282828; font-size:24px; text-indent: 1.2em;">
+The goal of this project was to identify areas that may need adjustments for CAAWT's web presence to improve donations for the charitable objectives. To this effect, a heuristic evaluation was conducted that followed with a usability test. The purpose of conducting the usability test was to gather insights into the mental models of new users who were animal caregivers, but had no prior knowledge of the organization and their operations. The usability test prioritized to access CAAWT website’s usability and credibility.</p>
+			
+<p class="body_texts vc_textblock_margins animated fadeInUpBig" style="color: #282828; font-size:24px; text-indent: 1.2em;">
+I collaborated in a team of five individuals, comprising four researchers and myself as the designer. I redesigned the menu's information architecture and the homepage as the recommendation for solutions which is shared toward the end of this report. I also took parts formulating and conducting the interviews and surveys to gather insights into user behaviors, preferences, and pain points. I worked closely with the researchers to sort through the findings and incorporated them into the redesign process (Note: The redesign recommendations have not yet been implemented into the existing CAAWT website).</p>
+			
+<!-- end intro texts -->
+			
+<!-- start body texts -->
+<br><br>
+<p class="body_texts vc_textblock_margins animated fadeInUpBig" style="color: #282828;  font-size:24px; text-align: center; font-weight: 600;">Usability Test</p>
+<br>
+<p class="body_texts vc_textblock_margins animated fadeInUpBig" style="color: #282828;  font-size:24px; font-weight: 600;"><i>Methodology</i></p>
+<p class="body_texts vc_textblock_margins animated fadeInUpBig" style="color: #282828; font-size:24px; text-indent: 1.2em;">
+According to Wix analytics, CAAWT's visitors frequented the Podcast pages of the site most, indicating that CAAWT's users are pet people with great interest in learning about animal care and animal behavior therapy. The web analytics also showed that a lot of users were directed to the website from Facebook, which may be an indicator that current CAAWT's members from Facebook community make up large portion of the organization's users. However, the goal of the usability test was to capture the mental models of a diverse set of new users, therefore, only users who were animal enthusiasts and with no prior knowledge about CAAWT nor ever visited the website were chosen. The test was conducted with 10 participants. The details of methods, materials, and participant selection are explained below.
+</p>
+						
+<br>
+	
+<p class="body_texts vc_textblock_margins animated fadeInUpBig" style="color: #282828;  font-size:24px; font-weight: 600;"><i>Materials</i></p>
+<p class="body_texts vc_textblock_margins animated fadeInUpBig" style="color: #282828; font-size:24px; text-indent: 1.2em;">
+The usability test was a summative test on www.caawt.com. The test was performed using the Zoom video conferencing tool. Users were given a brief explanation of what they were required to do and were allowed to skip a question or quit the session if they were not comfortable. Consent was taken to record the session. Prior to recording, the participants' names were changed to the moderator’s initials and date of recording; this process provided privacy to the participants' identity. All tests were conducted on desktop computers. Two out of ten users had Mac computers and the rest of the eight participants used Windows.</p>
+	
+<p class="body_texts vc_textblock_margins animated fadeInUpBig" style="color: #282828;  font-size:24px; text-indent: 1em;">
+The usability test began with the collection of participants' background information, then a link to the CAAWT's website was provided before they were asked to share their screen. The usability test
+began with open-ended questions to the users' initial impressions of the website and then went into eight scenario-based tasks. At the end of the last task, five follow-up questions were addressed. The test concluded
+with participants filling out the System Usability Scale (SUS) for user satisfaction survey through Qualtrics. </p>
+
+<br>
+
+<p class="body_texts vc_textblock_margins animated fadeInUpBig" style="color: #282828;  font-size:24px; font-weight: 600;"><i>Participants' Background</i></p>
+<p class="body_texts vc_textblock_margins animated fadeInUpBig fig-no_txt_off" style="color: #282828; font-size:24px; text-indent: 1.2em;">
+The user profile of the focus group for the usability test may or may not owned pets but demonstrated interest in animal care and animal behavior therapy. Ten participants were recruited and interviewed, and nine of the ten participants were current or prior pet owners. The age range of participants was between 18–59. The participants who were pet owners had a variety of pets and a variety of prior knowledge in pet care. Figures 1, 2, &amp; 3 represent this data.</p>
+	
+<!-- begin figures 2–4 -->
+			
+</div></div></div></div>
+		
+		
+
+		<div class="vc_row-full-width vc_clearfix"></div>
+		<div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" 
+		class="vc_row wpb_row vc_row-fluid 
+		sources-of-information-sliding-image-margin
+		vc_row-has-fill" 
+		style="left: -532px; position: relative; box-sizing: border-box; width: 1903px;">
+		<div class="wpb_column vc_column_container vc_col-sm-12">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="vc_row wpb_row vc_inner vc_row-fluid">
+		<div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-xs">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="vc_empty_space" style="height: 10px">
+		<span class="vc_empty_space_inner">
+		</span></div></div></div></div></div>
+			
+		<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1627582610979 vc_column-gap-20">
+		<div class="wpb_column vc_column_container vc_col-sm-4 sitemap-triple-images-linebreak triple-figure-1-2-3-width-sizing" >
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_single_image wpb_content_element vc_align_center">
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey">
+				<img src="../img/brand_dev/brand_dev.png" class="vc_single_image-img attachment-full"
+					 alt="" loading="lazy" srcset="../img/CAAWT/participant_gender/participant_gender.png 2500w,
+					 ../img/CAAWT/participant_gender/participant_gender-300x169.png 300w,
+					 ../img/CAAWT/participant_gender/participant_gender-1024x576.png 1024w,
+					 ../img/CAAWT/participant_gender/participant_gender-768x432.png 768w,
+					 ../img/CAAWT/participant_gender/participant_gender-1536x864.png 1536w"
+					 sizes="(max-width: 2500px) 100vw, 2500px"
+					 data-dt-location="../img/CAAWT/participant_gender"
+					 width="2500" height="1406"></div>
+		<p class="texts-caption" style="image_caption; color: #282828; text-align: left;"><i>
+		<b>Figure 1.</b> Participants' gender.</i></p>
+		</figure>
+			</div>
+
+			
+		</div>
+</div>
+</div>
+<div class="wpb_column vc_column_container vc_col-sm-4 sitemap-triple-images-linebreak triple-figure-1-2-3-width-sizing">
+<div class="vc_column-inner">
+<div class="wpb_wrapper">
+			<div class="wpb_single_image wpb_content_element vc_align_center">
+
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey">
+<img src="../img/CAAWT/participant_pet_experience/participant_pet_experience.png" 
+class="vc_single_image-img attachment-full fig2-emp_spc" alt="" loading="lazy" srcset="../img/CAAWT/participant_pet_experience/participant_pet_experience.png 2500w, ../img/CAAWT/participant_pet_experience/participant_pet_experience-300x169.png 300w, ../img/CAAWT/participant_pet_experience/participant_pet_experience-1024x576.png 1024w, ../img/CAAWT/participant_pet_experience/participant_pet_experience-768x432.png 768w, ../img/CAAWT/participant_pet_experience/participant_pet_experience-1536x864.png 1536w, ../img/CAAWT/participant_pet_experience/participant_pet_experience-2048x1152.png 2048w" sizes="(max-width: 2500px) 100vw, 2500px" data-dt-location="../img/CAAWT/participant_pet_experience/" width="2500" height="1406">
+</div>
+			<p class="texts-caption" style="image_caption; color: #282828; text-align: left;">
+<i>
+<b>Figure 2.</b> Participants' pet experience.</i>
+</p>
+</figure>
+			</div>
+</div>
+</div>
+</div>
+				
+	
+		<div class="wpb_column vc_column_container vc_col-sm-4 sitemap-triple-images-linebreak triple-figure-1-2-3-width-sizing
+		triple-figure-3-float">
+<div class="vc_column-inner">
+<div class="wpb_wrapper">
+			<div class="wpb_single_image wpb_content_element vc_align_center">
+
+	   <figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey">
+<img src="../img/CAAWT/types_of_pets/types_of_pets.png" 
+class="vc_single_image-img attachment-full fig3-emp_spc" alt="" loading="lazy" srcset="../img/CAAWT/types_of_pets/types_of_pets.png 2500w, ../img/CAAWT/types_of_pets/types_of_pets-300x169.png 300w, ../img/CAAWT/types_of_pets/types_of_pets-1024x576.png 1024w, ../img/CAAWT/types_of_pets/types_of_pets-768x432.png 768w, ../img/CAAWT/types_of_pets/types_of_pets-1536x864.png 1536w, ../img/CAAWT/types_of_pets/types_of_pets-2048x1152.png 2048w" sizes="(max-width: 2500px) 100vw, 2500px" data-dt-location="../img/CAAWT/types_of_pets/" width="2500" height="1406">
+</div>
+		   
+		   <p class="texts-caption" style="image_caption; color: #282828; text-align: left;">
+<i>
+<b>Figure 3.</b> Types of pets.</i>
+</p>
+		</figure>
+</div>
+
+
+			
+			
+		</div></div></div></div>
+			
+<br>
+			
+<!-- end figures 2–4 -->
+			
+<!-- begin participants' sources of information for pet care -->
+			
+<p class="body_texts vc_textblock_margins" style="color: #282828;  font-size:24px; font-weight: 600;"><i>Participants' sources of information for pet care</i></p>
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; text-indent: 1.2em;">
+All participants had shown interest in learning about pet care and animal behaviors. All participants would start 
+with a Google search to look up blogs, websites, and videos, that they followed regularly. 
+Most participants also sought information from their family and friends. Two participants followed social 
+media content on pet care. One participant followed an animal sanctuary that does live streams on Twitch and another occasionally listened to podcasts. Figure 4 represents this data.</p>
+
+</div></div></div></div>
+        <!-- begin figures 4 -->
+
+		<div class="vc_row-full-width vc_clearfix"></div>
+		<div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" 
+		class="vc_row wpb_row vc_row-fluid 
+		homepage-bottom-sliding-image-margin
+		vc_row-has-fill" 
+		style="left: -532px; position: relative; box-sizing: border-box; width: 1903px;">
+		<div class="wpb_column vc_column_container vc_col-sm-12">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="vc_row wpb_row vc_inner vc_row-fluid">
+		<div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-xs">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="vc_empty_space" style="height: 10px">
+		<span class="vc_empty_space_inner">
+		</span></div></div></div></div></div>
+			
+
+			
+		<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1627582610979 
+		single-figure-4-5-width-sizing
+		vc_column-gap-20">
+		<div class="wpb_column vc_column_container vc_col-sm-4" >
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_single_image wpb_content_element vc_align_center">
+
+			</div>
+
+			
+		</div></div></div>
+		
+		<div class="wpb_column vc_column_container vc_col-sm-4" 
+		style="padding-top: 0px !important; padding-bottom: 0px !important; ">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_single_image wpb_content_element vc_align_center">
+
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey">
+			<img src="../img/CAAWT/sources_of_info/sources_of_info.png" 
+			class="vc_single_image-img attachment-full" alt="" loading="lazy" 
+			srcset="../img/CAAWT/sources_of_info/sources_of_info.png 2500w, 
+			../img/CAAWT/sources_of_info/sources_of_info-300x169.png 300w, 
+			../img/CAAWT/sources_of_info/sources_of_info-1024x576.png 1024w, 
+			../img/CAAWT/sources_of_info/sources_of_info-768x432.png 768w, 
+			../img/CAAWT/sources_of_info/sources_of_info-1536x864.png 1536w, 
+			../img/CAAWT/sources_of_info/sources_of_info-2048x1152.png 2048w" 
+			sizes="(max-width: 2500px) 100vw, 2500px" 
+			data-dt-location="../img/CAAWT/sources_of_info/" width="2500" height="1406">
+			</div>
+			<p class="texts-caption" style="image_caption; color: #282828; text-align: left;">
+			<i><b>Figure 4.</b> Sources of information.</i></p>
+			</figure>
+			</div></div></div></div>
+				
+	
+		<div class="wpb_column vc_column_container vc_col-sm-4">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_single_image wpb_content_element vc_align_center">
+
+		</div>		
+		</div></div></div></div>
+			
+		<!-- end figures 4 -->
+			
+<!-- end participants' sources of information for pet care -->
+			
+<br>			
+<!-- begin participants' experience with payment tools and donations -->
+			
+<p class="body_texts vc_textblock_margins" style="color: #282828;  font-size:24px; font-weight: 600;"><i>Participants' experience with payment tools and donations</i></p>
+<p class="body_texts vc_textblock_margins fig-no_txt_off" style="color: #282828; font-size:24px; text-indent: 1.2em;">
+CAAWT uses PayPal and Patreon for various payment and donation methods on their websites so further questions regarding the participants' familiarity with these applications were also asked. All participants knew PayPal and had used it in the past. Although two participants noted that sometimes the fee structures on PayPal were unclear, most thought it was safe and convenient. 
+Figure 5 represents this data.
+</p>
+
+</div></div></div></div>
+        <!-- begin figures 5 -->
+
+		<div class="vc_row-full-width vc_clearfix"></div>
+		<div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" 
+		class="vc_row wpb_row vc_row-fluid 
+		homepage-bottom-sliding-image-margin
+		vc_row-has-fill" 
+		style="left: -532px; position: relative; box-sizing: border-box; width: 1903px;">
+		<div class="wpb_column vc_column_container vc_col-sm-12">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="vc_row wpb_row vc_inner vc_row-fluid">
+		<div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-xs">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="vc_empty_space" style="height: 10px">
+		<span class="vc_empty_space_inner">
+		</span></div></div></div></div></div>
+					
+		<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1627582610979 
+		single-figure-4-5-width-sizing
+		vc_column-gap-20">
+		<div class="wpb_column vc_column_container vc_col-sm-4" >
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_single_image wpb_content_element vc_align_center gs">
+
+		</div></div></div></div>
+		
+		<div class="wpb_column vc_column_container vc_col-sm-4" 
+		style="padding-top: 0px !important; padding-bottom: 0px !important; ">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_single_image wpb_content_element vc_align_center">
+
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey">
+			<img src="../img/CAAWT/types_of_donations/types_of_donations.png" 
+			class="vc_single_image-img attachment-full" alt="" loading="lazy" 
+			srcset="../img/CAAWT/types_of_donations/types_of_donations.png 2500w, 
+			../img/CAAWT/types_of_donations/types_of_donations-300x156.png 300w, 
+			../img/CAAWT/types_of_donations/types_of_donations-1024x533.png 1024w, 
+			../img/CAAWT/types_of_donations/types_of_donations-768x400.png 768w, 
+			../img/CAAWT/types_of_donations/types_of_donations-1536x800.png 1536w, 
+			../img/CAAWT/types_of_donations/types_of_donations-2048x1067.png 2048w" 
+			sizes="(max-width: 2500px) 100vw, 2500px" 
+			data-dt-location="../img/CAAWT/types_of_donations/" width="2500" height="1302">
+			</div>
+			<p class="texts-caption" style="image_caption; color: #282828; text-align: left;">
+			<i><b>Figure 5.</b> Types of donations.</i></p>
+		  </figure>
+		  </div></div></div></div>
+				
+	
+		<div class="wpb_column vc_column_container vc_col-sm-4">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_single_image wpb_content_element vc_align_center">
+
+		</div>		
+		</div></div></div></div>
+			
+		<!-- end figures 5 -->
+			
+
+<!-- end participants' experience with payment tools and donations -->
+
+<br>			
+<!-- begin metrics of measurement -->
+			
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; font-weight: 600;"><i>Metrics of measurements</i></p>
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; text-indent: 1.2em;">
+During the interviews, tasks-related quantitative measurements were recorded. The participants were asked to self rate their ease-of-task completions on a scale of 1 to 5, with 1 being very hard and 5 being very easy. The average of these ratings per task are reflected in the results and findings.
+Additionally, the efficiency and effectiveness of the website were also measured. Definitions for the three usability dimensions are described as follow:</p>
+
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; margin-bottom: 10px;">
+<span class="highlight_texts1">Efficiency</span> - The efficiency of the system was measured by timing how long it took for participants to complete the task. In tasks 3 and 7, there were no destinations in the current website, so participants were not able to complete the tasks. These two tasks were removed from this metric.</p>
+
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; margin-bottom: 10px;">
+<span class="highlight_texts1">Effectiveness</span> - The effectiveness was measured by success rates. A successfully completed task was defined as the participant arrived at the destination page. In task 3 and 7, there were no destinations in the current website, so these two tasks were removed from this metric.</p>
+			
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; margin-bottom: 10px;">
+<span class="highlight_texts1">User Satisfaction</span> - The user satisfaction was measured by the participants’ self-evaluation on the website's intuitiveness, ease of task, and how well it displayed the information. The System Usability Scale (SUS) was used as the post-task questionnaire to capture the participants’ data. The questionnaire included a total of 10 questions.</p>
+	
+<!-- end metrics of measurement -->
+
+<!-- begin results/finding -->
+			
+<br><br>
+<p class="body_texts vc_textblock_margins" style="color: #282828;  font-size:24px; text-align: center; font-weight: 600;">Results / Findings (Usability Issues & Observations)</p>
+<br>
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; text-indent: 1.2em;">
+The results of the usability test are listed below based on the order of tasks presented to the participants during the interviews. In addition to the noted qualitative insights, certain quantitative metric measurements were also combined across all the participants. These results include calculations of tasks' success rate, average tasks' completion time, and an average of participants’ self-reported ratings of the ease of task.
+</p>
+<br>			
+<!-- begin open exploration -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; font-weight: 600;"><i>Open Exploration (detailed questions shared in the appendices)</i></p>
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px;">
+On their first impression, all participants noticed the hero image. Four participants chose to scroll on the homepage first and six participants navigated the menu items first instead of scrolling for more information on the homepage.</p>
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.5em; text-indent: -1.5em; font-weight: 400;">1.&nbsp;Menu items</p>
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; text-indent: -1em; font-weight: 400;">a.&nbsp;All participants noticed the  navigation menu.</p>
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; text-indent: -1em; font-weight: 400;">b.&nbsp;One person mentioned that the hero image brought attention to the menu but seemed to fade into the background.</p>
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; text-indent: -1em; font-weight: 400;">c.&nbsp;Two of the participants were unclear about the organization’s name, and what 'CAAWT' was abbreviated for. These are their quotes:</p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.3em; text-indent: -.3em;"><i>"I think I just realized that CAAWT is the actual organization. That should have been far more obvious."</i></p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.3em; text-indent: -.3em;"><i>“The first words that really caught my attention was the Constructional Approach to Animal Welfare and Training that made me wonder of the meaning."</i></p>
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; text-indent: -1em; font-weight: 400;">d.&nbsp;Four participants wanted to learn more about the organization so approached the ‘About Us’ page:</p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.3em; text-indent: -.3em;"><i>“I would go first to ‘About Us’ to understand who they are and what they’re attempting to do. I see info about Sean Will and this looks like they’re legitimate; it looks like a small company.”</i></p>
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; text-indent: -1em; font-weight: 400;">e.&nbsp;Participants also noticed the English and Japanese languages option and the informational posters under Resources/Projects.</p>
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.5em; text-indent: -1.5em; font-weight: 400;">2.&nbsp;Homepage</p>
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; text-indent: -1em; font-weight: 400;">a.&nbsp;All participants noticed the hero image and liked it:</p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.3em; text-indent: -.3em;"><i>“What caught me the most was 'Making Best Friends for Life'. I see the picture of the person with the dog on the beach. For people who care about animals or have animals, they do become their best friends. So that caught me as maybe this is something legitimate and that these people are not in this to make a whole lot of money but it just seems to me that they care about animals.”</i></p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.3em; text-indent: -.3em;"><i>“The hero image and the slogan of making best friends for life with the pets and animals are comforting.”</i></p>
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; text-indent: -1em; font-weight: 400;">b.&nbsp;One participant mentioned that the 'Making Best Friends for Life' texts were not as prominent as the background that took him a while to notice it.</p>
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; text-indent: -1em; font-weight: 400;">c.&nbsp;One participant mentioned that there was too much information on the homepage and confusing ways to join the organization. They also found that the page had inconsistent designs and text styling.</p>
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; text-indent: -1em; font-weight: 400;">d.&nbsp;There were a few comments about the mission statement being a bit too general and not giving direct insight into what their services were or who they were serving:</p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.3em; text-indent: -.3em;"><i>“It says here that they help individuals and facilities that require training but can't afford it... just like random facilities. I'm not sure of the target of their philanthropy, it seems a little general.”</i></p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.3em; text-indent: -.3em;"><i>“From my first impression, I’m not quite sure what this organization does. I just know that it has something to do with animals and caring about animals. I also noticed that it’s a non-profit for behavior support and training. I’m not quite sure what that is so I’d have to do a little bit more browsing.”</i></p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.3em; text-indent: -.3em;"><i>“I know it's about helping animals but I also want to explore what are the different things that they do and the resources they have available.”</i></p>
+<!-- end open exploration -->
+<br>
+<!-- begin task 1 -->			
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; font-weight: 600;"><i>Tasks (procedures shared in the appendices)</i></p>
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.8em; text-indent: -1.5em; font-weight: 400;"><u>T1</u>: You are arriving at the CAAWT website for the first time and would like to learn about the organization’s mission, where would you go?</p>
+
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+<i><b></b>Success Rate</i>: 90%<br>
+<i>Average Completion Time</i>: 44.4 secs<br>
+<i>Average Ease Rating</i>: 3.75/5</p>
+	
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+	Task 1 asked the participants to look for the mission of the organization when they arrived at the website for the first time. Most participants went to ‘About Us’ on the menu first and then went back to the homepage. Some participants were looking for a mission tab on the navigation menu.</p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em;"><i>“When I cannot find 'Our Mission' or some titles like that on the navigation bar, I will directly go to ‘About Us’.”</i></p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+	Most participants encountered navigation issues and thought the homepage to be cluttered and hard to read with the different font fonts and sizes. The participants had to read carefully to find the information they needed. The participants also felt the mission statement was too short and and wanted more details.</p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em;"><i>“It seems very pragmatic if I may say and does not quite capture how much they care."</i></p>
+<!-- end task 1 -->	
+			
+<!-- begin task 2 -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.8em; text-indent: -1.5em; font-weight: 400;"><u>T2</u>: On this website, you want to find out more about CAAWT’s impact on the community of animal care enthusiasts. How would you go about locating it?</p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+<i>Success Rate</i>: 20%<br>
+<i>Average Completion Time</i>: 45.7 secs<br>
+<i>Average Ease Rating</i>: 2.1/5</p>
+
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+	Task 2 asked the participants to find out more about CAAWT’s impact on the community of animal care enthusiasts. Since impact stories encourage donation, users would be more willing to donate if they understand how the organization uses donation. ‘Resources/ Projects’ was where the participants mostly visited and expected to see the past projects and links that lead to external resources.</p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em;"><i>“The menu said 'projects', so I assumed there would be some projects to learn about that shared their mission, but I didn't find anything there.”</i></p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+	Participants expected to see the locations, animals, and people that they've helped in the past. However, they had a hard time finding the impact stories during this task. 
+</p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em;"><i>“It would be nice to show examples of their past successes if they had any.”</i></p>			
+<!-- end task 2 -->	
+			
+<!-- begin task 3 -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.8em; text-indent: -1.5em; font-weight: 400;"><u>T3</u>: You are trying to confirm the validity of the organization’s website. You can do this through locating CAAWT’s physical address or trust seal on the website. Where would you go to find this information?</p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+<i>Success Rate</i>: Not Completed<br>
+<i>Average Completion Time</i>: N/A<br>
+<i>Average Ease Rating</i>: 1.8/5</p>
+
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+Task 3 challenged the participants to confirm the validity of the organization’s website since credibility is one of the critical factors in users’ donation decisions. The majority of participants visited ‘Contact Us’ and ‘About Us’ to search for a physical address or trust seals but only found a contact form and email address. However, they found a page on past conferences to get a sense of trust. 
+</p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em;"><i>“I guess they're hosting a conference. One way to see if it is authentic is to look at the people who attend. You can see and get a sense of who actually cares about this group and if the attendees are also well known in the field.”</i></p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+	One participant also considered that since the website ran through “https”, it should be relatively trustworthy because it meant users' personal information were encrypted. In addition to relying on the organization for credibility, participants also defaulted to external or third-party reviews, such as news articles. 
+</p>
+			
+<!-- end task 3 -->
+			
+<!-- begin task 4 -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.8em; text-indent: -1.5em; font-weight: 400;"><u>T4</u>: While navigating through the CAAWT website, you are curious if CAAWT is endorsed by any third-party. How would you find this information?</p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+<i>Success Rate</i>: 40%<br>
+<i>Average Completion Time</i>: 94.8 secs<br>
+<i>Average Ease Rating</i>: 1.95/5</p>
+
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+Task 4 aked the participants to locate CAAWT’s third-party endorsements. Most participants checked the ‘Informational Resources’ under ‘Resources/Projects’ tab first to be the most logical placement for the third party endorsements. Although this was where the endorsements were, all failed to realize they had found what they were looking for due to the page’s structure since it did not clearly define their endorsements.
+Likewise, most expressed dissatisfaction in the topics listed under the ‘Resources/Projects’ tab since none of the drop down options hinted at nor illustrated third party sponsorship. After viewing the drop down choices, most navigated to the ‘Membership’ and ‘About Us’ tabs to complete the task. Other participants checked the podcast page under the assumption that the third party endorsements were featured on their podcasts. By the end of the task, all participants were frustrated after failing to locate the third party endorsements on the website including those who landed on the correct page.
+ 
+</p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;"><i>“Collaborators or partners, I don't see that anywhere. I'm starting to think that they do not have endorsements.”</i></p>
+			
+<!-- end task 4 -->
+			
+<!-- begin task 5 -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.8em; text-indent: -1.5em; font-weight: 400;"><u>T5</u>: You are prepared to donate to CAAWT. However, before donating, you wish to find out how CAAWT uses its donations. How would you find this information?</p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+<i>Success Rate</i>: 70%<br>
+<i>Average Completion Time</i>: 76.3 secs<br>
+<i>Average Ease Rating</i>: 4/5</p>
+
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+Task 5 challenged the participants to find information regarding CAAWT’s donation usage. The majority of participants found this task straightforward. Although for some, selecting the donation button wasn't their first choice. On average they checked ‘About Us’ and ‘Resources/Projects’ first under the assumption that the donation button was strictly to complete the donation task. Some expected this information to be displayed on the homepage. In terms of the information listed on the ‘Donation’ page, some found the information provided was thoughtful and informative with the nice visuals of animals. While others critiqued the page’s overall organization and text density. When probed on potential improvements, most expressed interest in adding a trust seal, third party information, and customer testimonies to encourage trustworthiness with its donors. 
+</p>
+			
+<!-- end task 5 -->
+			
+<!-- begin task 6 -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.8em; text-indent: -1.5em; font-weight: 400;"><u>T6</u>: You are attempting to donate $25.00 to CAAWT. Please demonstrate how you would donate $25.00 to the organization.</p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+<i>Success Rate</i>: 100%<br>
+<i>Average Completion Time</i>: 51.3 secs<br>
+<i>Average Ease Rating</i>: 4.6/5</p>
+
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+Task 6 asked the participants to show how to go about of donating $25.00 to CAAWT. Currently, there are three separate methods of donating to the website. The first method would be by clicking on the 'donate' button among the top main navigation. The second method would be from the Interaction Guidelines Poster, a page within the 'Resources/Projects' tab. The third method of donation would be through subscribing to the organization’s membership. Users selecting this option would be presented with two tiers, each with a monthly model and an annual model. These three methods of donations also have different processes, which proved confusing to the participants. Despite the three different methods of donation, all ten participants within the study arrived at the page through interacting with the donation button from the navigation menu.</p>
+			
+<!-- end task 6 -->
+			
+<!-- begin task 7 -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.8em; text-indent: -1.5em; font-weight: 400;"><u>T7</u>: You are trying to search for a page that you had frequented before. However, you can’t seem to find it through the website’s navigation menu, so you decide to search for it. Where would you go to use the Search function?</p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-size:22px;">
+<i>Success Rate</i>: Not completed<br>
+<i>Average Completion Time</i>: N/A<br>
+<i>Average Ease Rating</i>: 2.4/5</p>
+
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+Task 7 asked participants to find a non-existing search bar. This task was to further understand how the users navigate through CAAWT’s website without the search functionality. The more user friendly a website's navigation is, the greater the likelihood that visitors will delve deeper into its content. Furthermore, if a search bar was integrated into the Google Analytics, the ability to track the frequency of specific search terms used by visitors would be valuable to make strategic adjustments to the page content, structure, or design.
+</p>			
+<!-- end task 7 -->
+			
+<!-- begin task 8 -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.8em; text-indent: -1.5em; font-weight: 400;"><u>T8</u>: You are trying to register for a membership. Where would you find the registration?</p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+<i>Success Rate</i>: 100%<br>
+<i>Average Completion Time</i>: 13.4 secs<br>
+<i>Average Ease Rating</i>: 4.5/5</p>
+
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+Overall, registering for membership was an easy process. All participants found the ‘CAAWT Membership’ tab within seconds. However, a couple participants pointed out that the steps for the process were confusing or wordy. One mentioned that there’s a misspelling of the word 'membership' (5 Steps to Join CAAWT Memership). Another participant thought that it’s unprofessional for CAAWT to rely on Facebook for users to join membership. The organization should be able to create accounts for members independently from their own web portal.</p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;"><i>“People will do easy things so they're not going to scroll all the way down to look for those 5 steps. I might, because I like to see everything before I decide on something, but most people don't. It's like, okay, where do they click? Is that it? Click, boom, and then when they run into problems, they're gonna lose those people.”</i></p>
+<!-- end task 8 -->
+			
+<!-- end tasks -->
+<br>			
+<!-- begin follow-up questions -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; font-weight: 600;"><i>Follow-up questions</i></p>
+
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px;">
+Five follow-up questions were asked to get ideas of what design decisions should be, driven by user needs and preferences that ultimately lead to a website that better meets those needs. </p>
+
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.9em; text-indent: -1em; font-weight: 400;">1.&nbsp;Does it feel like the site is designed for someone like you? Why or why not? </p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+Comments included that the website seemed to be on the academic side, therefore, it's too professional for the users' interest. There's also the issue of missing information that may result in a lack of credibility. Positive comments included effective use of media, but even one positive person pointed out that he’s not completely clear of what they do. Overall, it seemed that the website required extensive browsing to understand its purpose and goal.</p>
+	
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.9em; text-indent: -1em; font-weight: 400;">2.&nbsp;What’s your impression of the visuals (color, photography, etc.) used throughout the site? What kind of feelings do they evoke for you?</p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+There’s an overall “warm and friendly” impression of the color, hero image, and calm vibe of the homepage. Participants sensed “compassion, companionship, and hope for the animals.” However, there were concerns about the usages of texts on all pages. A couple of users mentioned that the webpage’s design mostly appeared to be busy and “not very stylish” nor professional.</p>
+			
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.9em; text-indent: -1em; font-weight: 400;">3.&nbsp;If you were reviewing the site on your own, are there any actions you may be inclined to take? Which ones? Why?</p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+Issues of navigation, credibility, and unclear messaging were mentioned again. Three participants said they would search on Google for more information about the organization before they donate. The podcast page was mentioned twice, positively and neutrally, as one participant did not care to listen to podcasts.</p>	
+			
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.9em; text-indent: -1em; font-weight: 400;">4.&nbsp;What’s your sense of how trustworthy this website is? Why?</p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+There’s an overall sense of trust for the website but it needs more credibility and more information to be presented in a clear and visually engaging way. Adding a physical address or trust seals would help. Participants also suggested including more information on how the organization trains the animals, add impact stories, and be more transparent on how donations are spent.</p>
+			
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.9em; text-indent: -1em; font-weight: 400;">5.&nbsp;If you had a magic wand to change anything about this website to make it more user-friendly, what would you change and why?</p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2.1em; font-size:22px;">
+Suggestions from participants included redesign of the homepage to add impact stories, testimonials, photos &amp; videos of animal training, organize the main navigation appropriately, make mission more visible, add search bar, and increase credibility with legitimate elements accordingly.</p>
+			
+<!-- end follow-up questions -->
+<br>			
+<!-- begin metrics summarization -->			
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; font-weight: 600;"><i>Metrics Summarization</i></p>
+			
+<!-- begin efficiency -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; margin-bottom: 20px;"><span class="highlight_texts1">Efficiency</span> - Figure 6 shows the average time for each task. The participants struggled to find information on the website once no longer on the homepage. For example, both task 4 (to find third-party endorsements) and 5 (to find the donation usage) took the most time to complete.</p>
+			
+ 		<!-- begin figures 6 -->
+			
+		<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1627582610979 
+		single-figure-width-sizing
+		vc_column-gap-20">
+		<div class="wpb_column vc_column_container vc_col-sm-4" >
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_single_image wpb_content_element vc_align_center gs">
+
+		</div></div></div></div>
+		
+		<div class="wpb_column vc_column_container vc_col-sm-4" 
+		style="padding-top: 0px !important; padding-bottom: 0px !important; ">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_single_image wpb_content_element vc_align_center">
+
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey">
+			<img src="../img/CAAWT/average_times/average_times.png" 
+			class="vc_single_image-img attachment-full" alt="" loading="lazy" 
+			srcset="../img/CAAWT/average_times/average_times.png 2500w, 
+			../img/CAAWT/average_times/average_times-300x101.png 300w, 
+			../img/CAAWT/average_times/average_times-1024x345.png 1024w, 
+			../img/CAAWT/average_times/average_times-768x259.png 768w, 
+			../img/CAAWT/average_times/average_times-1536x517.png 1536w, 
+			../img/CAAWT/average_times/average_times-2048x690.png 2048w" 
+			sizes="(max-width: 2500px) 100vw, 2500px" 
+			data-dt-location="../img/CAAWT/types_of_donations/" width="2500" height="842">
+			</div>
+			<p class="texts-caption" style="image_caption; color: #282828; text-align: left; margin-top: 10px;">
+			<i><b>Figure 6.</b> Average times in seconds by tasks.</i></p>
+		  </figure>
+		  </div></div></div></div>
+
+		<div class="wpb_column vc_column_container vc_col-sm-4">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_single_image wpb_content_element vc_align_center">
+
+		</div>		
+		</div></div></div></div>
+			
+		<!-- end figures 6 -->			
+<!-- end efficiency -->
+			
+<!-- begin self-rating on ease of use -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; margin-top: 20px; margin-bottom: 20px;"><span class="highlight_texts1">Self rating on ease of use</span> - Figure 7 shows the ease-of-use ratings from the participants. Task 5 (to find donation's usage) and task 8 (to join membership) got the highest rating. The lowest group included task 2 (to find impactful stories), task 3 (to confirm the validity), and task 4 (to find third-party endorsements).</p>
+			
+ 		<!-- begin figures 7 -->
+			
+		<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1627582610979 
+		single-figure-width-sizing
+		vc_column-gap-20">
+		<div class="wpb_column vc_column_container vc_col-sm-4" >
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_single_image wpb_content_element vc_align_center">
+
+		</div></div></div></div>
+		
+		<div class="wpb_column vc_column_container vc_col-sm-4" 
+		style="padding-top: 0px !important; padding-bottom: 0px !important; ">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_single_image wpb_content_element vc_align_center">
+
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey">
+			<img src="../img/CAAWT/average_ease_rating/average_ease_rating.png" 
+			class="vc_single_image-img attachment-full" alt="" loading="lazy" 
+			srcset="../img/CAAWT/average_ease_rating/average_ease_rating.png 2500w, 
+			../img/CAAWT/average_ease_rating/average_ease_rating-300x122.png 300w, 
+			../img/CAAWT/average_ease_rating/average_ease_rating-1024x416.png 1024w, 
+			../img/CAAWT/average_ease_rating/average_ease_rating-768x312.png 768w, 
+			../img/CAAWT/average_ease_rating/average_ease_rating-1536x624.png 1536w, 
+			../img/CAAWT/average_ease_rating/average_ease_rating-2048x832.png 2048w" 
+			sizes="(max-width: 2500px) 100vw, 2500px" 
+			data-dt-location="../img/CAAWT/average_ease_rating/" width="2500" height="842">
+			</div>
+			<p class="texts-caption" style="image_caption; color: #282828; text-align: left; margin-top: 10px;">
+			<i><b>Figure 7.</b> Average ease-of-use rating by tasks.</i></p>
+		  </figure>
+		  </div></div></div></div>
+
+		<div class="wpb_column vc_column_container vc_col-sm-4">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_single_image wpb_content_element vc_align_center">
+
+		</div></div></div></div></div>
+			
+		<!-- end figures 7 -->	
+			
+<!-- end self-rating on ease of use -->
+			
+<!-- begin effectiveness -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; margin-top: 20px; margin-bottom: 20px;"><span class="highlight_texts1">Effectiveness</span> - Figure 8 displays the success rate for each task. The participants had the highest success rates on task 6 (to make a donation) and task 8 (to join the membership). The lowest success rates were task 2 (to find impactful stories) and task 4 (to find third-party endorsements) may indicated that the participants were frustrated when they were looking for information on the site.</p>
+			
+ 		<!-- begin figures 8 -->
+			
+		<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1627582610979 
+		single-figure-width-sizing
+		vc_column-gap-20">
+		<div class="wpb_column vc_column_container vc_col-sm-4" >
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_single_image wpb_content_element vc_align_center">
+
+		</div></div></div></div>
+		
+		<div class="wpb_column vc_column_container vc_col-sm-4" 
+		style="padding-top: 0px !important; padding-bottom: 0px !important; ">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_single_image wpb_content_element vc_align_center">
+
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey">
+			<img src="../img/CAAWT/success_rate/success_rate.png" 
+			class="vc_single_image-img attachment-full" alt="" loading="lazy" 
+			srcset="../img/CAAWT/success_rate/success_rate.png 2500w, 
+			../img/CAAWT/success_rate/success_rate-300x101.png 300w, 
+			../img/CAAWT/success_rate/success_rate-1024x345.png 1024w, 
+			../img/CAAWT/success_rate/success_rate-768x259.png 768w, 
+			../img/CAAWT/success_rate/success_rate-1536x517.png 1536w, 
+			../img/CAAWT/success_rate/success_rate-2048x690.png 2048w" 
+			sizes="(max-width: 2500px) 100vw, 2500px" 
+			data-dt-location="../img/CAAWT/average_ease_rating/" width="2500" height="842">
+			</div>
+			<p class="texts-caption" style="image_caption; color: #282828; text-align: left; margin-top: 10px;">
+			<i><b>Figure 8.</b> Success rates by tasks.</i></p>
+		  </figure>
+		  </div></div></div></div>
+
+		<div class="wpb_column vc_column_container vc_col-sm-4">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_single_image wpb_content_element vc_align_center">
+
+		</div></div></div></div></div>
+			
+		<!-- end figures 8 -->	
+			
+<!-- end effectiveness -->
+			
+<!-- begin participants' satisfaction -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; margin-top: 20px; margin-bottom: 20px;"><span class="highlight_texts1">Participants' satisfaction</span> - The System Usability Scale (SUS)—a reliable tool for assessing the perceived usability of a website—was used to evaluate the participants' experience after the usability study and showed the final SUS score to be 49. According to previous studies, a score below 50 indicates that the usability of the website needs improvement. The full questionnaire can be referred to in the appendix.</p>
+			
+ 		<!-- begin figures 9 -->
+			
+		<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1627582610979 
+		single-figure-width-sizing
+		vc_column-gap-20">
+		<div class="wpb_column vc_column_container vc_col-sm-4" >
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_single_image wpb_content_element vc_align_center">
+
+		</div></div></div></div>
+		
+		<div class="wpb_column vc_column_container vc_col-sm-4" 
+		style="padding-top: 0px !important; padding-bottom: 0px !important;">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_single_image wpb_content_element vc_align_center">
+
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey">
+			<img src="../img/CAAWT/participant_satisfaction/participant_satisfaction.png" 
+			class="vc_single_image-img attachment-full" alt="" loading="lazy" 
+			srcset="../img/CAAWT/participant_satisfaction/participant_satisfaction.png 2500w, 
+			../img/CAAWT/participant_satisfaction/participant_satisfaction-300x67.png 300w, 
+			../img/CAAWT/participant_satisfaction/participant_satisfaction-1024x226.png 1024w, 
+			../img/CAAWT/participant_satisfaction/participant_satisfaction-768x171.png 768w, 
+			../img/CAAWT/participant_satisfaction/participant_satisfaction-1536x342.png 1536w, 
+			../img/CAAWT/participant_satisfaction/participant_satisfaction-2048x456.png 2048w" 
+			sizes="(max-width: 2500px) 100vw, 2500px" 
+			data-dt-location="../img/CAAWT/participant_satisfaction/" width="2500" height="557">
+			</div>
+			<p class="texts-caption" style="image_caption; color: #282828; text-align: left; margin-top: 10px;">
+			<i><b>Figure 9.</b> Participants' satisfaction.</i></p>
+		  </figure>
+		  </div></div></div></div>
+
+		<div class="wpb_column vc_column_container vc_col-sm-4">
+		<div class="vc_column-inner">
+		<div class="wpb_wrapper">
+		<div class="wpb_single_image wpb_content_element vc_align_center">
+
+		</div></div></div></div></div>
+			
+		<!-- end figures 9 -->	
+			
+<!-- end metrics summarization -->
+			
+<!-- end results/findings -->
+
+<!-- begin identification of common issues -->			
+<br><br>
+<p class="body_texts vc_textblock_margins" style="color: #282828;  font-size:24px; text-align: center; font-weight: 600;">Identification of Common Issues</p>
+<br>
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px;">
+Below are the most common problems identified during the usability testing for the 'Open Exploration' questions and the 8 tasks. Recommendations for these processes are as follow:</p>
+
+<br>					
+				<!-- exploration -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; font-weight: 600;"><i>For 'Open Exploration'</i></p>
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px;">
+Make it very clear what 'CAAWT' is for the users to grasp immediately as they first arrive to the homepage by providing a brief, but prominent, description for CAAWT on the page. There's also a disconnection of the logo bug and name of the organization, pull the two elements closer or best to redesign the logo.</p>			
+		
+				<!-- task 1 -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; font-weight: 600;"><i>For 'Tasks'</i></p>
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 2.2em; text-indent: -1.5em; font-weight: 400;"><u>T1</u>: Although the mission statement may be found elsewhere on the website, it's beneficial to create its own space where visitors can delve into a more comprehensive understanding of CAAWT's current and future objectives, then provide a link to the page whenever they come up contextually. Placing the mission statement in the navigation menu ('About Us' or 'Our Story') or in the hero section of the webpage is a prominent and visually striking choice. It's one of the first things visitors see, ensuring that the mission statement is front and center. The mission statement should have more details, describing motivation, vision, targeted animals, and the work process. Users are interested in concrete stories.</p>			
+
+				<!-- task 2 -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 2.2em; text-indent: -1.5em; font-weight: 400;"><u>T2</u>: Past projects and impact in the community should be obvious to see.</p>			
+			
+				<!-- task 3 -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 2.2em; text-indent: -1.5em; font-weight: 400;"><u>T3</u>: There's currently no physical address. Displaying a physical address provides a sense of trust and credibility to visitors. It signals that CAAWT is real and has a physical presence, which can be essential for gaining the trust of potential clients or donors. Users expected to see it on the ‘About Us’, ‘Contact Us’ page, or the footer of the homepage where the copyright information is. If CAAWT prefers not to disclose a physical address, a P.O. Box or a mailbox service as a mailing address for correspondence can be used. Another alternative is to create a Google business page listed on Google Map to show which city the business is located in.</p>			
+			
+				<!-- task 4 -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 2.2em; text-indent: -1.5em; font-weight: 400;"><u>T4</u>: Adding third-party endorsements to websites can have several benefits for businesses and organizations. Endorsements serve as social proof, showing that CAAWT's services are being used and valued by others. This can influence visitors to take desired actions, such as signing up for a service or making a donation.</p>	
+			
+				<!-- task 5 -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 2.2em; text-indent: -1.5em; font-weight: 400;"><u>T5</u>: Add the donation usage information on the homepage to create transparency between the donors and the organization when initially viewing the website. Additionally, edit the donation information into concise bullet points to lower the cognitive load of the user and make the page easier to digest. This will possibly attract more donors while allowing the donate button to be strictly action based for submitting a donation.</p>			
+			
+				<!-- task 6 -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 2.2em; text-indent: -1.5em; font-weight: 400;"><u>T6</u>: All participants navigated to the donations area through the donation button in the header. One participant stated that they were confused with the different methods of donations. Two participants perceived the donations and membership were the same: one stated that they would rather join the membership than donate as the membership would provide them with perks. Additionally, the donation methods currently have different processes: while one asks users to complete a donation form, the other bypasses it completely. CAAWT needs to streamline the donation process.</p>			
+			
+				<!-- task 7 -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 2.2em; text-indent: -1.5em; font-weight: 400;"><u>T7</u>: Although three participants stated that they prefer utilizing the navigation over search, the remaining participants felt that search would benefit them when they were searching for specific pages. CAAWT should consider adding in search functionality to its site.</p>
+			
+    			<!-- task 8 -->
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 2.2em; text-indent: -1.5em; font-weight: 400;"><u>T8</u>: CAAWT's usage of Facebook's platform for new member sign-ups could be too dependable on Facebook's infrastructure and policies. This could lead to less control over the sign-up process, and if Facebook makes changes or experiences downtime, it could affect CAAWT's ability to acquire new members. CAAWT should allow for members to create membership accounts on its own platform instead of utilizing Facebook exclusively.</p>
+
+<!-- end identification of common issues -->
+<br><br>			
+<!-- begin design recommendations -->
+<p class="body_texts vc_textblock_margins" style="color: #282828;  font-size:24px; text-align: center; font-weight: 600;">Design Recommendations</p>
+<br>
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px;">Below are the current and suggested-redesign sitemaps and homepage that explain the issues and redesign solutions.</p>
+
+<br>
+				<!-- sitemap -->
+
+			
+<div class="widget-box"></div>	
+<div class="vc_empty_space" style="height: 10px"></div>	
+
+
+			<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1625807015592">	
+			<div class="wpb_column vc_column_container vc_col-sm-6 double-images-linebreak">
+			<div class="vc_column-inner">
+				
+			<p class="body_texts" style="font-size:24px; font-weight: 500; padding-bottom: .3em;"><span class="highlight_texts2"><i>Current sitemap</i></span></p>	
+				
+
+				
+			<div class="wpb_wrapper">
+				<div class="wpb_single_image wpb_content_element vc_align_center">
+					
+						<figure class="wpb_wrapper vc_figure">
+						<img src="../img/CAAWT/sitemaps/current_sitemap.png" 
+						class="vc_single_image-img attachment-full" alt="" 
+						loading="lazy" srcset="../img/CAAWT/sitemaps/current_sitemap-1300x350.png 1300w, 
+						../img/CAAWT/sitemaps/current_sitemap-300x81.png 300w, 
+						../img/CAAWT/sitemaps/current_sitemap-1024x276.png 1024w, 
+						../img/CAAWT/sitemaps/current_sitemap-768x207.png 768w" 
+						sizes="(max-width: 1500px) 100vw, 1500px" 
+						data-dt-location="../img/CAAWT/sitemaps/" 
+						width="1500" height="404"><i></i>
+					
+						<p class="mobile_texts" style="color: #282828; font-size:24px; text-indent: 1.2em; text-align: left; margin-top: 1em;">
+Current sitemap has 8 primary navigation that are confusing at first glance. Participants had to click on all categories to understand what the organization was about. There are no login, search bar, nor mission page to help search engines crawl (e.g., users could not do a web search for 'CAAWT's mission' because the page does not exist). There's also not much information in the footer section.</p>
+							
+						<p class="mobile_texts" style="color: #282828; font-size:24px; text-indent: 1.2em; text-align: left;">
+Suggestions for the future sitemap shows the original set of 8 primary navigation restructuring to a set of 3 primary navigation for a better organizational fluidity. The missing features—login, search bar, &amp; mission page—were added. Contents are now grouped into categories to match the user's mental model. The footer was also added for users to find info that they may have missed on the top navigation, e.g., contact, details about the organization, or social media posts.</p>
+					
+						</figure>
+				</div></div></div></div>
+				
+
+				
+				<div class="wpb_column vc_column_container vc_col-sm-6 double-images-linebreak">
+				<div class="vc_column-inner">
+					
+				<p class="body_texts img-vertical_break" style="font-size:24px; font-weight: 500; padding-bottom: .3em;"><span class="highlight_texts3"><i>Solutions for the future sitemap</i></span></p>	
+					
+				<div class="wpb_wrapper">
+					<div class="wpb_single_image wpb_content_element vc_align_center">
+
+						
+						
+						<figure class="wpb_wrapper vc_figure">
+							<img src="../img/CAAWT/sitemaps/redesigned_sitemap.png" 
+							class="vc_single_image-img attachment-full img-vertical_break" alt="" 
+							loading="lazy" srcset="../img/CAAWT/sitemaps/redesigned_sitemap-1300x859.png 1300w, 
+							../img/CAAWT/sitemaps/redesigned_sitemap-300x198.png 300w, 
+							../img/CAAWT/sitemaps/redesigned_sitemap-1024x677.png 1024w, 
+							../img/CAAWT/sitemaps/redesigned_sitemap-768x508.png 768w" 
+					
+						</figure>
+					</div></div></div></div></div>	
+			
+<br>			
+			<!-- begin homepage design -->
+
+			
+<div class="widget-box"></div>	
+<div class="vc_empty_space" style="height: 10px"></div>	
+		
+			<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1625807015592">		
+			<div class="wpb_column vc_column_container vc_col-sm-6 double-images-linebreak">
+				
+			<p class="body_texts" style="font-size:24px; font-weight: 500; padding-bottom: .3em;"><span class="highlight_texts2"><i>Current homepage&nbsp;</i></span></p>
+				
+			<div class="vc_column-inner">
+			<div class="wpb_wrapper">
+			
+			<div class="wpb_single_image wpb_content_element vc_align_center">
+					
+						<figure class="wpb_wrapper vc_figure">
+						<img src="../img/CAAWT/homepage_design/current_hp.png" 
+						class="vc_single_image-img attachment-full" alt="" 
+						loading="lazy" srcset="../img/CAAWT/homepage_design/current_hp-1300x860.png 1300w, 
+						../img/CAAWT/homepage_design/current_hp-300x198.png 300w, 
+						../img/CAAWT/homepage_design/current_hp-1024x677.png 1024w, 
+						../img/CAAWT/homepage_design/current_hp-768x508.png 768w" 
+						sizes="(max-width: 1500px) 100vw, 1500px" 
+						data-dt-location="../img/CAAWT/homepage_design/" 
+						width="1500" height="992">
+
+											
+<p class="body_texts" style="font-weight: 500; color: #d88a0c; padding-left: 0em; text-indent: -.3em; text-align: left; padding-top: 1em; padding-bottom: .3em;"> 
+	&nbsp;Issues for the current homepage include:</p> 
+<p class="mobile_texts" style="color: #282828; padding-left: .9em; text-indent: -1.2em; margin-bottom: .3em; text-align: left;">•&nbsp;The disconnection of the logo bug and name of the organization. The website is often a first point of contact between CAAWT and potential clients. The logo is one of the first elements visitors see, and it can leave a lasting impression.</p>
+<p class="mobile_texts" style="color: #282828; padding-left: .9em; text-indent: -1.2em; margin-bottom: .3em; text-align: left;">•&nbsp;Low contrast donation button. If the button is hidden or hard to find, potential donors may not even realize that the option to support CAAWT is important or much needed. Making the donation button noticeable on a non-profit website is crucial.</p>
+<p class="mobile_texts" style="color: #282828; padding-left: .9em; text-indent: -1.2em; margin-bottom: .3em; text-align: left;">•&nbsp;No CTA on main part of the page. Placing a CTA prominently on the homepage invites visitors to take an immediate action. This can be crucial for capturing their attention and encouraging interaction with the CAAWT.</p>
+<p class="mobile_texts" style="color: #282828; padding-left: .9em; text-indent: -1.2em; margin-bottom: .3em; text-align: left;">•&nbsp;Confusing navigation menus can lead to a frustrating user experience. IA, which organizes content and structure, relies on a clear navigation structure. When the menu is unclear, it hinders users' ability to find and access information, reducing overall satisfaction.</p>
+<p class="mobile_texts" style="color: #282828; padding-left: .9em; text-indent: -1.2em; margin-bottom: .3em; text-align: left;">•&nbsp;Hard to read main messaging that may cause visitors to struggle to understand the organization's mission, purpose, and the actions. This leads to a poor user experience, potentially resulting in frustration and a high bounce rate (users leaving the site without engaging).</p>
+<p class="mobile_texts" style="color: #282828; padding-left: .9em; text-indent: -1.2em; margin-bottom: .3em; text-align: left;">•&nbsp;No sign-in functionality means CAAWT misses out on the opportunity to create user accounts, tracks user activity, and encourages users to engage with the website in a more personalized and interactive manner. This can limit user engagement and interaction.</p>
+<p class="mobile_texts" style="color: #282828; padding-left: .9em; text-indent: -1.2em; margin-bottom: .3em; text-align: left;">•&nbsp;No search bar for users who come to the CAAWT website with a specific query or goal in mind may become frustrated if they cannot quickly find the information they need.</p>
+<p class="mobile_texts" style="color: #282828; padding-left: .9em; text-indent: -1.2em; margin-bottom: .3em; text-align: left;">•&nbsp;No link to the mission page. Although the users can see the mission statement when they scroll down the homepage or when they visit the page for 'About Us', there is no dedicated mission page on its own.</p>	
+					
+						</figure>
+				</div></div></div></div>
+
+				
+				<div class="wpb_column vc_column_container vc_col-sm-6 double-images-linebreak">
+				<div class="vc_column-inner">
+					
+				<p class="body_texts img-vertical_break" style="font-size:24px; font-weight: 500; padding-bottom: .3em;"><span class="highlight_texts3"><i>Redesign solutions for the future homepage&nbsp;</i></span></p>	
+					
+				<div class="wpb_wrapper">
+				<div class="wpb_single_image wpb_content_element vc_align_center">
+
+						<figure class="wpb_wrapper vc_figure">
+							<img src="../img/CAAWT/homepage_design/hp-redesign.png" 
+							class="vc_single_image-img attachment-full img-vertical_break" alt="" 
+							loading="lazy" srcset="../img/CAAWT/homepage_design/hp-redesign-1300x860.png 1300w, 
+							../img/CAAWT/homepage_design/hp-redesign-300x198.png 300w, 
+							../img/CAAWT/homepage_design/hp-redesign-1024x677.png 1024w, 
+							../img/CAAWT/homepage_design/hp-redesign-768x508.png 768w" 
+							sizes="(max-width: 1500px) 100vw, 1500px" 
+							data-dt-location="../img/CAAWT/homepage_design/" 
+							width="1500" height="992">
+
+<p class="body_texts img-vertical_break" style="font-weight: 500; color: #4e8f45; padding-left: 0em; text-indent: -.3em; text-align: left; padding-top: 1em; padding-bottom: .3em;">&nbsp;Redesign recommendations:</p> 
+<p class="mobile_texts img-vertical_break" style="color: #282828; padding-left: 1em; text-indent: -1.2em; margin-bottom: .3em; text-align: left;">•&nbsp;Name of the organization and the logo bug are showing that they're connected in this redesigned mockup. A logo redesign is highly recommended. Having a professionally designed logo would further CAAWT's sense of legitimacy and professionalism.</p>
+
+<p class="mobile_texts img-vertical_break" style="color: #282828; padding-left: 1em; text-indent: -1.2em; margin-bottom: .3em; text-align: left;">•&nbsp;Visitors are encouraged to take action to make donations with the redesigned donation buttons. Their visibility now reinforce CAAWT's brand and mission and serve as visual reminders of the organization's primary goal and purpose, reinforcing the importance of financial support to achieve that mission. </p>
+<p class="mobile_texts img-vertical_break" style="color: #282828; padding-left: 1em; text-indent: -1.2em; margin-bottom: .3em; text-align: left;">• Here, the hero image is used to pop out the CTA and bring attention to the donation button. The added CTA helps convey to visitors that their donations would be appreciated.</p>
+<p class="mobile_texts img-vertical_break" style="color: #282828; padding-left: 1em; text-indent: -1.2em; margin-bottom: .3em; text-align: left;">•&nbsp;Primary navigation is now organized to flow well. The contents are now grouped into categories to match the users' mental model. Users will less likely become disengaged or abandon the website.</p>
+<p class="mobile_texts img-vertical_break" style="color: #282828; padding-left: 1em; text-indent: -1.2em; margin-bottom: .3em; text-align: left;">•&nbsp;Clear and legible messagings are now popping out on the page with better contrast to the hero image, compare to the current layout that blends everything in. The redesign engages visitors and encourages them to take actions such as donating, volunteering, or becoming a member.
+<p class="mobile_texts img-vertical_break" style="color: #282828; padding-left: 1em; text-indent: -1.2em; margin-bottom: .3em; text-align: left;">•&nbsp;Sign-in feature added for users to allow CAAWT to collect user data, preferences, and behaviors, which can be used to personalize the user experience. Without this data, CAAWT cannot offer personalized content, recommendations, or features tailored to individual users.</p>
+<p class="mobile_texts img-vertical_break" style="color: #282828; padding-left: 1em; text-indent: -1.2em; margin-bottom: .3em; text-align: left;">•&nbsp;Added search bar that extends to type. The search function offers a more effient way to find content with search analytics that can provide valuable insights into what users are looking for.</p>
+<p class="mobile_texts img-vertical_break" style="color: #282828; padding-left: 1em; text-indent: -1.2em; margin-bottom: .3em; text-align: left;">•&nbsp;Added links to the mission page from 'LEARN MORE' and secondary navigation under 'ABOUT US'. A clear and compelling mission statement, organization's history &amp; impact, and success stories or testimonials are among the features on the new mission page.</p>
+							
+						</figure>
+				
+				  </div></div></div></div></div>
+			
+<!-- end Abc -->
+	
+<!-- begin references -->
+			
+<br><br>
+<p class="body_texts vc_textblock_margins" style="color: #282828;  font-size:24px; text-align: center; font-weight: 600;">References</p>
+<br>	
+<p class="body_texts vc_textblock_margins breakWord" style="color: #282828; padding-left: 2em; text-indent: -2em;">
+Brooke, J. (1996). SUS—A quick and dirty usability scale. In Jordan, P. W., Thomas, B., Weerdmeester B. A., &amp; McClelland, L. (Eds.), <i>Usability evaluation in industry</i> (pp. 189-194). Taylor &amp; Francis. https://www.researchgate.net/publication/319394819_SUS_--_a_quick_and_dirty_usability_scale</p>
+<p class="body_texts vc_textblock_margins breakWord" style="color: #282828; padding-left: 2em; text-indent: -2em;">
+Constructional approach to animal welfare and training (Retrieved December 13, 2022). https://www.caawt.com 
+</p>
+<!-- end references -->
+			
+<br><br>
+		
+<!-- begin appendices -->
+<p class="body_texts vc_textblock_margins" style="color: #282828;  font-size:24px; text-align: center; font-weight: 600;">Appendices</p>
+<br>
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; font-weight: 600;"><i>Background questions</i></p>
+<p class="body_texts vc_textblock_margins" style="color: #282828;  font-size:24px;">
+	Questions that provided additional information on the participants:<br>
+
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.9em; text-indent: -1.8em;">Q1. Do you own pets?</p>
+
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.9em; text-indent: -1.8em;">Q2. Have you worked with animals before? (if no, skip to Q4)</p>
+
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.9em; text-indent: -1.8em;">Q3. How many years of pet or animal care experience do you have?</p>
+
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.9em; text-indent: -1.8em;">Q4. In the past, how often have you sought out information on animal or pet behaviors? (if no, skip to Q6)</p>
+
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.9em; text-indent: -1.8em;">Q5. What kind of informational resources have you used to learn more about animal behaviors? (e.g., magazines, documents, blogs, videos, or podcasts)</p>	
+
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.9em; text-indent: -1.8em;">Q6. Are you familiar with Paypal or Patron? How was your experience using these tools?</p>
+
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.9em; text-indent: -1.8em;">Q7. Have you made donations to other animal charities before?</p>
+	
+
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 3.2em; text-indent: -1.3em;">(a) If yes, how did you donate?</p>
+
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 3.2em; text-indent: -1.3em;">(b) How would you say the process of donation on this website compares with your prior experience?</p>
+			</p>
+<!-- end background questions -->
+			
+<!-- begin open-ended exploration -->
+<br>			
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; font-weight: 600;"><i>Open-ended exploration</i></p>
+<p class="body_texts vc_textblock_margins" style="color: #282828;  font-size:24px;">
+	Participants were asked to imagine that they were searching online and came across the CAAWT website. They were to explore the site the way that they normally would if they were outside of the usability test session and to think aloud of their first impressions.</p>
+
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.9em; text-indent: -1.8em;">Q1. What caught your eye the most when you first saw the website?</p>
+
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.9em; text-indent: -1.8em;">Q2. Based on your very first impression, what do you think the website or the organization is about?</p>
+			
+<p class="body_texts vc_textblock_margins" style="color: #282828;  font-size:24px;">
+	Stopping point: 30 secs - 1 min.</p>
+
+<br>			
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; font-weight: 600;"><i>Tasks</i></p>
+
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.8em; text-indent: -1.5em; font-weight: 400;"><u>T1</u>: You are arriving at the CAAWT website for the first time and would like to learn about the organization’s mission, where would you go?</p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Screen: Both ‘Homepage’ & ‘About Us’ have the mission statement, however, there is no direct link to it from anywhere.</i></p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Stopping point: Homepage & About Us</i></p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Record start time: ________</i></p>
+			
+
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.8em; text-indent: -1.5em; font-weight: 400;"><u>T2</u>: On this website, you want to find out more about CAAWT’s impact on the community of animal care enthusiasts. How would you go about locating it?</p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Screen: Participants were to look for impact stories.</i></p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Stopping point: Podcast page</i></p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Record start time: ________</i></p>
+			
+
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.8em; text-indent: -1.5em; font-weight: 400;"><u>T3</u>: You are trying to confirm the validity of the organization’s website. You can do this through locating CAAWT’s physical address or trust seal on the website. Where would you go to find this information?</p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Screen: This should be available on all pages, especially on the contact page, but is currently not shown on any page.</i></p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Stopping point: 30 secs</i></p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Record start time: ________</i></p>
+			
+
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.8em; text-indent: -1.5em; font-weight: 400;"><u>T4</u>: While navigating through the CAAWT website, you are curious if CAAWT is endorsed by any third-party. How would you find this information?</p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Screen: Resources/Projects</i></p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Stopping point: : Click to compare / view details</i></p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Record start time: ________</i></p>
+			
+			
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.8em; text-indent: -1.5em; font-weight: 400;"><u>T5</u>: You are prepared to donate to CAAWT. However, before donating, you wish to find out how CAAWT uses its donations. How would you find this information?</p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Screen: Donation page</i></p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Stopping point: : 'What the donation be used for' section on the donation page.</i></p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Record start time: ________</i></p>
+			
+ 
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.8em; text-indent: -1.5em; font-weight: 400;"><u>T6</u>: You are attempting to donate $25.00 to CAAWT. Please demonstrate how you would donate $25.00 to the organization.</p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Screen: Donation page</i></p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Stopping point: : participants arriving at the donation page.</i></p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Record start time: ________</i></p>
+			
+			
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.8em; text-indent: -1.5em; font-weight: 400;"><u>T7</u>: You are trying to search for a page that you had frequented before. However, you can’t seem to find it through the website’s navigation menu, so you decide to search for it. Where would you go to use the Search function?</p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Screen: site currently has no search bar.</i></p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Stopping point: : 30secs to locate search bar.</i></p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Record start time: ________</i></p>
+			
+			
+<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.8em; text-indent: -1.5em; font-weight: 400;"><u>T8</u>: You are trying to register for a membership. Where would you find the registration?</p>
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Screen: CAAWT membership</i></p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Stopping point: : CAAWT membership</i></p>
+			
+<p class="mobile_texts vc_textblock_margins" style="color: #282828; padding-left: 2em; font-weight: 400;"><i>Record start time: ________</i></p>
+			
+			
+<br>			
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; font-weight: 600;"><i>Follow-Up Questions</i></p>
+	<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.9em; text-indent: -1.9em">Q1. Does it feel like the site is designed for someone like you? Why or why not?</p>
+	<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.9em; text-indent: -1.9em;">Q2. What’s your impression of the visuals (color, photography, etc) used throughout the site? What kind of feelings do they evoke for you?</p>
+	<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.9em; text-indent: -1.9em">Q3. If you were reviewing the site on your own, are there any actions you may be inclined to take? Which ones? Why?</p>
+	<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.9em; text-indent: -1.9em">Q4. What’s your sense of how trustworthy this website is? Why?</p>
+	<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.9em; text-indent: -1.9em">Q5. If you had a magic wand to change anything about this website to make it more user-friendly, what would you change and why?</p>
+
+<br>			
+<p class="body_texts vc_textblock_margins" style="color: #282828; font-size:24px; font-weight: 600;"><i>SUS Qualtrics Assessment</i></p>
+	<p class="body_texts vc_textblock_margins" style="color: #282828;"><i>Note: the moderator was to paste the qualtrics' link in the chat; the participants were to provide their given Zoom's name as their identifiers for the qualtrics' assessment.</i></p>
+	<p class="body_texts vc_textblock_margins" style="color: #282828;">On a scale of 1 to 5 (1 being Strongly Disagree and 5 being Strongly Agree), how would you score the following 10 statements:</p>
+			
+	<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.2em; text-indent: -1em;">1. I think that I would like to use this website frequently.</p>
+	<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.2em; text-indent: -1em;">2. I found the website unnecessarily complex.</p>
+	<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.2em; text-indent: -1em;">3. I thought the website was easy to use.</p>
+	<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.2em; text-indent: -1em;">4. I think that I would need the support of a technical person to be able to use this website.</p>
+	<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.2em; text-indent: -1em;">5. I found the various functions in this website were well integrated.</p>
+	<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.2em; text-indent: -1em;">6. I thought there was too much inconsistency in this website.</p>
+	<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.2em; text-indent: -1em;">7. I would imagine that most people would learn to use this website very quickly.</p>
+	<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.2em; text-indent: -1em;">8. I found the website very cumbersome to use.</p>
+	<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.2em; text-indent: -1em;">9. I felt very confident using the website.</p>
+	<p class="body_texts vc_textblock_margins" style="color: #282828; padding-left: 1.2em; text-indent: -1.5em;">10. I needed to learn a lot of things before I could get going with this website.</p>
+<!-- end appendices -->
+
+	
+		<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1627582610979 vc_column-gap-20"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner">
+			<div class="wpb_single_image wpb_content_element vc_align_center   gs">
+			</div></div></div>
+			
+			<div class="wpb_column vc_column_container vc_col-sm-4">
+			<div class="wpb_text_column wpb_content_element  vc_custom_1627751112721">
+				<div class="wpb_wrapper"></div></div></div>
+			
+			<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
+			<div class="wpb_single_image wpb_content_element vc_align_center   gs">
+				<figure class="wpb_wrapper vc_figure">
+					<div class="vc_single_image-wrapper   vc_box_border_grey"></div>
+				</figure></div>
+			<div class="wpb_text_column wpb_content_element  vc_custom_1627751120095">
+				<div class="wpb_wrapper"></div></div>
+		</div></div></div></div></div></div></div></div>
+
+<!-- end Abc -->
+
+
+
+
+		<div class="vc_row-full-width vc_clearfix"></div>
+
+		</div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-lg vc_hidden-md vc_hidden-sm">
+	<div class="wpb_text_column wpb_content_element  vc_custom_1626215209237">
+
+	</div>
+<div class=" vc_custom_1630860484878 ubtn-ctn-center "></div>
+<div class="vc_row-full-width vc_clearfix"></div><!-- Row Backgrounds -->
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+				jQuery(document).ready(function ($) {
+					if( typeof jQuery('.ult-carousel-22832029316140fff670c65').slick == "function"){
+						$('.ult-carousel-22832029316140fff670c65').slick({dots: false,autoplay: true,autoplaySpeed: 2000,speed: 1000,infinite: true,arrows: false,slidesToScroll:1,slidesToShow:0,swipe: true,draggable: true,touchMove: true,pauseOnHover: true,pauseOnFocus: false,responsive: [
+							{
+							  breakpoint: 1026,
+							  settings: {
+								slidesToShow: 0,
+								slidesToScroll: 1,
+							  }
+							},
+							{
+							  breakpoint: 1025,
+							  settings: {
+								slidesToShow: 0,
+								slidesToScroll: 1
+							  }
+							},
+							{
+							  breakpoint: 760,
+							  settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							  }
+							}
+						],pauseOnDotsHover: true,customPaging: function(slider, i) {
+                   return '<i type="button" style= "color:#333333;" class="ultsl-record" data-role="none"></i>';
+                },});
+					}
+				});
+			</script>
+			</div></div>
+	<div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="true"
+
+			class="vc_row wpb_row vc_row-fluid" style="left: -245px; position: relative; box-sizing: border-box; width: 1903px; padding-left: 245px; padding-right: 244px;">
+			  <div class="vc_row wpb_row vc_inner vc_row-fluid"></div></div><div class="vc_row-full-width vc_clearfix"></div>
+
+
+<script type="text/javascript">
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = false;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+		<!--
+The IP2Location Country Blocker is using IP2Location LITE geolocation database. Please visit http://lite.ip2location.com for more information.
+-->
+
+
+<script type="text/javascript">
+		if(typeof revslider_showDoubleJqueryError === "undefined") {function revslider_showDoubleJqueryError(sliderID) {console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");console.log("To fix this, you can:");console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");console.log("2. Find the double jQuery.js inclusion and remove it");return "Double Included jQuery Library";}}
+</script>
+
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+</style>
+<script type="text/javascript" src="../markup/js/main.js" id="dt-main-js"></script>
+<script type="text/javascript" src="../markup/js/regenerator-runtime.js" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="../markup/js/jquery-mousewheel.js" id="jquery-mousewheel-js"></script>
+<script type="text/javascript" src="../markup/js/ltd_composer_main.js" id="wpb_composer_front_js-js"></script>
+<script type="text/javascript" id="rs-initialisation-scripts">
+	var	tpj = jQuery;
+
+		var	revapi12;
+
+		if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+		if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+		RS_MODULES.modules["revslider121"] = {once: RS_MODULES.modules["revslider121"]!==undefined ? RS_MODULES.modules["revslider121"].once : undefined, init:function() {
+			window.revapi12 = window.revapi12===undefined || window.revapi12===null || window.revapi12.length===0  ? document.getElementById("rev_slider_12_1") : window.revapi12;
+			if(window.revapi12 === null || window.revapi12 === undefined || window.revapi12.length==0) { window.revapi12initTry = window.revapi12initTry ===undefined ? 0 : window.revapi12initTry+1; if (window.revapi12initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider121"].init()}); return;}
+			window.revapi12 = jQuery(window.revapi12);
+			if(window.revapi12.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_12_1"); return;}
+			revapi12.revolutionInit({
+					revapi:"revapi12",
+					sliderType:"hero",
+					DPR:"dpr",
+					sliderLayout:"fullscreen",
+					duration:"2000ms",
+					visibilityLevels:"1240,1024,778,480",
+					gridwidth:"1240,1024,778,480",
+					gridheight:"900,768,960,720",
+					lazyType:"smart",
+					spinner:"spinner0",
+					perspective:600,
+					perspectiveType:"global",
+					editorheight:"900,768,960,720",
+					responsiveLevels:"1240,1024,778,480",
+					progressBar:{disableProgressBar:true},
+					navigation: {
+						onHoverStop:false
+					},
+					viewPort: {
+						global:true,
+						globalDist:"-200px",
+						enable:false
+					},
+					fallbacks: {
+						allowHTML5AutoPlayOnAndroid:true
+					},
+			});
+
+		}} // End of RevInitScript
+
+		if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
+	</script>
+
+
+
+
+				<!-- NOTE modified to add work and contact overlays -->
+				<div class="mobile-sticky-header-overlay"></div>
+				<div id="phantom" class="masthead inline-header right full-height full-width
+animate-position-mobile-menu-icon dt-parent-menu-clickable show-sub-menu-on-hover show-device-logo
+show-mobile-logo hide-phantom"
+					 style="z-index: 1000;">
+					<div class="ph-wrap with-logo" style="color: #fbfbfb; background-color: #fbfbfb; z-index: 999999 !important;">
+						<div class="logo-box" >
+
+							<div class="homepage-mobile-logo-padding">
+								<a href="/index.html"></div>
+							<img class=" preload-me" id="mainlogo"
+								 src="../img/logo_drk.svg" sizes="66px"
+								 alt="LTD logo" width="66" height="auto"
+								 style="float:left; margin: 5px;  z-index:9999999;
+	 visibility:visible !important; opacity:1 !important;"> </a></div>
+
+						<div class="menu-box">
+
+							<!-- NOTE this is the main display section for the full screen floating menu -->
+							<ul class="main-nav underline-decoration upwards-line outside-item-remove-margin" role="menubar">
+
+								<li class="show-hide menu-item menu-item-type-post_type menu-item-object-page menu-item-4202 first" role="presentation">
+									<a href="javascript:;" data-reveal-id="projects" data-level="1" role="menuitem">
+									<span>
+									<span class="topnav-right-f-c hov-color" style="font-size:23px;"><b>WORK</b>
+									</span></span>
+									</a>
+									</li>
+								
+								<li class="show-hide menu-item menu-item-type-post_type menu-item-object-page menu-item-4202 first" role="presentation">
+									<a href="javascript:;" data-reveal-id="reviews" data-level="1" role="menuitem">
+									<span>
+									<span class="topnav-right-f-c hov-color" style="font-size:23px;"><b>PRODUCT REVIEWS</b>
+									</span></span>
+									</a>
+									</li>
+
+								<li class="show-hide menu-item menu-item-type-post_type menu-item-object-page menu-item-3747" role="presentation">
+									<a href="../pg/about.html" data-level="1" role="menuitem">
+									<span class="topnav-right-f-c hov-color" style="font-size:23px;"><b>ABOUT</b>
+									</span>
+									</a>
+									</li>
+
+								<li class="show-hide menu-item menu-item-type-post_type menu-item-object-page menu-item-3839 text-container-contact" role="presentation">
+									<a href="javascript:;" data-reveal-id="socialmodal" data-level="1" role="menuitem"><span>
+									<span class="topnav-right-f-c hov-color" style="font-size:23px;"><b>CONTACT</b>
+									</span></span>
+									</a>
+									</li> 
+									
+									</ul>
+									</div>
+						<!-- NOTE end of this is the main display section for the full screen floating menu -->
+
+						<div class="widget-box"></div></div></div>
+
+				<div class="iso-preloader dt-posts-preload dt-posts-preload-active" style="display: none;">
+					<div class="dt-posts-preload-activity">
+					</div></div>
+				<!-- NOTE end modified to add work and contact overlays -->
+
+
+			<div class="widget-box"></div>
+
+		
+		<div class="iso-preloader dt-posts-preload dt-posts-preload-active" style="display: none;">
+			<div class="dt-posts-preload-activity"></div></div>
+
+
+<script type="text/javascript" src="../markup/js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><//script>')</script>
+<script type="text/javascript" src="../markup/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="../markup/js/plugins.js"></script>
+
+<script>
+    $(document).foundation();
+    </script>
+
+
+
+<!-- !Footer -->
+<footer id="footer" class="footer solid-bg empty-footer" style="border-top:6px solid #5d7c80; height:190px !important;" >
+
+	<!-- !Footer -->
+
+	<div class="logo">
+		<img src="../img/logo_footer.svg" class="centerImage" alt="ltd logo">bottom:15px !important;
+	</div>
+	<div class="bottom">
+		<div class="addthis_toolbox text-center transition clearfix">
+			<p class="futura-condensed">
+				&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> |
+				lauren thy doan |
+				<nobr><a href="mailto:info@ltd-hfid.com" class="futura-condensed" style="color:#7f7a75;">info@ltd-hfid.com</a>
+				• <a href="https://www.linkedin.com/in/lauren-thy-doan-8811519" target="_blank" style="color:#7f7a75;">
+				<i class="icon-linkedin-rect"></nobr></i></a>
+			</p>
+		</div>
+	</div>
+
+	<!-- NOTE UP Arrow and associated background modified
+	the dimensions can be controlled by the style section
+	-->
+	<a href="#" class="scroll-top"
+	   style="font-size:25px; color:#5d7c80; font-weight: bold;
+	   right: 0px !important;
+	   bottom: 0px !important;
+	   width: 60px !important;
+	   height: 30px !important">&#65085;
+		<span class="screen-reader-text"></span></a>
+</footer>
+
+</body>
+
+
+
+
+</html>

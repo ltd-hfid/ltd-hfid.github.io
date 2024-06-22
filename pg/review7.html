@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html class="js csstransitions supports no-touchevents no-forcetouch objectfit object-fit cssanimations no-cssgridlegacy cssgrid cssfilters csstransforms csstransforms3d mobile-false js_active vc_desktop vc_transform not-iOS" style="" lang="en"><!--<![endif]-->
+	
+<head>
+	
+<!-- Google tag (gtag.js) -->
+<script type="text/javascript" src="../markup/js/googletagmanager.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5V23KZXJ79');
+</script>
+	
+<!-- Typekit font loading script -->
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+
+		<meta name="theme-color" content="#000000">	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+		<title>Lauren Thy Doan / McIntosh Laboratory User Experience</title>
+	
+<link rel="icon" type="image/x-icon" href="https://ltd-hfid.com/fav/favicon.ico">
+<link rel="apple-touch-icon" href="https://ltd-hfid.com/fav/apple-touch-icon.png" />
+<link rel="android-chrome" type="image/png" sizes="32x32" href="https://ltd-hfid.com/fav/android-chrome-192x192.png">
+<link rel="android-chrome" type="image/png" sizes="16x16" href="https://ltd-hfid.com/fav/android-chrome-512x512.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ltd-hfid.com/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ltd-hfid.com/fav/favicon-16x16.png"> 
+	
+<meta name="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	
+<link rel="stylesheet" href="https://use.typekit.net/ego2stb.css">
+
+<link rel="stylesheet" href="../markup/css/root.css">
+<link rel="stylesheet" href="../markup/css/custom.css">
+<link rel="stylesheet" href="../markup/css/media.css">
+<link rel="stylesheet" href="../markup/css/site.css">
+
+<style>
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay .close{
+position: absolute;
+}
+
+#text{
+  position: absolute;
+  top: 20%;
+  font-family: "futura-pt", "Futura", Helvetica, sans-serif;
+font-size: 24px !important;
+  font-weight: 500 !important;
+  color: white;
+  text-align: left;
+  margin-left: .8em;
+}
+</style>
+
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off_t(x) {
+if (x == 'yes') {
+  document.getElementById("overlay").style.display = "none";
+}
+}
+
+function stop_prop() {
+	event.stopPropagation();
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+<style id="dt-main-inline-css" type="text/css">
+body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 10002;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background-color: #ffffff;
+}
+.uil-default rect:not(.bk) {
+  fill: rgba(51,51,51,0.3);
+}
+.uil-ring > path {
+  fill: rgba(51,51,51,0.3);
+}
+.ring-loader .circle {
+  fill: rgba(51,51,51,0.3);
+}
+.ring-loader .moving-circle {
+  fill: #333333;
+}
+.uil-hourglass .glass {
+  stroke: #333333;
+}
+.uil-hourglass .sand {
+  fill: rgba(51,51,51,0.3);
+}
+.spinner-loader .load-wrap {
+  background-image: url("data:image/svg+xml,%3Csvg width='75px' height='75px' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='xMidYMid' class='uil-default'%3E%3Crect x='0' y='0' width='100' height='100' fill='none' class='bk'%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(0 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(30 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.08333333333333333s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(60 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.16666666666666666s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(90 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.25s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(120 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.3333333333333333s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(150 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.4166666666666667s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(180 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.5s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(210 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.5833333333333334s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(240 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.6666666666666666s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(270 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.75s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(300 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.8333333333333334s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba%2851%2C51%2C51%2C0.3%29' transform='rotate(330 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.9166666666666666s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/svg%3E");
+}
+.ring-loader .load-wrap {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='72' height='72' fill='rgba%2851%2C51%2C51%2C0.3%29'%3E   %3Cpath opacity='.25' d='M16 0 A16 16 0 0 0 16 32 A16 16 0 0 0 16 0 M16 4 A12 12 0 0 1 16 28 A12 12 0 0 1 16 4'/%3E   %3Cpath d='M16 0 A16 16 0 0 1 32 16 L28 16 A12 12 0 0 0 16 4z'%3E     %3CanimateTransform attributeName='transform' type='rotate' from='0 16 16' to='360 16 16' dur='0.8s' repeatCount='indefinite' /%3E   %3C/path%3E %3C/svg%3E");
+}
+.hourglass-loader .load-wrap {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='72' height='72' fill='rgba%2851%2C51%2C51%2C0.3%29'%3E   %3Cpath transform='translate(2)' d='M0 12 V20 H4 V12z'%3E      %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline'  /%3E   %3C/path%3E   %3Cpath transform='translate(8)' d='M0 12 V20 H4 V12z'%3E     %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0.2' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline'  /%3E   %3C/path%3E   %3Cpath transform='translate(14)' d='M0 12 V20 H4 V12z'%3E     %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0.4' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline' /%3E   %3C/path%3E   %3Cpath transform='translate(20)' d='M0 12 V20 H4 V12z'%3E     %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0.6' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline' /%3E   %3C/path%3E   %3Cpath transform='translate(26)' d='M0 12 V20 H4 V12z'%3E     %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0.8' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline' /%3E   %3C/path%3E %3C/svg%3E");
+}
+
+.futura-condensed {
+  font-family: "futura-pt-condensed", "Futura Condensed", Impact, Helvetica;
+}
+
+@media (max-width: 480px) {
+	.reviews-mobile_texts {
+		font-size: 22px !important;
+	}
+	
+	.reviews-mobile_texts-caption {
+		font-size: 16px !important;
+	}
+	}
+	
+@media (min-width: 481px) and (max-width: 1024px) {
+	.reviews-mobile_texts {
+		font-size: 22px !important;	
+	}
+	
+	.reviews-mobile_texts-caption {
+		font-size: 18px !important;
+	}
+	}
+
+@media (min-width: 1025px) {
+		.reviews-mobile_texts {
+		font-size: 24px !important;		
+	}
+	
+	.reviews-mobile_texts-caption {
+		font-size: 20px !important;
+	}
+	}	
+
+@media only screen and (max-width: 764px) {
+.headline-margins{
+margin-top: 3em; 
+margin-bottom: -6em;
+z-index: 9999;
+position: relative;
+}
+}
+
+@media  only screen and (min-width: 765px) and (max-width: 780px) {
+.headline-margins{
+margin-top: 3em; 
+margin-bottom: -4em;
+z-index: 9999;
+position: relative;
+}
+}
+
+@media (min-width: 781px) {
+.headline-margins{
+margin-top: 2em; 
+margin-bottom: -3.6em;
+z-index: 9999;
+position: relative;
+}
+}	
+
+@media only screen and (max-width: 767px) {
+.reviews-title-text1 {
+text-align: center !important;
+font-size: 35px !important;
+padding-bottom: 0px !important;
+padding-left: 5%;
+padding-right: 5%;
+}	
+.reviews-title-text2 {
+text-align: center !important;
+font-size: 24px !important;
+padding-left: 5%;
+padding-right: 5%;
+}
+}
+
+@media only screen and (min-width: 768px) and  (max-width: 991px) {	
+.reviews-title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+padding-left: 10%;
+padding-right: 10%;
+}		
+.reviews-title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+}
+}
+
+@media only screen and (min-width: 992px) and  (max-width: 1023px) {	
+.reviews-title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+}		
+.reviews-title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+}
+}
+
+@media only screen and (min-width: 1024px) and  (max-width: 1199px) {	
+.reviews-title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+}		
+.reviews-title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+}
+}
+
+@media only screen and (min-width: 1200px) and  (max-width: 1279px) {	
+.reviews-title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+}		
+.reviews-title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+}
+}
+
+@media only screen and (min-width: 1280px) and  (max-width: 1365px) {	
+.reviews-title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+}		
+.reviews-title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+}
+}
+
+@media only screen and (min-width: 1366px) and  (max-width: 1399px) {	
+.reviews-title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+}		
+.reviews-title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+}
+}
+
+@media only screen and (min-width: 1400px) and  (max-width: 1439px) {
+.reviews-title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+}		
+.reviews-title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+}
+}
+	
+@media only screen and (min-width: 1440px) and  (max-width: 1535px) {
+.reviews-title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+padding-left: 15%;
+padding-right: 15%;
+}	
+	
+.reviews-title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+padding-left: 18%;
+padding-right: 18%;
+}
+}
+
+@media only screen and (min-width: 1536px) and  (max-width: 1599px) {
+.reviews-title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+padding-left: 10%;
+padding-right: 10%;
+}		
+.reviews-title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+padding-left: 10%;
+padding-right: 10%;
+}
+}
+
+@media only screen and (min-width: 1600px) and  (max-width: 1679px) {
+.reviews-title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+padding-left: 13%;
+padding-right: 13%;
+}		
+.reviews-title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+padding-left: 10%;
+padding-right: 10%;
+padding-left: 13%;
+padding-right: 13%;
+}
+}
+
+@media only screen and (min-width: 1680px) and  (max-width: 1919px) {
+.reviews-title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+padding-left: 10%;
+padding-right: 10%;
+}		
+.reviews-title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+padding-left: 10%;
+padding-right: 10%;
+}
+}
+		
+@media only screen and (min-width: 1920px) {
+.reviews-title-text1 {
+text-align: center !important;
+font-size: 45px !important;
+padding-bottom: 0px !important;
+}		
+.reviews-title-text2 {
+text-align: center !important;
+font-size: 28px !important;
+}
+}
+	
+.image_caption {
+margin-top: .1em!important;
+margin-bottom: .08em !important;
+}	
+	
+</style>
+
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script type="text/javascript" src="../markup/js/jquery.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="../markup/js/jquery-migrate.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="dt-navbar-js-extra">
+<!-- NOTE firstSwitchPoint sets the width point where the floating menu kicks in -->
+/* <![CDATA[ */
+var dtLocal = {"themeUrl":"https:\/\/ltd-hfid.com\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"4753","ajaxurl":"https:\/\/ltd-hfid.com\/wp-admin\/admin-ajax.php","REST":{"baseUrl":"https:\/\/ltd-hfid.com\/wp-json\/the7\/v1","endpoints":{"sendMail":"\/send-mail"}},"contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy.","fillTheCaptchaError":"Please, fill the captcha."},"captchaSiteKey":"","ajaxNonce":"9a9c4d28a2","pageData":{"type":"page","template":"microsite","layout":null},"themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"solid","color":"#000000"},"desktopHeader":{"height":50},"ToggleCaptionEnabled":"disabled","ToggleCaption":"Navigation","floatingHeader":{"showAfter":500,"showMenu":true,"height":80,"logo":{"showLogo":false,"html":"<img class=\" preload-me\" src=\"\" srcset=\"\"  alt=\"Online Portfolio\" \/>","url":"https:\/\/ltd-hfid.com\/"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":200,"secondSwitchPoint":375,"firstSwitchPointHeight":80,"secondSwitchPointHeight":80,"mobileToggleCaptionEnabled":"disabled","mobileToggleCaption":"Menu"},"stickyMobileHeaderFirstSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\" srcset=\"https:\/\/ltd-hfid.com\/wp-content\/uploads\/2021\/07\/blk-logo.png 214w\" width=\"214\" height=\"47\"   sizes=\"214px\" alt=\"Online Portfolio\" \/>"}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\" srcset=\"https:\/\/ltd-hfid.com\/wp-content\/uploads\/2021\/07\/blk-logo.png 214w\" width=\"214\" height=\"47\"   sizes=\"214px\" alt=\"Online Portfolio\" \/>"}},"content":{"textColor":"#1d2731","headerColor":"#1f3044"},"sidebar":{"switchPoint":990},"boxedWidth":"1340px","stripes":{"stripe1":{"textColor":"#787d85","headerColor":"#3b3f4a"},"stripe2":{"textColor":"#8b9199","headerColor":"#ffffff"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}},"VCMobileScreenWidth":"768"};
+var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Tweet","pinterest":"Pin it","linkedin":"Share on Linkedin","whatsapp":"Share on Whatsapp"},"overlayOpacity":"90"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../markup/js/navbar.js" id="dt-navbar-js"></script>
+<!--
+<link rel="https://api.w.org/" href="https://ltd-hfid.com/wp-json/"><link rel="alternate" type="application/json" href="https://ltd-hfid.com/wp-json/wp/v2/pages/4753"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ltd-hfid.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://ltd-hfid.com/wp-includes/wlwmanifest.xml">
+-->
+<link rel="canonical" href="https://ltd-hfid.com/">
+<link rel="shortlink" href="https://ltd-hfid.come/">
+<link rel="alternate" type="application/json+oembed" href="https://ltd-hfid.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fltd-hfid.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://ltd-hfid.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fltd-hfid.com%2F&amp;format=xml">
+<meta property="og:site_name" content="Online Portfolio">
+<meta property="og:title" content="Home">
+<meta property="og:url" content="https://ltd-hfid.com/">
+<meta property="og:type" content="website">
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+<!--
+<meta name="generator" content="Powered by Slider Revolution 6.5.8 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+-->
+<script type="text/javascript" id="the7-loader-script">
+document.addEventListener("DOMContentLoaded", function(event) {
+	var load = document.getElementById("load");
+	if(!load.classList.contains('loader-removed')){
+		var removeLoading = setTimeout(function() {
+			load.className += " loader-removed";
+		}, 300);
+	}
+});
+</script>
+	
+	<script type="text/javascript">function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1625859779156{margin-right: 20% !important;margin-left: 20% !important;padding-top: 10px !important;background-color: #282828 !important;}.vc_custom_1625859779156{margin-right: 20% !important;margin-left: 20% !important;padding-top: 10px !important;background-color: #282828 !important;}.vc_custom_1625317703012{padding-top: 15px !important;}.vc_custom_1628439132875{padding-top: 100px !important;padding-bottom: 50px !important;background-color: #282828 !important;}.vc_custom_1626217005519{background-color: #e9e7e4 !important;}.vc_custom_1627583808753{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1627755402350{border-left-width: 0px !important;padding-left: 20px !important;border-left-color: #d3d3d3 !important;border-left-style: solid !important;}.vc_custom_1627602231208{margin-bottom: 10px !important;}.vc_custom_1625872002412{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1627751201993{margin-bottom: 10px !important;}.vc_custom_1625807015592{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1625807025230{margin-right: 5% !important;margin-bottom: 0px !important;margin-left: 5% !important;}.vc_custom_1625807025230{margin-right: 5% !important;margin-bottom: 0px !important;margin-left: 5% !important;}.vc_custom_1627583499581{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1627755311735{border-left-width: 3px !important;padding-left: 20px !important;border-left-color: #d3d3d3  !important;border-left-style: solid !important;}.vc_custom_1627655162656{margin-bottom: 10px !important;}.vc_custom_1625872002412{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1627755381719{margin-bottom: 10px !important;}.vc_custom_1627582610979{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1627582610979{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1627751083331{margin-top: 15px !important;margin-right: 2% !important;margin-bottom: 20px !important;margin-left: 2% !important;}.vc_custom_1627751090432{margin-top: 15px !important;margin-right: 2% !important;margin-bottom: 20px !important;margin-left: 2% !important;}.vc_custom_1627751097972{margin-top: 15px !important;margin-right: 2% !important;margin-bottom: 20px !important;margin-left: 2% !important;}.vc_custom_1627751105768{margin-top: 15px !important;margin-right: 2% !important;margin-bottom: 20px !important;margin-left: 2% !important;}.vc_custom_1627751112721{margin-top: 15px !important;margin-right: 2% !important;margin-bottom: 20px !important;margin-left: 2% !important;}.vc_custom_1627751120095{margin-top: 15px !important;margin-right: 2% !important;margin-bottom: 20px !important;margin-left: 2% !important;}.vc_custom_1626215171930{padding-top: 10px !important;padding-bottom: 10px !important;}.vc_custom_1627757524478{margin-bottom: 20px !important;}.vc_custom_1630860484878{margin-top: 20px !important;}.vc_custom_1626215209237{margin-right: 2% !important;margin-bottom: 25px !important;margin-left: 2% !important;}.vc_custom_1630860484878{margin-top: 20px !important;}.vc_custom_1626194535371{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1626217220645{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1626217229469{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1626217229469{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1627755535238{border-left-width: 3px !important;padding-left: 20px !important;border-left-color: #282828  !important;border-left-style: solid !important;}.vc_custom_1627751351818{margin-bottom: 10px !important;}.vc_custom_1625934777281{margin-right: 5% !important;margin-bottom: 10px !important;margin-left: 5% !important;}.vc_custom_1626105420287{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1626209494916{margin-right: 5% !important;margin-left: 5% !important;}.vc_custom_1627755548316{border-left-width: 3px !important;padding-left: 20px !important;border-left-color: #d3d3d3  !important;border-left-style: solid !important;}.vc_custom_1626207814767{margin-bottom: 10px !important;}.vc_custom_1627586820374{margin-top: 20px !important;}.vc_custom_1630871079916{margin-top: 20px !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }
+</style></noscript>
+
+
+<style id="the7-custom-inline-css" type="text/css">
+a:link {
+    text-decoration: none;
+}
+
+.bio-pic {
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+.hidden-header .show-floating-icon .mobile-header-bar {
+    display: block !important;
+    position: absolute;
+}
+
+
+.vc_column_container > .vc_column-inner {
+
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+body, *{
+font-family: "futura-pt", "Futura", Helvetica, sans-serif;
+}
+
+
+imgbw {
+
+	filter:grayscale(100%);
+}
+
+imgbw:hover {
+
+	filter:grayscale(0%) !important;
+}
+
+.gs {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 1;
+    filter: alpha(opacity=60);
+    transition: all 1.5s ease;
+}
+
+.gs:hover {
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+overflow: hidden !important;
+opacity: 1;
+filter: alpha(opacity=100);
+}
+
+
+</style>
+<style>
+/** Ultimate: CountDown Responsive **/ #ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}
+@media (min-width: 1824px) {
+}
+@media (max-width: 1199px) { #ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}
+}
+@media (max-width: 991px)  { #ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}
+}
+@media (max-width: 767px)  { #ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}
+}
+@media (max-width: 479px)  { #ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}
+}
+/** Ultimate: Tooltipster Responsive - **/</style>
+	<style>#ult-carousel-24915921956140fff670c89 .slick-slide { margin:0 5px; } </style><style>/** Ultimate: Media Responsive **/ #ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}@media (max-width: 1199px) { #ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}}@media (max-width: 991px)  { #ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}}@media (max-width: 767px)  { #ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}}@media (max-width: 479px)  { #ubtn-1442{font-size:16px;}#ubtn-1877{font-size:16px;}#ubtn-6875{font-size:16px;}}/** Ultimate: Media Responsive - **/</style>
+
+<!-- NOTE move these to base.css when done -->
+	<style>
+.home-page-mob-overlay {
+background-color: #fbf9f6 !important;
+opacity: .97 !important;
+//overflow-y: auto !important;
+}
+
+.ham-overlay-text-attrs {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+
+    z-index: 3000 !important;
+	font-family: "futura-pt-condensed", "Futura Condensed", Impact, Helvetica;
+	text-align: center !important;
+}
+
+
+
+@media (max-width: 1199px) {
+.hide-full-nav{
+//visibility: hidden !important;
+//opacity: 0 !important;
+}
+}
+
+.homepage-bottom-sliding-image {
+padding-top: 85px !important;
+padding-bottom: 50px !important;
+background-color: #282828 !important;
+}
+
+@media (max-width: 730px) {
+.homepage-bottom-sliding-image-margin{
+margin-right: 20% !important;
+margin-left: 20% !important;
+padding-top: 10px !important;
+background-color: #282828 !important;
+margin-bottom: -100px !important;
+}
+
+}
+
+@media (min-width: 731px) {
+.homepage-bottom-sliding-image-margin{
+margin-right: 20% !important;
+margin-left: 20% !important;
+padding-top: 10px !important;
+background-color: #282828 !important;
+margin-bottom: -10px !important;
+}
+
+}
+
+@media only screen and (max-width: 875px) {
+.intro-text-width {
+width: 100% !important;
+}
+}
+
+</style>
+	
+<!-- CLASSES FOR THREE COLUMN WORK OVERLAY -->
+
+
+</head>
+	
+<body id="" style="height: 100% !important;" class="max-height-a home page-template page-template-template-microsite page-template-template-microsite-php page page-id-4753
+wp-embed-responsive the7-core-ver-2.5.7.1 one-page-row slideshow-on dt-responsive-on right-mobile-menu-close-icon ouside-menu-close-icon
+mobile-hamburger-close-bg-enable  fade-medium-mobile-menu-close-icon
+fade-small-menu-close-icon srcset-enabled btn-flat custom-btn-color custom-btn-hover-color phantom-slide
+phantom-disable-decoration phantom-custom-logo-on floating-mobile-menu-icon top-header first-switch-logo-left first-switch-menu-right
+second-switch-logo-left second-switch-menu-right right-mobile-menu layzr-loading-on popup-message-style dt-fa-compatibility
+the7-ver-9.17.0 wpb-js-composer js-comp-ver-6.7.0 vc_responsive hidden-header no-mobile closed-overlay-mobile-header">
+
+
+<div id="load" class="spinner-loader loader-removed">
+	<div class="load-wrap"></div>
+</div>
+<div id="page" class="closed-mobile-header">
+
+
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+
+	<div class="mobile-sticky-header-overlay"></div>
+<div class="masthead inline-header right full-height full-width animate-position-mobile-menu-icon dt-parent-menu-clickable show-sub-menu-on-hover show-device-logo show-mobile-logo" role="banner" style="">
+
+
+
+	<div class="top-bar top-bar-empty top-bar-line-hide hide-top-bar" style="">
+	<div class="top-bar-bg"></div>
+	<div class="mini-widgets left-widgets"></div><div class="mini-widgets right-widgets"></div></div>
+
+	<header class="header-bar">
+
+		<div class="branding">
+	<div id="site-title" class="assistive-text">Online Portfolio</div>
+
+
+		<ul id="primary-menu" class="main-nav underline-decoration upwards-line outside-item-remove-margin" role="menubar">
+		
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4202 first" role="presentation">
+		<a href="javascript:;" data-reveal-id="projects" data-level="1" role="menuitem" >
+		<span class="menu-item-text">
+		<span class="menu-text">WORK</span></span></a></li>
+
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4202 first" role="presentation">
+		<a href="javascript:;" data-reveal-id="reviews" data-level="1" role="menuitem" >
+		<span class="menu-item-text">
+		<span class="menu-text">PRODUCT REVIEWS</span></span></a></li>
+		
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3747" role="presentation">
+		<a href="about.html" data-level="1" role="menuitem">
+		<span class="menu-item-text">
+		<span class="menu-text">ABOUT</span></span></a></li>
+		
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3839" role="presentation">
+		<a href="javascript:;" data-reveal-id="socialmodal" data-level="1" role="menuitem"><span class="menu-item-text">
+		<span class="menu-text">CONTACT</span></span></a></li> 
+		
+		</ul>
+		
+		</div>
+
+	</header>
+	
+<div class="mob-hide mobile-header-bar" style="visibility: hidden !important;" >
+
+<!-- begin work menu overlay-->
+		
+					
+<div id="projects" class="bak-color overlay-settings reveal-modal" style="opacity: .88 !important; display: none;">
+<nav id="projects-menu" class="futura-condensed clearfix">
+				
+<div class="rowa">
+<div class="columna work_menu-left_padding"></div>
+            		
+<div class="columna work_menu-middle_texts">
+
+<div><h4 class="futura-condensed projects-title fullscreen-work-overlay-title-bar" style="margin-top: 1em; ">Sample Projects    
+<a class="work-close-button-padding- close-reveal-modal mob-hov-color-c overlay-close-button-projects-margins" style="z-index: 9000; position: relative !important;">&times;</a></h4></div>
+            		
+<h4 class="fullscreen-work-overlay-spacer-bar"></h4>
+	
+<ul class="fullscreen-work-overlay-projects-bar">
+
+                    
+					<li><a href="../pg/caawt.html">
+					<span class="mob-hov-color-b overlay_menu-font">CAAWT: Usability Test and Redesign Recommendations</span></a></li>
+	
+					<li><a href="../pg/greendrop.html">
+					<span class="mob-hov-color-b overlay_menu-font" >Greendrop: The Green Watering App</span></a></li>
+						
+					<li><a href="../pg/phr.html">
+					<span class="mob-hov-color-b overlay_menu-font">Personal Health Record (PHR) User Stories</span></a></li>
+					
+					<li><a href="../pg/bch.html">
+					<span class="mob-hov-color-b overlay_menu-font">Boston Children's Hospital: Pre- and Post-Virtual Checklists</span></a></li>
+
+					<li><a href="frontier.html">
+					<span class="mob-hov-color-b overlay_menu-font">Frontier: Print &amp; Digital</span></a></li>
+					
+					<li><a href="kohls.html">
+					<span class="mob-hov-color-b overlay_menu-font">Kohl's Drive-to-Web</span></a></li>
+					
+					<li><a href="usps.html">
+					<span class="mob-hov-color-b overlay_menu-font">USPS Change of Address: Display &amp; Card</span></a></li>
+					
+					<li><a href="target.html">
+					<span class="mob-hov-color-b overlay_menu-font">Target Mover Sample Kit</span></a></li>     
+					    
+         	        </ul>
+         	        </div> <!-- end class="columna right" -->
+         	        
+         	        
+					<div class="columna work_menu-right_padding"></div>
+         	        
+         	        </div> <!-- end class="rowa" -->
+         	        
+         	        </nav>
+         	        
+         	        </div>
+
+
+<!-- begin menu overlay for product reviews -->
+		
+<div id="reviews" class="bak-color overlay-settings reveal-modal" style="opacity: .88 !important; display: none;">
+<nav id="projects-menu" class="futura-condensed clearfix">
+	
+<div class="rowa">
+<div class="columna reviews_menu-left_padding"></div>
+            		
+<div class="columna reviews_menu-middle_texts">
+
+<div><h4 class="futura-condensed projects-title fullscreen-work-overlay-title-bar" style="margin-top: 1em;">
+Product Reviews<a class="work-close-button-padding- close-reveal-modal mob-hov-color-c 
+overlay-close-button-reviews-margins"  style="z-index: 9000; position: relative !important;">&times;</a></h4></div>       
+            		
+
+					<h4 class="fullscreen-work-overlay-spacer-bar"></h4>
+    		        
+            		<ul class="fullscreen-work-overlay-projects-bar">
+
+					<li><a href="review1.html"><span class="mob-hov-color-b overlay_menu-font">Perceptual Processing Systems / Design Review of a Self-Checkout Experience</span></a></li>
+					
+					<li><a href="review2.html"><span class="mob-hov-color-b overlay_menu-font">Pre-Attentive Processing / The Grouping of Information Display on HealthData.gov</span></a></li>
+					
+					<li><a href="review3.html"><span class="mob-hov-color-b overlay_menu-font">Prior Knowledge / Categorization Theory of the Mega Menus for Step Up for Students</span></a></li>
+					
+					<li><a href="review4.html"><span class="mob-hov-color-b overlay_menu-font">Cognitive Skills / Metacognitive Analysis of Users’ Decision Making on Morningstar Website</span></a></li>
+					
+					<li><a href="review5.html"><span class="mob-hov-color-b overlay_menu-font">Memory &amp; Cognitive Load / Emotional Subsystems / A User Experience on Trust Wallet</span></a></li>
+					
+					<li><a href="review6.html"><span class="mob-hov-color-b overlay_menu-font">A Heuristic Evaluation of Governor of Poker 3</span></a></li>
+					
+					<li><a href="review7.html"><span class="mob-hov-color-b overlay_menu-font">An Evaluation of the McIntosh Laboratory User Experience</span></a></li>    
+					    
+         	        </ul>
+         	        </div> <!-- end class="columna right" -->
+         	        
+         	        
+					<div class="columna reviews_menu-right_padding"></div>
+         	        
+         	        </div> <!-- end class="rowa" -->
+         	        
+         	        </nav>
+         	        
+         	        </div>
+         	        
+ 	
+		
+<!-- BEGIN OF CONTACT OVERLAY -->
+		
+			<div id="socialmodal" class="bak-color contact-overlay-settings reveal-modal"
+			 style="opacity: .88 !important; display: none;">
+            		<nav id="projects-menu" class="futura-condensed clearfix">
+            		
+					<div class="menu-row">
+					
+					<div class="menu-column menu-left-padding"></div>
+            		
+            		
+            		<div class="menu-column menu-middle-size">
+            		
+            		
+					<div><h4 class="futura-condensed projects-title contact-overlay-title-bar" style="margin-top: 1em;">Let's connect!<a class="close-reveal-modal mob-hov-color-c close-arrow-margins-contact" style="z-index: 9000; position: relative !important;">&times;</a></h4></div>
+						
+            		<h4 class="fullscreen-work-overlay-spacer-bar"></h4>        
+            		<ul class="fullscreen-work-overlay-projects-bar">
+                    
+					<li><a class="linkedin" href="http://www.linkedin.com/in/lauren-thy-doan-8811519">
+					<span class="mob-hov-color-b overlay_menu-font   menu-line-item-params" >LinkedIn</span></a></li>
+					<div class="menu-inter-line-item-spacing"></div>
+					
+					<li><a class="email" href="mailto:info@ltd-hfid.com">
+					<span class="mob-hov-color-b overlay_menu-font   menu-line-item-params">Email</span></a></li>
+					
+					</ul>    
+         	        </div> <!-- end class="menu-column right" -->
+         	        
+         	        
+					<div class="menu-column menu-right-padding"></div>
+         	        
+         	        </div> <!-- end class="menu-row" -->
+         	        
+         	        </nav>
+         	        
+         	        </div>
+
+<!--  END OF CONTACT OVERLAY -->
+
+
+		<div class="mobile-mini-widgets"></div>
+		<div class="mobile-branding">
+
+</div></div></div>
+	
+	
+<!-- NOTE main overlay for hamburger menu -->
+	<div class="home-page-mob-overlay dt-mobile-header mobile-menu-show-divider dt-parent-menu-clickable"
+		 style="min-width:600px; max-width:900px !important; z-index:15001 !important; ">
+		<div class="mobile-header-scrollbar-wrap">
+			<div class="dt-close-mobile-menu-icon" style="z-index:20000; min-width:600px; max-width:900px !important;">
+				<div class="overlay-close-button-main-hp ">
+				<div class="overlay-close-button-main-hp">				
+					<a class="mob-hov-color-c overlay-close-button-main-hp" style="font-size: 1.5em !important;">&times;</a>
+				</div>
+				</div>
+				</div>
+			
+			
+			<!-- NOTE this is hamburger menu items -->
+			
+			<ul id="mobile-menu" class="ham-overlay-text-attrs  
+			mobile-main-nav futura-condensed" 
+			role="menubar" style="padding-top: 67px !important;">
+
+			<li class="ham-overlay-text-attrs " style="text-align: center !important;  
+			" role="presentation">
+			<a href="javascript:;" data-reveal-id="projects" data-level="1" role="menuitem" >
+			<span class="">
+			<span class="topnav-float-left-a mob-hov-color " style="font-size: 25px !important; z-index: 50000 !important;">
+			<b>WORK</b> 
+			</span></span></a>
+			</li>
+
+			<li class="ham-overlay-text-attrs" style="text-align: center !important;" role="presentation">
+			<a href="javascript:;" data-reveal-id="reviews" data-level="1" role="menuitem" >
+			<span class="">
+			<span class="topnav-float-left-a mob-hov-color " style="font-size: 25px  !important; z-index: 50000 !important;">
+			<b>PRODUCT REVIEWS</b>
+			</span></span></a>
+			</li>
+			
+			<li class="ham-overlay-text-attrs menu-item menu-item-type-post_type menu-item-object-page menu-item-3747" role="presentation">
+			<a href="../pg/about.html" data-level="1" role="menuitem">
+			<span class="menu-item-text">
+			<span class="topnav-float-left-a mob-hov-color " style="font-size: 25px  !important; z-index: 50000 !important;">
+			<b>ABOUT</b>
+			</span></span></a>
+			</li>
+			
+			<li class="ham-overlay-text-attrs menu-item menu-item-type-post_type menu-item-object-page menu-item-3839" role="presentation">
+			<a href="javascript:;" data-reveal-id="socialmodal" data-level="5" role="menuitem">				
+			<span class="menu-item-text">
+			<span class="topnav-float-left-a mob-hov-color " style="font-size: 25px  !important; z-index: 50000 !important;">
+			<b>CONTACT</b>
+			</span></span></a>
+			</li>
+
+			
+			<div class="mobile-mini-widgets-in-menu first-switch-no-widgets second-switch-no-widgets"></div>
+			
+			
+			
+			</ul>
+				
+		</div></div>
+
+
+
+	<!-- animated header --> <br>
+<div class="row homewrapper clearfix" style="z-index: 10000 !important; background-color: ffffff !important;">
+            <span class="screen-reader-text"><h1>Lauren Thy Doan / Product Review / An Evaluation of the McIntosh Laboratory User Experience</h1></span>
+
+<center><img src="../img/review7/logo.png" 
+alt="McIntosh Laboratory" class="center animated fadeInUpBig" style="padding-top: 1em;"></center>
+	
+	<div class="vc_empty_space" style="height: 1.5em">
+	<span class="vc_empty_space_inner"></span></div>	
+
+                </div></div></div></div>
+
+
+<div id="main" class="sidebar-none ">
+
+
+	<div class="main-gradient"></div>
+	<div class="wf-wrap">
+	<div class="wf-container-main">
+
+<div class="headline-margins animated fadeInUpBig">
+<p style="color: white; line-height: 1.1; margin-bottom: .4em;" class="reviews-title-text1 review-heading-text-center center animated fadeInUpBig">
+AN EVALUATION</p>
+					
+<p style="color: white; margin-bottom: .6em;" class="reviews-title-text2 animated fadeInUpBig ">
+of the McIntosh Laboratory User Experience</p>
+</div>
+				
+<div id="content" class="content" role="main">
+
+	<div id="featured" class="vc_row wpb_row vc_row-fluid">
+		<div class="wpb_column vc_column_container vc_col-sm-12- vc_hidden-sm vc_hidden-xs-">
+			<div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div>
+	<div data-vc-full-width="true" data-vc-full-width-init="true"
+		 class="vc_row wpb_row vc_row-fluid" style="z-index:; left: 445px; 
+		 position: relative; box-sizing: border-box; width: 1903px; padding-left: 245px; padding-right: 244px;">
+		<div class="wpb_column vc_column_container vc_col-sm-12- vc_hidden-xs-">
+			<div class="vc_column-inner">
+				<div class="wpb_wrapper" >
+				<div class="vc_empty_space" style="height: 40px">
+					</div>
+				<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1627583808753 
+				vc_column-gap-20- vc_row-o-content-middle vc_row-flex">
+				
+				<div class="vc_column-inner">
+				</div>
+				<div class="wpb_column vc_column_container">
+
+		<div class="wpb_wrapper">
+			<div class="wpb_wrapper">
+		
+<!--
+	<div class="wpb_text_column">
+		<div class="wpb_wrapper">
+			<p class="reviews-title-text1 review-heading-text-center animated fadeInUpBig">
+				<span style="margin-left: 3em; margin-right: 3em;"></span>
+				PERCEPTUAL PROCESSING SYSTEMS</p>
+				
+			<p class="reviews-title-text2 animated fadeInUpBig">
+				<span style="margin-left: 6em; margin-right: 6em;"></span>
+				A Design Review of a Self-Checkout Experience</p>
+</div>
+		
+	</div>
+	-->
+	
+	</div>
+	
+	
+	
+	
+	</div></div>
+
+<div class="wpb_column vc_column_container vc_col-sm-2">
+<div class="vc_column-inner">
+	<div class="wpb_wrapper"></div></div></div></div></div></div></div>
+	<div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-lg vc_hidden-md vc_hidden-sm">
+	<div class="vc_column-inner">
+	<div class="wpb_wrapper">
+	<div class="vc_empty_space" style="height: 30px">
+	<span class="vc_empty_space_inner">
+	</span></div>
+	<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1625872002412" style="z-index:;">
+		<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner">
+			<div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  vc_custom_1627751201993">
+
+</div>
+
+</div></div></div></div>
+
+<div class="vc_empty_space" style="height: 45px"><span class="vc_empty_space_inner"></span></div></div></div></div></div>
+
+	<!-- NOTE begin copy -->
+
+
+	<div class="vc_row-full-width vc_clearfix"></div>
+	<div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true"
+	class="vc_row wpb_row vc_row-fluid vc_custom_1625859779156 vc_row-has-fill"
+	style="left: -532px; position: relative; box-sizing: border-box; width: 1903px;">
+	<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner">
+		<div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid">
+			<div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-xs">
+				<div class="vc_column-inner"><div class="wpb_wrapper">
+					<div class="vc_empty_space" style="height: 30px">
+						<span class="vc_empty_space_inner"></span></div></div></div></div></div>
+
+			<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1625807015592">
+			<div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner">
+			<div class="wpb_wrapper">
+				<div class="wpb_single_image wpb_content_element vc_align_center gs">
+
+
+				</div></div></div></div>
+
+				<div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+					<div class="wpb_single_image wpb_content_element vc_align_center gs">
+
+						
+					</div></div></div></div></div>
+
+			<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1625807015592"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+				<div class="wpb_single_image wpb_content_element vc_align_center gs">
+
+					
+				</div></div></div></div>
+
+				<div class="wpb_column vc_column_container vc_col-sm-6">
+					<div class="vc_column-inner">
+						<div class="wpb_wrapper">
+					<div class="wpb_single_image wpb_content_element vc_align_center gs">
+
+						
+					</div></div></div></div></div>
+			
+			
+						<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1625807015592"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+				<div class="wpb_single_image wpb_content_element vc_align_center gs">
+
+					
+				</div></div></div></div>
+
+				<div class="wpb_column vc_column_container vc_col-sm-6">
+					<div class="vc_column-inner">
+						<div class="wpb_wrapper">
+					<div class="wpb_single_image wpb_content_element vc_align_center gs">
+
+						
+					</div></div></div></div></div>
+			
+
+			<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1625807025230">
+				<div class="wpb_column vc_column_container vc_col-sm-6">
+					<div class="vc_column-inner">
+						<div class="wpb_wrapper">
+				<div class="wpb_single_image wpb_content_element vc_align_center   gs">
+
+
+					
+				</div></div></div></div>
+
+				<div class="gs wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+
+					<div class="shortcode-single-image-wrap shortcode-single-image-f61453443e165cad845d4c65ba74e356 alignnone  enable-bg-rollover dt-icon-bg-off" style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;"><div class="shortcode-single-image"><div class="fancy-media-wrap" style="">
+						<div class="layzr-bg">
+
+		</div></div></div></div></div></div></div></div></div></div></div></div>
+
+
+			
+			<div class="vc_row-full-width vc_clearfix"></div><!-- Row Backgrounds -->
+			<div data-vc-full-width="true" data-vc-full-width-init="true" 
+			class="vc_row wpb_row vc_row-fluid vc_custom_1626217005519 
+			vc_row-has-fill" style="left: -245px; position: relative; box-sizing: 
+			border-box; width: 1903px; padding-left: 245px; padding-right: 244px;">
+			<div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-xs-">
+			<div class="vc_column-inner">
+			<div class="wpb_wrapper">
+			<div class="vc_empty_space" style="height: 50px">
+			<span class="vc_empty_space_inner"></span></div>
+			<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1626194535371">
+			<div class="wpb_column vc_column_container vc_col-sm-2">
+			<div class="vc_column-inner">
+			<div class="wpb_wrapper">
+			</div></div></div>
+
+<div class="vc_col-sm-8">
+<div class="reviews-body-blurb-width">
+<div class="wpb_wrapper ">
+
+
+	<div class="wpb_text_column wpb_content_element animated fadeInUpBig "  style="margin-bottom: 10px !important;">
+		<div class="wpb_wrapper">
+
+<center><img src="../img/review7/amplifier.png" 
+alt="McIntosh MC125KW Quad Balanced Power Amplifier" class="center animated fadeInUpBig"></center>
+<p class="reviews-mobile_texts-caption" style="image_caption; color: #282828;"><i><b>Figure 1.</b> McIntosh MC125KW Quad Balanced Power Amplifier (image from Robb Report's November 11, 2022 issue)</i></p>
+<br>
+
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-align: center; font-weight: 600;">Abstract</p>
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+Audio products remain largely traditional in interface design such as the case of the legendary McIntosh, a leader in high-performance audio products. While its design emanates an elegant and timeless aura, the interface appears to belong to a bygone era and might initially pose confusion when being navigated. This review evaluates the user experience of a set of a McIntosh system. The goal is to understand why the brand’s interface has not changed much, but rather evolved very slowly, since its founding in 1949. Further insights from market analysis and research articles follow to suggest whether McIntosh should take advantage of the possibilities of new interactive interfaces for an overall usability success.
+</p>
+			
+<br>
+			
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-align: center; font-weight: 600;">Introduction</p>			
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+During the standstill of the Covid lockdown, I rediscovered old passions that include music. I started to listen to music again, something that was forgotten amidst the busy commitments and travel adventures of my pre-covid life. Listening to music on a superior sound system can be truly transcendent, so upon the search for stereo equipment to further the audio bliss, I came across a “Mac Stack” that was configured for an at home entertainment. My first encounter with the McIntosh’s components whose front panels feature bright blue meters and elegant knobs—that reminisce scenes from a few of my favorite period movies—was very pleasing to the eyes, however, it took me some time to work through the system. Despite the preliminary struggle, I was rewarded with the beautiful, crisp, and clear sound that made the experience worth it.</p>
+
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+Per ISO 9241-11, usability has been defined as the “extent to which a product can be used by specified users to achieve specific goals with effectiveness, efficiency and satisfaction in a specified context of use”. So why was my first interaction with this well-praised and high-end audio equipment so complicated? Could there be a story behind the product to give me clarity? This review will look into the history of the McIntosh Laboratory brand to understand its current interface and broad context. The findings will be combined with a market analysis and research articles to determine if design recommendations should be made.  
+</p>
+						
+<br>
+
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-align: center; font-weight: 600;">About McIntosh Laboratory</p>
+<br>
+<center><img src="../img/review7/about_mcintosh.png" 
+alt="MC3500, Mc2300, & MA9000" class="center animated fadeInUpBig"></center>
+<p class="reviews-mobile_texts-caption" style="image_caption; color: #282828;"><i><b>Figure 2, 3, &amp; 4.</b> MC3500, MC2300, and MA9000</i></p>
+<br>
+
+<p class="reviews-mobile_texts"style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+Founded in 1949 by Frank McIntosh, much of the signature look of McIntosh equipment goes back to the early years of the company. The brand is a well-known American company that specializes in manufacturing high-end audio equipment, including amplifiers, receivers, and speakers. The company is known for its distinctive visual design, which often includes blue meters and a robust, classic appearance. McIntosh products are highly regarded in the music community for their exceptional sound quality and craftsmanship.
+</p>
+			
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+McIntosh generated loyalties that started in the sixties. Bands like the Grateful Dead, the Beach Boys, and Earth, Wind &amp; Fire became early adopters of McIntosh gear. Their amplifiers became easily recognizable in recording studios and in live concerts. In 1969, the most powerful amp McIntosh offered was the single channel MC3500 (Fig. 2). These gained overnight fame with bands and home stereo enthusiasts after they were used to power Woodstock.</p>
+
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+Following the success of Woodstock, the Grateful Dead began using the McIntosh dual channel MC2300 amplifiers (Fig. 3) to power their concerts, including their renowned Wall of Sound performances starting in 1973. These amplifiers, and the Wall of Sound concerts, have become so famous that lead guitarist Jerry Garcia of the Grateful Dead's personal MC2300 sold for $378,000 at Sotheby's last year. Figure 4 is of the dual channel MA9000 McIntosh power amplifier, part of the company’s current lineup. Note the similarities to the two previous models.</p>
+
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+In October of 2022, the Robb Report produced their first ever music issue. They used parts of the standard McIntosh front panel to produce the headline image for the article. The publication received many inquiries on the dial, tubes, and blue meter that they did a follow up article in November 2022 entitled “How McIntosh’s Blue Meters Became Synonymous with Premium Audio”. The report compares McIntosh gear to Swiss watches and European sports cars in both its desirability and ability to hold its value. The author notes "Think Rolex, in black and blue" which refers to blue-blooded audiophiles desire to have a "Mac Stack" with lots of blue meters to build their own "Wall of Sound".
+</p>
+			
+<br>
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-align: center; text-align: center; font-weight: 600;">Market Comparative Analysis</p>
+<br>
+<p class="reviews-mobile_texts-caption" style="image_caption; color: #282828;"><b>Table 1.</b> Brands comparison between Marantz Model 40N, Cambridge Audio Edge A, Mark Levinson No. 5805, and McIntosh MA5300.</p>
+<center><img src="../img/review7/market_analysis.png" 
+alt="MC3500, Mc2300, & MA9000" class="center animated fadeInUpBig"></center>
+
+<br>
+<br>
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-align: center; text-align: center; font-weight: 600;">Research Articles</p>
+<br>
+	
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; font-weight: 600;"><i>Usability of Consumer Electronic Products</i></p>
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+Han (Han et al., 2000) noted that a consumer electronic product is not just a tool that performs a task, but also a home decoration that expresses one's lifestyle or personality. So, it not only should be easy to use, but also needs to be aesthetically pleasing. Traditional electronic product designers focused mostly on the aesthetic integrity aspect and hence front panel controls can be relatively small in shape, be the same color and size, and have no hierarchy. However, research has shown that as electronic devices become more sophisticated users are becoming increasingly frustrated with the complexity in understanding how to use them, and usability is becoming a dominant factor that affects a user's decision to purchase a product. A new definition for usability of consumer products was defined as ‘satisfying the users in terms of both the performance and the image and impression felt by them’.
+</p>
+			
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+Traditional concepts of usability as applied to software systems cannot be applied to electronic products as they are hybrid systems consisting of hardware components such as knobs and dials, visual components like displays and meters, and software interfaces such as mobile apps or web interfaces. Usability needs to be blended across these different aspects of the design.
+</p>
+			
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+While aesthetics is important in consumer electronic design, the physical user interface needs to allow users to quickly be able to identify key features that allow them to get up and running. Users expect interfaces to give a sense of consistency, predictability and to be informative. Consistency, color, brightness, shape, and texture all play into this. One of the challenges for user-centered design (UCD) with consumer electronics is balancing a hierarchical layout that achieves these goals balanced with the elegant look and feel that traditional designers lean towards.
+</p>
+			
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+Other key aspects of usability include learnability and memorability. Users should be able to grasp the key features and be able to easily remember them. If users find they are constantly referring to a complex instruction manual to repeat the same task, then key aspects of usability are missing. Their research showed that with some products key features are never utilized simply because manuals are too complex, or the steps to enable the feature were too complex and difficult to remember.
+</p>
+			
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+Han and his colleagues provided a list of 48 dimensions, 23 performances related and 25 visuals, to allow designers and developers to better understand the nature of usability as it relates to consumer electronic products. The goal of the list is to provide a framework to allow for the design of electronics that balance the two somewhat competing aspects of usability and visual appearance (Han et al., 2000).
+</p>
+	
+		
+<br>
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; font-weight: 600;"><i>Usability in the Development of Consumer Electronics: Issues and Actors</i></p>
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+Van Kuijk and his colleagues (Van Kuijk, Kanis et al., 2006) defined the goal in an article to identify both the issues and actors encountered in companies that manufacture consumer electronics. A broad spectrum of topics is considered, such as development process, company culture, organization of the usability department, how groups are managed, and the experience level of the usability department along with the flexibility they are given in decision-making. The authors started out with a real-life scenario that one of them had with an engineering Ph.D. colleague. His colleague had recently purchased a high-end stereo system, and after an hour and a half of trying, was unable to determine how to stream internet radio out of the system. The colleague could not figure out how to use it, or which buttons to push. The author noted that the unit looked spectacular but on closer inspection of the front panel, he mentioned over-technological descriptions of functions, buttons that did not look like buttons, and other usability issues. He asked himself whether any usability testing had been done, or whether the designers knew how to design for ease of use.
+</p>
+			
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+At the end of the analysis, it is concluded that corporate culture is a key player in the objective of incorporating user-centric design in electronic products. Companies must ensure that UCD is ingrained in all groups including the usability research group, the product development and design group, electronic designers, and product and marketing managers. The groups should be kept updated on the results of internal usability studies, as well as feedback from the field regarding customer usability concerns.
+</p>
+
+<br>
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; font-weight: 600;"><i>Detecting and Explaining Usability Issues of Consumer Electronic Products</i></p>
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+Along with price and functionality, usability is becoming a key factor in a buyer’s decision-making process. For user control electronic products are implementing a combination of traditional physical items like buttons and dials, along with touchscreens, visual displays, and apps. While all of this gives users a wide array of choices in how to interact with a product, the side effect is that they are becoming overwhelmed with complexity, and the difficulty of implementing the various approaches in controlling the devices (Benvenuti, Buda et al., 2021). 
+</p>
+			
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+The issue can get compounded by the lack of feedback on issues encountered by users as they attempt to control electronic devices via the various interfaces. Benvenuti and his colleagues proposed that one approach to acquiring usable information to improve design of electronic devices is to implement the same logging and data gathering technologies that computers use. Computer software, web applications, and mobile apps produce server logs that track every action a user takes, along with application and system errors. These logs generally fall into the category of Big Data and can be used to produce analytics reports that allow designers and developers to detect key issues users are encountering; as more data is collected, more useful information is gathered.  
+</p>
+			
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+Gathering logs would be particularly helpful with electronic devices given the available ways users can interact with them. If logging were implemented, the logs could be fed into currently available powerful analytics programs that can provide analysis of each method of interaction, but also provide cross correlations for users who are attempting multiple approaches in controlling a device. All of this can be done anonymously with user acceptance as it is done with web applications. If an electronic device already has smart technology like Bluetooth, WIFI, and possibly onboard memory then implementing a logging system can be built on top of this. This would provide a continuous feedback loop to allow for continuous usability enhancements even as systems are upgraded.  
+</p>			
+
+<br>
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; font-weight: 600;"><i>Barriers to and Enablers of Usability in Electronic Consumer Product Development</i></p>
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+A study was conducted to identify and categorize the various enablers and barriers that practitioners encounter when working to integrate UCD into electronic devices (Van Kuijk, Kanis et al., 2017). The increased integration of information technology into electronic devices has effectively turned many of them into powerful minicomputers on their own. This in turn has led to the design of more and varying sophisticated user interfaces, which requires more attention to the usability aspects of the devices.
+</p>
+			
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+Usability as relates to electronic devices is broken down into three categories. Effectiveness relates to users being able to accurately complete a specific goal with a device. Efficiency is the amount of time required by users to complete a goal effectively. Satisfaction is more subjective and relates to a user achieving a positive attitude with no feelings of discomfort in achieving a goal. All three of these must be evaluated and addressed by usability specialists and designers towards the goal of producing a UCD product.
+</p>
+			
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+The authors note that both technological complexity and functionality of electronic components is increasing, along with ways in which users can interact with these devices, whether that be a traditional hardware interface, web app or mobile app. This competes with companies wanting to shorten time to market cycles due to business competition, which in turn puts pressure on designers and developers to complete usability analysis on more complex systems in a shortened time. 
+</p>
+			
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+With most categories of consumer electronics, new companies are starting up and entering the marketplace, and more consumer choices are becoming available. Even well-established companies are feeling sales pressure from the increasing number of competitors who may offer similar products as their own—with similar performance and features—but at a lower cost and in some cases better usability. Similarly, to Benvenuti (Benvenuti, Buda et al., 2021), the authors note that usability must be balanced with visual appearance. 
+</p>
+			
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+With today's ever complicated electronic equipment and shortened development cycles, a wide array of issues needs to be considered to correctly implement UCD. There is no one fixed approach and while the study provides insight into what enables UCD and what hinders it, each company needs to self-adapt and implement a system that works for their culture and working groups. Ideally, UCD would be ingrained into a company’s culture, but it at least needs to be part of the working philosophy of interface designers, electronic designers, and software designers. In the long run, businesses that are able to implement UCD well will have competitive advantages over those who do not.  
+</p>
+
+<br>
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; font-weight: 600;"><i>Evaluating User Interfaces for Audio Equipment</i></p>
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+Dewey and Wakefield (Dewey et al., 2014) provided proposed guidelines for the audio industry to design and evaluate user interfaces for audio equipment. They completed a case study in two phases, for two different pieces of audio equipment, to provide a basis for their proposal. 
+</p>
+
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+In phase one, they evaluated user interfaces for audio equalizers which are components in stereo systems that allow users to filter out or amplify certain frequencies. For instance, bass sounds could be amplified, and mid-range could be attenuated. Expert users were provided with three traditional, and four novel audio equalizer interfaces and given the task of removing a resonant frequency produced by a snare drum using each one. The time testers spent thinking about and navigating the interface, vs using the equalizer to remove the resonant frequency was measured. It was determined that several of the novel interfaces resulted in quicker completion times than the traditional interfaces. 
+</p>
+	
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+The second test involved evaluating one traditional and three novel audio mixer interfaces. Audio mixers allow sound inputs from multiple sources to be mixed and then sent to the speaker system. In phase 2, the participants provided a preference ranking on the mixers and selected 5 keywords from a preselected list to describe their level of satisfaction. One of the novel interfaces provided the highest test results. 
+</p>
+			
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+The authors provided a suggested list of steps based on the approach and results of the equalizer and mixer testing. They also presented an approach to be used in the evaluation and design of user interfaces for audio equipment. The case study concluded that audio products should adopt a meticulous design and evaluation process of new interfaces for more intuitive user experience. 
+</p>
+			
+<br>
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-align: center; font-weight: 600;">Summary and Recommendations</p>
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+McIntosh has continued to be a successful company in an increasingly competitive market. Respected retailer Crutchfield lists almost forty high-end integrated amplifiers that would be considered competitors to McIntosh, yet to this point McIntosh continues to be a popular brand. They focus on improving the electronic design and sound quality of their equipment while maintaining the traditional 1960s look and feel of their front panels. The company has also surprisingly chosen not to build in Bluetooth or Wi-Fi support for online streaming services like Spotify and Pandora via phone apps. Even with more features, their award-winning competitors have produced streamlined, and intuitive, front panel designs. As has been noted in several audio forums, the McIntosh blue meters serve limited purpose, other than for aesthetics; and to allow users to quickly identify the brand.
+</p>
+			
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+In the opening scenario of "Usability in the Development of Consumer Electronics: Issues and Actors" (Van Kuijk, Kanis et al., 2006), a story was shared that relates to a real-life interaction an author had with an engineering Ph.D. educated colleague who was frustrated after an hour and a half of interacting with a high-end stereo system. In particular, the colleague was just trying to stream internet radio through the system. He was confused about the usage and placement of the knobs and buttons as well as their functionality. This scenario frames the backdrop described in other articles that entailed: while consumer electronics are offering more options both on the technology front—as well as more user interaction options, e.g., Bluetooth and mobile apps—they are becoming more complicated to use; users sometimes cannot quickly figure out how to do something that should be simple like streaming an internet music channel.
+</p>
+
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+Han (Han et al., 2000) notes that traditional interface designers for electronic products mostly focused on the aesthetic as consumers considered the look of these devices of high importance. This approach worked fine with limited functionality on non-smart devices. However, their same research showed that with the onset of smart devices that could be controlled via Bluetooth and Wi-Fi mobile apps, and that were also offering increasing technical functionality like streaming services, that users were becoming frustrated with their ability to interact with these same devices, and hence usability is coming to the forefront. They also note that aesthetics still needs to be a driving factor in the overall design plan.
+</p>			
+
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+The three competitors to McIntosh from the market comparative analysis all allowed users to get up and running more quickly. In his review of the McIntosh, Ralph Werner (Werner, 2014) made a tongue-in-cheek comment that he'd ask McIntosh why they do not upgrade the look and layout of their interface, but he'd most likely get a reply to the effect that they've done it this way for decades, so why change now.
+</p>			
+
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+With the ever-competitive marketplace and complexity of products being developed, Benvenuti (Benvenuti, Buda et al., 2021) suggested that to allow for quick feedback on usability issues, manufacturers could implement the same logging and Big Data analytics that things like web applications and mobile apps currently use. The three McIntosh competitors are already using smart devices with Bluetooth, Wi-Fi, and onboard RAM so they have part of the infrastructure in place to enable this logging. The McIntosh has none of this in place, and no mobile app, so they would be starting from ground zero even if they wanted to enable logging.
+</p>				
+
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+Van Kuijk (Van Kuijk, Kanis et al., 2017, 2006) pointed out that implementing UCD into electronics ideally will be embedded in corporate culture and be pushed down from management through to the functional groups such as part of a core company design philosophy. On their own website, McIntosh talks about how they've continued to use the same color schemes, panel designs, meters and overall look that made them famous in the sixties. Per the Robb Report (Ross, 2022), McIntosh still has a strong following and continues to have good sales.
+</p>
+
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-indent: 2.2em;">
+Based on the insights provided by current academic research, and in conjunction with review articles sourced from popular audiophile publications for the market comparative analysis, McIntosh may want to weigh a few points going forward. The brand should consider implementing smart technology such as Bluetooth, Wi-Fi, and support for popular high quality streaming functionality such as Aptx HD to help them maintain their current market position in the face of increasing global competition from lower cost competitors who are implementing smart technology and focusing on usability. McIntosh would most likely benefit from using the Dewey and Wakefield proposed guidelines for evaluating their interfaces, rather than just continuing to rely on their following and popularity amongst audiophiles. For McIntosh to grow, they may want to shed some of their existing philosophy that they need to keep their existing 1960s look and feel, particularly as they move into more complicated smart technology enabled devices. Given the short turnaround time in today's competitive markets, they would benefit from putting together a strategy to implement a Big Data analytics integration into their devices, which would allow them to gather quick insights into usability issues.
+</p>			
+
+	
+<br>
+<p class="reviews-mobile_texts" style="color: #282828;  font-size:24px; text-align: center; text-align: center; font-weight: 600;">References</p>
+<br>
+<p class="breakWord" style="color: #282828;  font-size:20px; padding-left: 2.2em; text-indent: -2.2em;">
+Benvenuti, D., Buda, E., Fraioli, F., Marrella, A., Catarci, T. (2021). <i>Detecting and explaining usability issues of consumer electronic products</i> (pp. 298–319). Springer International Publishing. DOI: 10.1007/978-3-030-85610-6_18
+</p>
+
+<p class="breakWord" style="color: #282828;  font-size:20px; padding-left: 2.2em; text-indent: -2.2em;">
+Cambridge Audio Edge A Review (2020, June 12). What HiFi. https://www.whathifi.com/reviews/cambridge-audio-edge-a 
+</p>
+	
+<p class="breakWord" style="color: #282828;  font-size:20px; padding-left: 2.2em; text-indent: -2.2em;">
+Dewey, C. & Wakefield J. (2014). <i>A guide to the design and evaluation of new user interfaces for the audio industry</i>. Audio Engineering Society 136th European Convention. http://www.aes.org/e-lib/browse.cfm?elib=17218
+</p>
+	
+<p class="breakWord" style="color: #282828;  font-size:20px; padding-left: 2.2em; text-indent: -2.2em;">
+Han, S. H., Yun, M.H., Kwahk, J., Hong, S.W. (2001). Usability of consumer electronic products. <i>International Journal of Industrial Ergonomics, 28</i>(3–4), 143–151. https://doi.org/10.1016/S0169-8141(01)00025-7
+</p>
+	
+<p class="breakWord" style="color: #282828;  font-size:20px; padding-left: 2.2em; text-indent: -2.2em;">
+Kanno, R. (2019, October). <i>Cambridge Audio Edge A Integrated Amplifier DAC</i>. SoundStage! Hi-Fi. https://www.soundstagehifi.com/index.php/equipment-reviews/1345-cambridge-audio-edge-a-integrated-amplifier-dac
+</p>
+	
+<p class="breakWord" style="color: #282828;  font-size:20px; padding-left: 2.2em; text-indent: -2.2em;">
+Mark Levinsion No. 5805 Integrated Amplifier. Audio Advice. AudioAdvice.
+https://www.audioadvice.com/mark-levinson-no-5805-integrated-amplifier
+</p>
+	
+<p class="breakWord" style="color: #282828;  font-size:20px; padding-left: 2.2em; text-indent: -2.2em;">
+McIntosh MA5300 100-Watt Integrated Amplifier w/ Built-In Phono Stage, Headphone Amp, Includes a DAC, USB DAC. AudioAdvice. https://www.audioadvice.com/mcintosh-ma5300-100-watt-integrated-amplifier
+</p>
+	
+<p class="breakWord" style="color: #282828;  font-size:20px; padding-left: 2.2em; text-indent: -2.2em;">
+Micallef, K. (2018, December 20). <i>Cambridge Audio Edge A integrated amplifier</i>. Stereophile. https://www.stereophile.com/content/cambridge-audio-edge-integrated-amplifier
+</p>
+	
+<p class="breakWord" style="color: #282828;  font-size:20px; padding-left: 2.2em; text-indent: -2.2em;">
+Nasir, Rahiel (2020, June 16). <i>Hardware reviews: Cambridge Audio Edge A</i>. The Ear. https://the-ear.net/review-hardware/cambridge-audio-edge-integrated-amplifierdac
+</p>
+	
+<p class="breakWord" style="color: #282828;  font-size:20px; padding-left: 2.2em; text-indent: -2.2em;">
+Robinson, A. (2022, February 20). <i>All in one amp we love! Marantz Model 40N review</i>. The Robinson Brand. https://www.therobinsonbrand.com/journal/all-in-one-amp-we-love-marantz-model-40n-review
+</p>
+	
+<p class="breakWord" style="color: #282828;  font-size:20px; padding-left: 2.2em; text-indent: -2.2em;">
+Ross, R. (2022). <i>How McIntosh’s blue meters became synonymous with premium audio</i>. The Robb Report. https://robbreport.com/gear/electronics/mcintosh-blue-meters-1234771651
+</p>
+	
+<p class="breakWord" style="color: #282828;  font-size:20px; padding-left: 2.2em; text-indent: -2.2em;">
+Sylthe, K. E. (2022, June 19). <i>Review: Marantz Model 40N</i>. Audiophile.No. http://audiophile.no/en/articles-tests-reviews/item/3067-review-marantz-model-40n
+</p>
+	
+<p class="breakWord" style="color: #282828;  font-size:20px; padding-left: 2.2em; text-indent: -2.2em;">
+Van Kuijk, J., Kanis, H., Christiaans, H., & van Eijk, D. (2017). Barriers to and enablers of usability in electronic consumer product development: A multiple case study. <i>Human-Computer Interaction, 32</i>(1), 1–71. DOI: 10.1080/07370024.2015.1117373
+</p>
+	
+<p class="breakWord" style="color: #282828;  font-size:20px; padding-left: 2.2em; text-indent: -2.2em;">
+Van Kuijk, J.I., Christiaans, H., Kanis, H., & van Eijk, D.J. (2006, July). <i>Usability in the development of consumer electronics: Issues and actors</i> [Pager presentation]. Section of Applied Ergonomics and Design. DOI: 10.1016/S0169-8141(01)00025-7
+</p>
+	
+<p class="breakWord" style="color: #282828;  font-size:20px; padding-left: 2.2em; text-indent: -2.2em;">
+Veenstra, Jaap (2022, November 25). <i>Review Mark Levinsion 5805 integrated amplifier - Full body</i>. Alpha-Audio. https://alpha-audio.net/review/review-mark-levinson-5805-geintegreerde-versterker-full-body
+</p>
+	
+<p class="breakWord" style="color: #282828;  font-size:20px; padding-left: 2.2em; text-indent: -2.2em;">
+Werner, R. (2014, February). <i>A syndicated review from Germany, MA5200</i>. https://6moons.com/audioreviews/mcintosh3/1.html
+</p>
+
+	
+<div class="widget-box"></div>
+<div class="widget-box"></div>
+
+</div></div></div></div></div>
+		
+<!-- beginning of image swap section -->
+<div id="ult-carousel-24915921956140fff670c89" 
+class="ult-carousel-wrapper  vc_custom_1626105420287  ult_horizontal" data-gutter="5" data-rtl="false">
+<div class="ult-carousel-22832029316140fff670c65 slick-initialized slick-slider">
+<div aria-live="polite" class="slick-list draggable">
+<div class="slick-track" style="opacity: 1;" role="listbox">
+<div class="ult-item-wrap slick-slide animated no-animation" data-animation="animated no-animation" 
+data-slick-index="0" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide00">
+	
+	
+			
+		</figure>
+	</div>
+	
+</div>
+	
+	<div class="ult-item-wrap slick-slide slick-current" data-animation="animated no-animation" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide01">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		
+	</div>
+</div></div></div></div></div>			
+
+<!-- end of image swap section -->
+
+
+
+<script type="text/javascript">
+				jQuery(document).ready(function ($) {
+					if( typeof jQuery('.ult-carousel-22832029316140fff670c65').slick == "function"){
+						$('.ult-carousel-22832029316140fff670c65').slick({dots: false,autoplay: true,autoplaySpeed: 2000,speed: 1000,infinite: true,arrows: false,slidesToScroll:1,slidesToShow:0,swipe: true,draggable: true,touchMove: true,pauseOnHover: true,pauseOnFocus: false,responsive: [
+							{
+							  breakpoint: 1026,
+							  settings: {
+								slidesToShow: 0,
+								slidesToScroll: 1,
+							  }
+							},
+							{
+							  breakpoint: 1025,
+							  settings: {
+								slidesToShow: 0,
+								slidesToScroll: 1
+							  }
+							},
+							{
+							  breakpoint: 760,
+							  settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							  }
+							}
+						],pauseOnDotsHover: true,customPaging: function(slider, i) {
+                   return '<i type="button" style= "color:#333333;" class="ultsl-record" data-role="none"></i>';
+                },});
+					}
+				});
+			</script>
+			<div class="vc_empty_space" style="height: 2em;"><span class="vc_empty_space_inner"></span></div></div></div></div></div>
+	<div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="true"
+
+			class="vc_row wpb_row vc_row-fluid" style="left: -245px; position: relative; box-sizing: border-box; width: 1903px; padding-left: 245px; padding-right: 244px;">
+			  <div class="vc_row wpb_row vc_inner vc_row-fluid"></div></div></div><div class="vc_row-full-width vc_clearfix"></div>
+
+</div><!-- #content -->
+</div><!-- .wf-container -->
+</div><!-- .wf-wrap -->
+</div><!-- #page -->
+
+
+		<script type="text/javascript">
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = false;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+		<!--
+The IP2Location Country Blocker is using IP2Location LITE geolocation database. Please visit http://lite.ip2location.com for more information.
+-->
+
+
+<script type="text/javascript">
+		if(typeof revslider_showDoubleJqueryError === "undefined") {function revslider_showDoubleJqueryError(sliderID) {console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");console.log("To fix this, you can:");console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");console.log("2. Find the double jQuery.js inclusion and remove it");return "Double Included jQuery Library";}}
+</script>
+
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+</style>
+<script type="text/javascript" src="../markup/js/main.js" id="dt-main-js"></script>
+<script type="text/javascript" src="../markup/js/regenerator-runtime.js" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="../markup/js/jquery-mousewheel.js" id="jquery-mousewheel-js"></script>
+<script type="text/javascript" src="../markup/js/ltd_composer_main.js" id="wpb_composer_front_js-js"></script>
+<script type="text/javascript" id="rs-initialisation-scripts">
+		var	tpj = jQuery;
+
+		var	revapi12;
+
+		if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+		if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+		RS_MODULES.modules["revslider121"] = {once: RS_MODULES.modules["revslider121"]!==undefined ? RS_MODULES.modules["revslider121"].once : undefined, init:function() {
+			window.revapi12 = window.revapi12===undefined || window.revapi12===null || window.revapi12.length===0  ? document.getElementById("rev_slider_12_1") : window.revapi12;
+			if(window.revapi12 === null || window.revapi12 === undefined || window.revapi12.length==0) { window.revapi12initTry = window.revapi12initTry ===undefined ? 0 : window.revapi12initTry+1; if (window.revapi12initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider121"].init()}); return;}
+			window.revapi12 = jQuery(window.revapi12);
+			if(window.revapi12.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_12_1"); return;}
+			revapi12.revolutionInit({
+					revapi:"revapi12",
+					sliderType:"hero",
+					DPR:"dpr",
+					sliderLayout:"fullscreen",
+					duration:"2000ms",
+					visibilityLevels:"1240,1024,778,480",
+					gridwidth:"1240,1024,778,480",
+					gridheight:"900,768,960,720",
+					lazyType:"smart",
+					spinner:"spinner0",
+					perspective:600,
+					perspectiveType:"global",
+					editorheight:"900,768,960,720",
+					responsiveLevels:"1240,1024,778,480",
+					progressBar:{disableProgressBar:true},
+					navigation: {
+						onHoverStop:false
+					},
+					viewPort: {
+						global:true,
+						globalDist:"-200px",
+						enable:false
+					},
+					fallbacks: {
+						allowHTML5AutoPlayOnAndroid:true
+					},
+			});
+
+		}} // End of RevInitScript
+
+		if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
+	</script>
+
+
+
+
+				<!-- NOTE modified to add work and contact overlays -->
+				<div class="mobile-sticky-header-overlay"></div>
+				<div id="phantom" class="masthead inline-header right full-height full-width
+animate-position-mobile-menu-icon dt-parent-menu-clickable show-sub-menu-on-hover show-device-logo
+show-mobile-logo hide-phantom"
+					 style="z-index: 10000;">
+					<div class="ph-wrap with-logo" style="color: #fbfbfb; background-color: #fbfbfb; z-index: 999999 !important;">
+						<div class="logo-box" >
+
+							<div class="homepage-mobile-logo-padding">
+								<a href="/index.html"></div>
+							<img class=" preload-me" id="mainlogo"
+								 src="../img/logo_drk.svg" sizes="66px"
+								 alt="LTD logo" width="66" height="auto"
+								 style="float:left; margin: 5px;  z-index:9999999;
+	 visibility:visible !important; opacity:1 !important;"> </a></div>
+
+						<div class="menu-box">
+
+							<!-- NOTE this is the main display section for the full screen floating menu -->
+							<ul class="main-nav underline-decoration upwards-line outside-item-remove-margin" role="menubar">
+
+								<li class="show-hide menu-item menu-item-type-post_type menu-item-object-page menu-item-4202 first" role="presentation">
+									<a href="javascript:;" data-reveal-id="projects" data-level="1" role="menuitem">
+									<span>
+									<span class="topnav-right-f-c hov-color" style="font-size:23px;"><b>WORK</b>
+									</span></span>
+									</a>
+									</li>
+								
+								<li class="show-hide menu-item menu-item-type-post_type menu-item-object-page menu-item-4202 first" role="presentation">
+									<a href="javascript:;" data-reveal-id="reviews" data-level="1" role="menuitem">
+									<span>
+									<span class="topnav-right-f-c hov-color" style="font-size:23px;"><b>PRODUCT REVIEWS</b>
+									</span></span>
+									</a>
+									</li>
+
+								<li class="show-hide menu-item menu-item-type-post_type menu-item-object-page menu-item-3747" role="presentation">
+									<a href="about.html" data-level="1" role="menuitem">
+									<span class="topnav-right-f-c hov-color" style="font-size:23px;"><b>ABOUT</b>
+									</span>
+									</a>
+									</li>
+
+								<li class="show-hide menu-item menu-item-type-post_type menu-item-object-page menu-item-3839 text-container-contact" role="presentation">
+									<a href="javascript:;" data-reveal-id="socialmodal" data-level="1" role="menuitem"><span>
+									<span class="topnav-right-f-c hov-color" style="font-size:23px;"><b>CONTACT</b>
+									</span></span>
+									</a>
+									</li> 
+									
+									</ul>
+									</div>
+						<!-- NOTE end of this is the main display section for the full screen floating menu -->
+
+						<div class="widget-box"></div></div></div>
+
+				<div class="iso-preloader dt-posts-preload dt-posts-preload-active" style="display: none;">
+					<div class="dt-posts-preload-activity">
+					</div></div>
+				<!-- NOTE end modified to add work and contact overlays -->
+
+
+			<div class="widget-box"></div>
+
+		
+		<div class="iso-preloader dt-posts-preload dt-posts-preload-active" style="display: none;">
+			<div class="dt-posts-preload-activity"></div></div>
+
+
+<script type="text/javascript" src="../markup/js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><//script>')</script>
+<script type="text/javascript" src="../markup/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="../markup/js/plugins.js"></script>
+
+<script>
+    $(document).foundation();
+    </script>
+
+
+<!-- !Footer -->
+<footer id="footer" class="footer solid-bg empty-footer" style="border-top:6px solid #5d7c80; height:190px !important;" >
+
+	<!-- !Footer -->
+
+	<div class="logo">
+		<img src="../img/logo_footer.svg" class="centerImage" alt="ltd logo">bottom:15px !important;
+	</div>
+	<div class="bottom">
+		<div class="addthis_toolbox text-center transition clearfix">
+			<p class="futura-condensed">
+				&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> |
+				lauren thy doan |
+				<nobr><a href="mailto:info@ltd-hfid.com" class="futura-condensed" style="color:#7f7a75;">info@ltd-hfid.com</a>
+				• <a href="https://www.linkedin.com/in/lauren-thy-doan-8811519" target="_blank" style="color:#7f7a75;">
+				<i class="icon-linkedin-rect"></nobr></i></a>
+			</p>
+		</div>
+	</div>
+
+	<!-- NOTE UP Arrow and associated background modified
+	the dimensions can be controlled by the style section
+	-->
+	<a href="#" class="scroll-top"
+	   style="font-size:25px; color:#5d7c80; font-weight: bold;
+	   right: 0px !important;
+	   bottom: 0px !important;
+	   width: 60px !important;
+	   height: 30px !important">&#65085;
+		<span class="screen-reader-text"></span></a>
+</footer>
+
+</body>
+
+</html>
