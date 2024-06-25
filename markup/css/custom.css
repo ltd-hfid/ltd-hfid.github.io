@@ -782,6 +782,7 @@ body {
 #page {
   background: #ffffff none repeat  center top;
   background-size: auto;
+  margin-top: -15px;
 }
 
 .fixed-page-bg #page {
@@ -7384,3 +7385,164 @@ h3.gform_title,
 .uvc-heading.uvc-heading-default-font-sizes .uvc-main-heading h6 {
   line-height: 29px;
 }
+
+#grid{margin-top:20px;margin-right:20px}#grid .item,#grid .item.hovering{box-sizing:border-box;padding-bottom:20px;padding-left:20px}#grid .item a{position:relative}footer#bottomBar{bottom:0px !important;position:relative !important}
+ .about-hero {background:url("../../img/about/hero.jpg"); 
+ width:auto;
+	height:100%;
+	position:relative;
+	display:block;
+	// background-image:url(../../img/about/hero.jpg);
+	background-position:center center;
+	background-repeat: no-repeat;
+	background-size:auto 100%;
+	left:50%;
+	min-height:500px;
+
+	will-change:transform;
+	transform:translate3d(-50%,0px,0px);
+	-webkit-transform:translate3d(-50%,0px,0px);
+	-moz-transform:translate3d(-50%,0px,0px);
+	-o-transform:translate3d(-50%,0px,0px);
+
+	transition: opacity 1s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-webkit-transition: opacity 1s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-moz-transition: opacity 1s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-o-transition: opacity 1s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	}
+ .about-hero 
+ .about-hero-wrap{max-width:550px;margin:0 auto;text-align:left;padding-top:10px}
+ .about-hero 
+ .about-hero-wrap
+
+ .about-hero 
+ .about-hero-wrap
+ .about-subheading{font-size:21px;line-height:26px; margin-left: 120px;}}@media screen and (min-width: 768px) and (max-width: 991px) { 
+ .about-hero 
+ .about-hero-wrap 
+
+ .about-hero{min-height:600px;max-height:700px;background-position:center top}
+ .about-hero 
+ .about-hero-wrap{max-width:2500px;text-align:left;padding:170px 0 200px 380px}
+ .about-hero 
+ .about-hero-wrap 
+ .about-subheading{font-size:33px;color:white;line-height:39px; margin-left: 120px;}}@media screen and (min-width:1200px){
+ .about-hero 
+ .about-hero-wrap{max-width:600px;padding:170px 0 200px 400px}
+ .about-hero 
+ .about-hero-wrap 
+ .about-heading{max-width:600px;width:500px;margin-left:-100px;margin-top:-100px}
+ .about-hero 
+ .about-hero-wrap 
+ .about-subheading{font-size:33px;line-height:39px; margin-left: 120px;}}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+	.about-hero{
+		background-image:url("../../img/about/hero.jpg");
+	}}
+
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+	.about-hero{
+		background-image:url("../../img/about/hero.jpg");
+	}}
+
+@media only screen and (min-width: 768px) and  (max-width: 991px) {	
+	.about-hero{
+		background-image:url("../../img/about/hero.jpg");
+	}}
+
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+	.about-hero{
+		background-image:url("../../img/about/hero-568.jpg");
+	}}
+
+@media only screen and (min-width: 480px) and (max-width: 567px) {
+	.about-hero{
+		background-image:url("../../img/about/hero-480.jpg");
+	}}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+	.about-hero{
+		background-image:url("../../img/about/hero-mobile.jpg");
+	}}
+
+@media only screen and (max-width: 319px) {
+	.about-hero{
+		background-image:url("../../img/about/hero-mobile.jpg");
+	}}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {	
+	.about-heading{
+		max-width: 550px;
+		width: 100%;
+		margin-left: 180px;
+		margin-top: 70px;
+	}}
+
+@media only screen and (min-width: 992px) and (max-width: 1023px) {	
+	.about-heading{
+		max-width: 550px;
+		width: 100%;
+		margin-left: 150px;
+		margin-top: 65px;
+	}}
+
+@media only screen and (min-width: 768px) and  (max-width: 991px) {	
+	.about-heading{
+		max-width: 550px;
+		width: 100%;
+		margin-left: 100px;
+		margin-top: 65px;
+	}}
+
+@media only screen and (min-width: 568px) and (max-width: 667px) {
+	.about-heading{
+		max-width: 550px;
+		width: 80%;
+		margin-left: 120px;
+		margin-top:60px;
+	}}
+
+@media only screen and (min-width: 668px) and (max-width: 767px) {
+	.about-heading{
+		max-width: 550px;
+		width: 80%;
+		margin-left: 150px;
+		margin-top:60px;
+	}}
+
+@media only screen and (min-width: 480px) and (max-width: 567px) {
+	.about-heading{
+		max-width: 550px;
+		width: 80%;
+		margin-left: 90px;
+		margin-top: 50px;
+	}}
+	
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+	.about-heading{
+		max-width: 550px;
+		width: 80%;
+		margin-left: 80px;
+		margin-top: 30px;
+	}}
+
+@media only screen and (max-width: 319px) {
+	.about-heading{
+		max-width: 550px;
+		width: 80%;
+		margin-left: 50px;
+		margin-top: 20px;
+	}}
+
+
+
+
+
+
+
+
+
+
