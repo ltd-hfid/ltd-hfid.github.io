@@ -6,6 +6,7 @@ function toggleReviews() {
   element.classList.toggle("open");
   var e = document.getElementById("reviewArrow");
   e.classList.toggle("rotate-me");
+   e.classList.toggle("topnav-spacing");
 } 
 
 function toggleWork() {
@@ -13,6 +14,8 @@ function toggleWork() {
   element.classList.toggle("open");
   var e = document.getElementById("workArrow");
   e.classList.toggle("rotate-me");
+  e.classList.toggle("topnav-spacing");
+
 } 
 
 
@@ -24,16 +27,12 @@ function toggleContact() {
 
 
 function myFunctionOpen(i) {
-console.log(i);
-console.log("show");
   var x = document.getElementById(i);
 	x.classList.remove("hide-me");
 	x.classList.add("show-me");
 } 
 
 function myFunctionHide(i) {
-console.log("Hide");
-console.log(i);
   var x = document.getElementById(i);
 	x.classList.remove("show-me");
 	x.classList.add("hide-me");
